@@ -1,0 +1,378 @@
+@extends('layouts.user_master')
+@section('title','Home')
+@section('content')
+     <!--banner area-->
+    
+    <section class="bannar-area  pb-100">
+        <div class="banner bg">
+           <div class="container">
+                <div class="content">
+                    <div class="banner-text">
+                        <h2>welcome to the sylhet wholeheartedly.</h2>
+                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </section>
+
+  <!--about us-->
+   <section class="about-area pt-100">
+        <div class="pt-100 section-title">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 about-title">
+                        <h2> about us.</h2>
+                        <h4 class="about-heading">WE'RE MORE THAN A DIGITAL AGENCY</h4>
+                    </div>
+                    <div class="col-xl-6 text right about-content">
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry typesetting industry.</p>
+                    </div>
+               </div>
+            </div>
+        </div>    
+   </section>
+   <section class="about-area1 pb-100">
+           <div class="container">       
+               <div class="about row">
+                       <div class="col-xl-4">
+                          <div class="about-icon"><i class="far fa-question-circle"></i></div>
+                          <div class="single-about">
+                                
+                                <h4>Who we are</h4>
+                                <p class="about-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint quae similique explicabo sed, fuga eius nostrum! Illo delectus distinctio temporibus.</p>
+                                <a href="" class="btn-primary">Read More</a>
+                          </div>
+                       </div>
+                       <div class="col-xl-4">
+                           <div class="about-icon"><i class="fab fa-think-peaks"></i></div>
+                           <div class="single-about">
+                                
+                                <h4>Our philosophy</h4>
+                                <p class="about-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint quae similique explicabo sed, fuga eius nostrum! Illo delectus distinctio temporibus.</p>
+                                <a href="" class="btn-primary">Read More</a>
+                           </div>
+                       </div>
+                       <div class="col-xl-4">
+                           <div class="about-icon"><i class="fas fa-network-wired"></i></div>
+                           <div class="single-about">
+                                
+                                <h4>How we work</h4>
+                                <p class="about-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint quae similique explicabo sed, fuga eius nostrum! Illo delectus distinctio temporibus.</p>
+                                <a href="" class="btn-primary">Read More</a>
+                           </div>
+                       </div>
+               </div>    
+           </div>
+   </section>
+
+   <!--visit place-->
+
+   <section class="place-area pb-100">
+       <div class=" section-title">
+           <div class="container">
+               <div class="row pt-100">
+                   <div class="col-xl-12 about-title text-center">
+                       <h2>places to visit.</h2>
+                       <h4 class="about-heading">check out amazing places of sylhet</h4>
+                   </div>
+               </div>
+               <div class="row">
+                   <div class="col-xl-4">
+                       <div class="card middle">
+                           <div class="front">
+                               <img src="{{asset('public/user_assets/')}}/images/ratargul1.jpg">
+                           </div>
+                           <div class="back">
+                               <div class="back-content middle">
+                                   <h2>ratargul</h2>
+                                   <a href="" class="btn-primary">Read More</a>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="col-xl-4">
+                       <div class="card middle">
+                           <div class="front">
+                               <img src="{{asset('public/user_assets/')}}/images/ratargul2.jpg">
+                           </div>
+                           <div class="back">
+                               <div class="back-content middle">
+                                   <h2>ratargul</h2>
+                                   <a href="" class="btn-primary">Read More</a>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="col-xl-4">
+                       <div class="card middle">
+                           <div class="front">
+                               <img src="{{asset('public/user_assets/')}}/images/teagarden2.jpg">
+                           </div>
+                           <div class="back">
+                               <div class="back-content middle">
+                                   <h2>ratargul</h2>
+                                   <a href="" class="btn-primary">Read More</a>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="col-xl-4">
+                       <div class="card middle">
+                           <div class="front">
+                               <img src="{{asset('public/user_assets/')}}/images/ratargul1.jpg">
+                           </div>
+                           <div class="mg-top back">
+                               <div class="back-content middle">
+                                   <h2>ratargul</h2>
+                                   <a href="" class="btn-primary">Read More</a>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="col-xl-4">
+                       <div class="card middle">
+                           <div class="front">
+                               <img src="{{asset('public/user_assets/')}}/images/ratargul1.jpg">
+                           </div>
+                           <div class="mg-top back">
+                               <div class="back-content middle">
+                                   <h2>ratargul</h2>
+                                   <a href="" class="btn-primary">Read More</a>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="col-xl-4">
+                       <div class="card middle">
+                           <div class="front">
+                               <img src="{{asset('public/user_assets/')}}/images/ratargul1.jpg">
+                           </div>
+                           <div class="mg-top back">
+                               <div class="back-content middle">
+                                   <h2>ratargul</h2>
+                                   <a href="" class="btn-primary">Read More</a>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </section>
+
+   <!--service part-->
+
+   <section class="service-area pb-100">
+       <div class="pt-100 section-title">
+           <div class="container">
+               <div class="row ">
+                   <div class="col-xl-6 about-title">
+                       <h2> services.</h2>
+                       <h4 class="about-heading">services we provide</h4>
+                   </div>
+               </div>
+
+               <div class="row pt-100">
+                   <div class="col-xl-4">
+                       <a href="">
+                           <div class="services">
+                                <i class="fas fa-hotel"></i>
+                                <h3 class="title">hotels</h3>
+                                <i class="fas fa-hand-point-right"></i>
+                            </div>
+                       </a>
+                   </div>
+                   <div class="col-xl-4">
+                       <a href="">
+                           <div class="services">
+                                <i class="fas fa-utensils"></i>
+                                <h3 class="title">restaurents</h3>
+                                <i class="fas fa-hand-point-right"></i>
+                            </div>
+                       </a>
+                   </div>
+                   <div class="col-xl-4">
+                       <a href="">
+                           <div class="services">
+                                <i class="fas fa-mountain"></i>
+                                <h3 class="title">tourists attraction</h3>
+                                <i class="fas fa-hand-point-right"></i>
+                            </div>
+                       </a>
+                   </div>
+                   <div class="col-xl-4">
+                       <a href="">
+                           <div class="services">
+                                <i class="fas fa-car-side"></i>
+                                <h3 class="title">transport cost</h3>
+                                <i class="fas fa-hand-point-right"></i>
+                            </div>
+                       </a>
+                   </div>
+                   <div class="col-xl-4">
+                       <a href="">
+                           <div class="services">
+                                <i class="fas fa-store"></i>
+                                <h3 class="title">shopping mall</h3>
+                                <i class="fas fa-hand-point-right"></i>
+                           </div>
+                       </a>
+                   </div>
+                   <div class="col-xl-4">
+                       <a href="">
+                           <div class="services">
+                                <i class="far fa-hospital"></i>
+                                <h3 class="title">emergency contacts</h3>
+                                <i class="fas fa-hand-point-right"></i>
+                          </div>
+                        </a>
+                   </div>
+                   <div class="col-xl-4">
+                    <a href="">
+                        <div class="services">
+                             <i class="fas fa-tshirt"></i>
+                             <h3 class="title">famous attire</h3>
+                             <i class="fas fa-hand-point-right"></i>
+                         </div>
+                    </a>
+                    </div>
+                    <div class="col-xl-4">
+                    <a href="">
+                        <div class="services">
+                            <i class="fas fa-coffee"></i>
+                            <h3 class="title">traditional aliment</h3>
+                            <i class="fas fa-hand-point-right"></i>
+                        </div>
+                    </a>
+                    </div>
+                   <div class="col-xl-4">
+                    <a href="">
+                        <div class="services">
+                            <i class="fas fa-shopping-cart"></i>
+                            <h3 class="title">grocery shops</h3>
+                            <i class="fas fa-hand-point-right"></i>
+                       </div>
+                     </a>
+                    </div>
+               </div>    
+           </div>
+       </div>
+   </section>
+
+   <!--gallery-->
+
+   <section class="gallery-area">
+       <div class="section-title">
+           <div class="container">
+                <div class="row pt-100">
+                    <div class="col-xl-12 about-title text-center">
+                        <h2>gallery.</h2>
+                        <h4 class="about-heading">check out amazing gallery of places in sylhet</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="gallery-area1 pb-100">
+        <div class="container">          
+                <div class="gallery-value row">
+                    <div class="gallery row">
+                        <div class="card1 galley-img">
+                            <img src="{{asset('public/user_assets')}}/images/about.jpg"/>
+                        </div> 
+                        <div class="card1 gallery-content">
+                            <div class="info">
+                                <h2>place name</h2> 
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry typesetting industry.</p>
+                            </div>
+                        </div>  
+                    </div>
+
+                    <div class="gallery row">
+                        <div class="card1 galley-img">
+                            <img src="{{asset('public/user_assets')}}/images/about.jpg"/>
+                        </div> 
+                        <div class="card1 gallery-content">
+                            <div class="info">
+                                <h2>place name</h2> 
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry typesetting industry.</p>
+                            </div>
+                        </div>  
+                    </div>
+                    <div class="gallery row">
+                        <div class="card1 galley-img">
+                            <img src="{{asset('public/user_assets')}}/images/about.jpg"/>
+                        </div> 
+                        <div class="card1 gallery-content">
+                            <div class="info">
+                                <h2>place name</h2> 
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry typesetting industry.</p>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+           </div>
+   </section>
+
+
+   <!--blog-->
+
+   
+   <section class="blog-area pb-100" >
+       <div class="pt-100 section-title">
+           <div class="container">
+               <div class="row ">
+                   <div class="col-xl-6 about-title">
+                       <h2> latest blogs.</h2>
+                       <h4 class="about-heading">learn more through our latest blog</h4>
+                   </div>
+               </div>
+               <div class="row pt-100">
+                   <div class="col-xl-4">
+                       <div class="single-blog">
+                           <div class="blog-img">
+                               <img src="{{asset('public/user_assets/')}}/images/banner.jpg" alt="">
+                           </div>
+                           <div class="blog-content">
+                               <h4>Blog 1</h4>
+                               <a href="">24 Nov 2020</a> / 
+                               <a href="">Admin</a>
+                               <p>Lorem ipsum dolor sit amet, consectetur, adipisicing elit. Voluptatem aliquam adipisci quod architecto labore iure quia velit quaerat veniam porro.</p>
+                               <a href="" class="btn-primary">Read More <i class="fa fa-angle-double-right"></i></a>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="col-xl-4">
+                       <div class="single-blog">
+                           <div class="blog-img">
+                               <img src="{{asset('public/user_assets/')}}/images/banner.jpg" alt="">
+                           </div>
+                           <div class="blog-content">
+                               <h4>Blog 2</h4>
+                               <a href="">24 Nov 2020</a> / 
+                               <a href="">Admin</a>
+                               <p>Lorem ipsum dolor sit amet, consectetur, adipisicing elit. Voluptatem aliquam adipisci quod architecto labore iure quia velit quaerat veniam porro.</p>
+                               <a href="" class="btn-primary">Read More <i class="fa fa-angle-double-right"></i></a>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="col-xl-4">
+                       <div class="single-blog">
+                           <div class="blog-img">
+                               <img src="{{asset('public/user_assets/')}}/images/banner.jpg" alt="">
+                           </div>
+                           <div class="blog-content">
+                               <h4>Blog 3</h4>
+                               <a href="">24 Nov 2020</a> / 
+                               <a href="">Admin</a>
+                               <p>Lorem ipsum dolor sit amet, consectetur, adipisicing elit. Voluptatem aliquam adipisci quod architecto labore iure quia velit quaerat veniam porro.</p>
+                               <a href="" class="btn-primary">Read More <i class="fa fa-angle-double-right"></i></a>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </section>  
+@endsection
