@@ -174,9 +174,43 @@ p {
     right: 80%;
   }
    /*header area*/
- .header-area {
-    padding: 20px 0;
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: 0.6s;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+  z-index: 2;
 }
+header .logo a, header span, header i{
+  color: #fff;
+  position: relative;
+  transition: 0.6s;
+}
+header.sticky{
+  margin: 0;
+  padding: 0;
+  background: #000;
+  z-index: 3;
+}
+header.sticky .logo a, header.sticky span, header.sticky i{
+  color:#e9204f ;
+}
+header.sticky .header{
+  border-bottom: 0;
+}
+.header{
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #e9204f;
+}
+
 #search-btn{
   font-size: 26px;
   margin-right: 22px;
@@ -293,6 +327,9 @@ p {
 }
 
 /*about page*/
+.aboutbanner-area .banner{
+  height: 80vh;
+}
 .about-area1{
   position: relative;
 }
@@ -896,7 +933,7 @@ h5{
 .service-list ul li a{
   padding: 5px;
 }
-.service-list ul li a:hover{
+.service-list ul li a:hover, .contact-content a:hover{
   color:#e9204f;
   font-weight: bold;
   font-size: 20px;

@@ -23,7 +23,6 @@ class LocationController extends Controller
             $fileName = str_slug($request->title,'_').'_'.md5(date('Y-m-d H:i:s'));
             $fileName = $fileName.'.'.$extension;
             $location->image = $fileName;
-  
             $request->imageName->move('public/uploads/locationImages/',$fileName);
           }
         $location->save();

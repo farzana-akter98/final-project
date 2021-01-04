@@ -4,7 +4,7 @@
         <div class="scroller" id="scroller">
             <div class="scroll__container" id="scroll__container">
                 <nav class="mdl-navigation">
-                    <a class="mdl-navigation__link mdl-navigation__link--current" href="index.html">
+                    <a class="mdl-navigation__link mdl-navigation__link--current" href="{{action('Admin\DashboardController@index')}}">
                         <i class="material-icons" role="presentation">dashboard</i>
                         Dashboard
                     </a>

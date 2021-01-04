@@ -37,4 +37,13 @@ Route::group(['prefix' => 'admin'],function () {
     Route::get('update_pageBlogPost/{id}','Admin\BlogPostController@update_page');
     Route::post('updateBlogPost','Admin\BlogPostController@update');
     /*-------------- End Blog Post-------------*/
+
+    /*-------------- Hotel -------------*/
+    Route::get('all-Hotel','Admin\HotelController@index');
+    Route::get('createHotel','Admin\HotelController@create');
+    // Route::post('storeBlogPost','Admin\BlogPostController@store');
+    // Route::get('deleteBlogPost/{id}','Admin\BlogPostController@delete');
+    Route::get('update_pageHotel/{id}','Admin\HotelController@update_page');
+    // Route::post('updateBlogPost','Admin\BlogPostController@update');
+    /*-------------- End Hotel -------------*/
 });

@@ -14,7 +14,7 @@
                 </div>
             </div>
             <div class="service-list col-xl-3">
-                <h2>service list</h2>
+                <h2>quick links</h2>
                 <div class="mtb-10">
                 <ul>
                     <li><i class="fas fa-caret-right"></i><a href="">hotels</a></li>

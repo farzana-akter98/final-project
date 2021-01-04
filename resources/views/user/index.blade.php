@@ -3,7 +3,7 @@
 @section('content')
      <!--banner area-->
     
-    <section class="bannar-area  pb-100">
+    <section class="bannar-area">
         <div class="banner bg">
            <div class="container">
                 <div class="content">

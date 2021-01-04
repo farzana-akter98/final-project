@@ -2,7 +2,18 @@
 @section('title','About')
 @section('content')
  
-
+<section class="aboutbanner-area">
+    <div class="banner bg">
+       <div class="container">
+            <div class="content">
+                <div class="banner-text">
+                    <h2>our company's rules.</h2>
+                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 <!--about us-->  
 <section class="about-area pt-50">
     <div class="section-title">
