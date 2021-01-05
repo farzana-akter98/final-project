@@ -292,22 +292,21 @@ header.sticky .header{
     background-image: url("../images/slider1.jpg");
   }
   25%{
-    background-image: url("../images/slider8.jfif");
-    
+    background-image: url("../images/slider8.jfif"); 
   }
   50%{
     background-image: url("../images/slider9.jfif");
   }
   75%{
     background-image: url("../images/slider4.jpg");
-    
   }
   100%{
-    background-image: url("../images/slider5.jpg");
-    
+    background-image: url("../images/slider5.jpg"); 
   }
 }
-
+.banner-area{
+  position: relative;
+}
 .banner-text{
   left: 50%;
   top: 50%;
@@ -576,7 +575,59 @@ left: 50%;
   right: 1px;
 }
 
-
+/*place to visit*/
+.place-card{
+  position: relative;
+  background: #000;
+  color: #e9204f;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 30px 10px;
+  padding: 20px 20px;
+  border-radius: 5px;
+  transition: 0.3s ease-in-out;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+}
+.place-card .place-img{
+  position: relative;
+  width: 100%;
+  top: -50px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.place-card .place-img img{
+  max-width: 100%;
+  border-radius: 4px;
+}
+.place-card:hover{
+  height: 100%;
+  bottom: 50px;
+}
+.place-card .place-content{
+  position: relative;
+  margin-top: -100px;
+  padding: 10px 15px;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+.place-content a{
+  color: #fff;
+}
+.place-content a:hover{
+  color: #a8687d;
+}
+.place-content i{
+  padding-right: 10px;
+}
+.place-card:hover .place-content{
+  visibility: visible;
+  opacity: 1;
+  margin-top: -50px;
+  padding-top: 20px;
+  transition: 0.3s;
+}
 /*gallery*/
 
 .middle{

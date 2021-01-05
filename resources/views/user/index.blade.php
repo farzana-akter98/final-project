@@ -6,10 +6,14 @@
     <section class="bannar-area">
         <div class="banner bg">
            <div class="container">
-                <div class="content">
-                    <div class="banner-text">
-                        <h2>welcome to the sylhet wholeheartedly.</h2>
-                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="content">
+                            <div class="banner-text">
+                                <h2>welcome to the sylhet wholeheartedly.</h2>
+                                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -77,85 +81,91 @@
                        <h4 class="about-heading">check out amazing places of sylhet</h4>
                    </div>
                </div>
-               <div class="row">
-                   <div class="col-xl-4">
-                       <div class="card middle">
-                           <div class="front">
-                               <img src="{{asset('public/user_assets/')}}/images/ratargul1.jpg">
+               <div class="row pt-100">
+                   <div class="col-xl-3">
+                       <div class="place-card flex">
+                           <div class="place-img">
+                               <img src="{{asset('public/user_assets')}}/images/lalakhal2.jpg" alt="">
                            </div>
-                           <div class="back">
-                               <div class="back-content middle">
-                                   <h2>ratargul</h2>
-                                   <a href="" class="btn-primary">Read More</a>
+                           <div class="place-content text-center">
+                               <h3>place name</h3>
+                               <div class="row"><a href="">
+                                   <div class="place-location flex">
+                                    <div class="col-6">
+                                        <i class="fas fa-location-arrow"></i>
+                                    </div>
+                                    <div class="col-6">
+                                     <h4>location address</h4>
+                                    </div>
+                                </div>
+                                </a>
                                </div>
                            </div>
                        </div>
                    </div>
-                   <div class="col-xl-4">
-                       <div class="card middle">
-                           <div class="front">
-                               <img src="{{asset('public/user_assets/')}}/images/ratargul2.jpg">
-                           </div>
-                           <div class="back">
-                               <div class="back-content middle">
-                                   <h2>ratargul</h2>
-                                   <a href="" class="btn-primary">Read More</a>
-                               </div>
-                           </div>
-                       </div>
-                   </div>
-                   <div class="col-xl-4">
-                       <div class="card middle">
-                           <div class="front">
-                               <img src="{{asset('public/user_assets/')}}/images/teagarden2.jpg">
-                           </div>
-                           <div class="back">
-                               <div class="back-content middle">
-                                   <h2>ratargul</h2>
-                                   <a href="" class="btn-primary">Read More</a>
-                               </div>
-                           </div>
-                       </div>
-                   </div>
-                   <div class="col-xl-4">
-                       <div class="card middle">
-                           <div class="front">
-                               <img src="{{asset('public/user_assets/')}}/images/ratargul1.jpg">
-                           </div>
-                           <div class="mg-top back">
-                               <div class="back-content middle">
-                                   <h2>ratargul</h2>
-                                   <a href="" class="btn-primary">Read More</a>
-                               </div>
-                           </div>
-                       </div>
-                   </div>
-                   <div class="col-xl-4">
-                       <div class="card middle">
-                           <div class="front">
-                               <img src="{{asset('public/user_assets/')}}/images/ratargul1.jpg">
-                           </div>
-                           <div class="mg-top back">
-                               <div class="back-content middle">
-                                   <h2>ratargul</h2>
-                                   <a href="" class="btn-primary">Read More</a>
-                               </div>
-                           </div>
-                       </div>
-                   </div>
-                   <div class="col-xl-4">
-                       <div class="card middle">
-                           <div class="front">
-                               <img src="{{asset('public/user_assets/')}}/images/ratargul1.jpg">
-                           </div>
-                           <div class="mg-top back">
-                               <div class="back-content middle">
-                                   <h2>ratargul</h2>
-                                   <a href="" class="btn-primary">Read More</a>
-                               </div>
-                           </div>
-                       </div>
-                   </div>
+                   <div class="col-xl-3">
+                    <div class="place-card flex">
+                        <div class="place-img">
+                            <img src="{{asset('public/user_assets')}}/images/lalakhal2.jpg" alt="">
+                        </div>
+                        <div class="place-content text-center">
+                            <h3>place name</h3>
+                            <div class="row"><a href="">
+                                <div class="place-location flex">
+                                 <div class="col-6">
+                                     <i class="fas fa-location-arrow"></i>
+                                 </div>
+                                 <div class="col-6">
+                                  <h4>location address</h4>
+                                 </div>
+                             </div>
+                             </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3">
+                    <div class="place-card flex">
+                        <div class="place-img">
+                            <img src="{{asset('public/user_assets')}}/images/lalakhal2.jpg" alt="">
+                        </div>
+                        <div class="place-content text-center">
+                            <h3>place name</h3>
+                            <div class="row"><a href="">
+                                <div class="place-location flex">
+                                 <div class="col-6">
+                                     <i class="fas fa-location-arrow"></i>
+                                 </div>
+                                 <div class="col-6">
+                                  <h4>location address</h4>
+                                 </div>
+                             </div>
+                             </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3">
+                    <div class="place-card flex">
+                        <div class="place-img">
+                            <img src="{{asset('public/user_assets')}}/images/lalakhal2.jpg" alt="">
+                        </div>
+                        <div class="place-content text-center">
+                            <h3>place name</h3>
+                            <div class="row"><a href="">
+                                <div class="place-location flex">
+                                 <div class="col-6">
+                                     <i class="fas fa-location-arrow"></i>
+                                 </div>
+                                 <div class="col-6">
+                                  <h4>location address</h4>
+                                 </div>
+                             </div>
+                             </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                </div>
            </div>
        </div>

@@ -5,7 +5,7 @@ Route::group(['prefix' => 'user'],function () {
     // Route::get('gallery','User\GalleryController@index');
     // Route::get('blogs','User\AllBlogController@index');
     // Route::get('blog','User\SingleBlogController@index');
-    // Route::get('place','User\PlacesController@index');
+    Route::get('place','User\PlaceController@index');
     Route::get('contact','User\ContactController@index');
 });
 Route::group(['prefix' => 'admin'],function () {
