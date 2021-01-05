@@ -33,7 +33,7 @@ class BlogPostController extends Controller
           $request->imageName->move('public/uploads/blogsImages/',$fileName);
         }
         $blogpost->save();
-        return redirect()->to('admin/all-BlogPost');
+        return redirect()->to('admin/all-blogpost');
       }
     public function update_page($id){
       $blogpost = BlogPost::find($id);
@@ -59,7 +59,7 @@ class BlogPostController extends Controller
           $request->imageName->move('public/uploads/blogsImages/',$fileName);
       }
         $blogpost->save();
-        return redirect()->to('admin/all-BlogPost');
+        return redirect()->to('admin/all-blogpost');
     } 
     public function delete($id){
       $blogpost=BlogPost::find($id);

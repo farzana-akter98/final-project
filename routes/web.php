@@ -21,29 +21,38 @@ Route::group(['prefix' => 'admin'],function () {
     /*----------------- End Location--------------- */
     
     /*--------------Blog Category-------------*/
-    Route::get('all-BlogCategory','Admin\BlogCategoryController@index');
-    Route::get('createBlogCategory','Admin\BlogCategoryController@create');
-    Route::post('storeBlogCategory','Admin\BlogCategoryController@store');
-    Route::get('deleteBlogCategory/{id}','Admin\BlogCategoryController@delete');
-    Route::get('update_pageBlogCategory/{id}','Admin\BlogCategoryController@update_page');
-    Route::post('updateBlogCategory','Admin\BlogCategoryController@update');
+    Route::get('all-blogcategory','Admin\BlogCategoryController@index');
+    Route::get('createblogcategory','Admin\BlogCategoryController@create');
+    Route::post('storeblogcategory','Admin\BlogCategoryController@store');
+    Route::get('deleteblogcategory/{id}','Admin\BlogCategoryController@delete');
+    Route::get('update_pageblogcategory/{id}','Admin\BlogCategoryController@update_page');
+    Route::post('updateblogcategory','Admin\BlogCategoryController@update');
     /*-------------- End Blog Category-------------*/
 
     /*--------------Blog Post-------------*/
-    Route::get('all-BlogPost','Admin\BlogPostController@index');
-    Route::get('createBlogPost','Admin\BlogPostController@create');
-    Route::post('storeBlogPost','Admin\BlogPostController@store');
-    Route::get('deleteBlogPost/{id}','Admin\BlogPostController@delete');
-    Route::get('update_pageBlogPost/{id}','Admin\BlogPostController@update_page');
-    Route::post('updateBlogPost','Admin\BlogPostController@update');
+    Route::get('all-blogpost','Admin\BlogPostController@index');
+    Route::get('createblogpost','Admin\BlogPostController@create');
+    Route::post('storeblogpost','Admin\BlogPostController@store');
+    Route::get('deleteblogpost/{id}','Admin\BlogPostController@delete');
+    Route::get('update_pageblogpost/{id}','Admin\BlogPostController@update_page');
+    Route::post('updateblogpost','Admin\BlogPostController@update');
     /*-------------- End Blog Post-------------*/
 
     /*-------------- Hotel -------------*/
-    Route::get('all-Hotel','Admin\HotelController@index');
-    Route::get('createHotel','Admin\HotelController@create');
-    // Route::post('storeBlogPost','Admin\BlogPostController@store');
-    // Route::get('deleteBlogPost/{id}','Admin\BlogPostController@delete');
-    Route::get('update_pageHotel/{id}','Admin\HotelController@update_page');
-    // Route::post('updateBlogPost','Admin\BlogPostController@update');
+    Route::get('all-hotel','Admin\HotelController@index');
+    Route::get('createhotel','Admin\HotelController@create');
+    Route::post('storehotel','Admin\HotelController@store');
+    Route::get('deletehotel/{id}','Admin\HotelController@delete');
+    Route::get('update_pagehotel/{id}','Admin\HotelController@update_page');
+    Route::post('updatehotel','Admin\HotelController@update');
     /*-------------- End Hotel -------------*/
+
+    /*-------------- Shopping Mall -------------*/
+    Route::get('all-mall','Admin\ShoppingMallController@index');
+    Route::get('createmall','Admin\ShoppingMallController@create');
+    Route::post('storemall','Admin\ShoppingMallController@store');
+    Route::get('deletemall/{id}','Admin\ShoppingMallController@delete');
+    Route::get('update_pagemall/{id}','Admin\ShoppingMallController@update_page');
+    Route::post('updatemall','Admin\ShoppingMallController@update');
+    /*-------------- End Shopping Mall -------------*/
 });

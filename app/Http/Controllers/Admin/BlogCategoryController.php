@@ -19,7 +19,7 @@ class BlogCategoryController extends Controller
       $blogcategory->name=$request->name;
       $blogcategory->slug=str_slug($request->name,'_');
       $blogcategory->save();
-      return redirect()->to('admin/all-BlogCategory');
+      return redirect()->to('admin/all-blogcategory');
     }
     public function update_page($id){
         $blogcategory=BlogCategory::find($id);
@@ -30,7 +30,7 @@ class BlogCategoryController extends Controller
         $blogcategory->name=$request->name;
         $blogcategory->slug=str_slug($request->name,'_');
         $blogcategory->save();
-        return redirect()->to('admin/all-BlogCategory');
+        return redirect()->to('admin/all-blogcategory');
       }
     public function delete($id){
       $blogcategory=BlogCategory::find($id);

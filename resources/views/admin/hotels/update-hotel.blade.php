@@ -9,30 +9,34 @@
         </div>
 
         <div class="create-page mdl-card__supporting-text">
-            <form action="#" class="form" method="POST" enctype="multipart/form-data">
+            <form action="{{action('Admin\HotelController@update')}}" class="form" method="POST" enctype="multipart/form-data">
                 @csrf
-                <input type="hidden" name="id" value=""/>
+                <input type="hidden" name="id" value="{{$hotel->id}}"/>
                 <div class="form__article">
                         <div class="mdl-cell mdl-cell--12-col mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                            <input class="mdl-textfield__input" type="text" name="name" value=""/>
+                            <input class="mdl-textfield__input" type="text" name="name" value="{{$hotel->name}}"/>
                             <label class="mdl-textfield__label">Hotel Name</label>
                         </div>
                         <div class="mdl-cell mdl-cell--12-col mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                            <input class="mdl-textfield__input" type="text" name="address" value=""/>
+                            <input class="mdl-textfield__input" type="text" name="address" value="{{$hotel->address}}"/>
                             <label class="mdl-textfield__label">Hotel Address</label>
                         </div>
                     <div class="mdl-cell mdl-cell--12-col mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
                         <input class="mdl-textfield__input" type="file" onchange="document.getElementById('hotel_image').src = window.URL.createObjectURL(this.files[0])" name="imageName"/>
                     </div>
                     <div class="mdl-cell mdl-cell--12-col mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                        <img width="200" height="100" id="hotel_image">
+                        @if ($hotel->image == 'default.jpg')
+                              <img width="250" height="130" src="{{asset('public/image/default.jpg')}}" alt="">
+                            @else
+                              <img width="250" height="130" id="hotel_image" src="{{asset('public/uploads/hotelImages/' .$hotel->image)}}" alt="">
+                            @endif
                     </div>
                     <div class="mdl-cell mdl-cell--12-col mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                        <input class="mdl-textfield__input" type="text" name="website"/>
+                        <input class="mdl-textfield__input" type="text" name="website" value="{{$hotel->website}}"/>
                         <label class="mdl-textfield__label">Website</label>
                     </div>
                     <div class="mdl-cell mdl-cell--12-col mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                        <input class="mdl-textfield__input" type="text" name="contact"/>
+                        <input class="mdl-textfield__input" type="text" name="contact" value="{{$hotel->contact}}"/>
                         <label class="mdl-textfield__label">Contact</label>
                     </div>
                 </div>

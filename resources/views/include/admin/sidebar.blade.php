@@ -30,11 +30,11 @@
                             </a>
                         </div>
                     </div>
-                    <a class="mdl-navigation__link" href="ui-components.html">
+                    <a class="mdl-navigation__link" href="{{action('Admin\HotelController@index')}}">
                         <i class="material-icons">local_hotel</i>
                         Hotels
                     </a>
-                    <a class="mdl-navigation__link" href="forms.html">
+                    <a class="mdl-navigation__link" href="{{action('Admin\ShoppingMallController@index')}}">
                         <i class="material-icons" role="presentation">local_mall</i>
                         Shoppping Malls
                     </a>
