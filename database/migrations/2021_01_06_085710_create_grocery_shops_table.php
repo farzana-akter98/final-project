@@ -4,28 +4,21 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateLocationsTable extends Migration
+class CreateGroceryShopsTable extends Migration
 {
     /**
      * Run the migrations.
      *
      * @return void
      */
-    //blog_categories
-    //id
-    //blog_posts
-    //blog_category_id
-    //BlogCategory
-    //BlogPost
-    //BlogImages
-    //return $this->belongsTo('App\BlogCategory');
     public function up()
     {
-        Schema::create('locations', function (Blueprint $table) {
+        Schema::create('grocery_shops', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('name',150);
-            //$table->string('image',150)->default('default.jpg');
             $table->string('address',150);
+            $table->string('image',150)->default('default.jpg');
+            $table->string('contact',50);
             $table->timestamps();
         });
     }
@@ -37,6 +30,6 @@ class CreateLocationsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('locations');
+        Schema::dropIfExists('grocery_shops');
     }
 }

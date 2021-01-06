@@ -26,6 +26,10 @@
                     <div class="mdl-cell mdl-cell--12-col mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
                         <img width="200" height="100" id="mall_image">
                     </div>
+                    <div class="mdl-cell mdl-cell--12-col mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                        <input class="mdl-textfield__input" type="text" name="contact"/>
+                        <label class="mdl-textfield__label">Contact</label>
+                    </div>
                 </div>
                 <div class="form__action">
                     <button id="submit_button" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">

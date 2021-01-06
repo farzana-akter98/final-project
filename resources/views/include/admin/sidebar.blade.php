@@ -38,7 +38,7 @@
                         <i class="material-icons" role="presentation">local_mall</i>
                         Shoppping Malls
                     </a>
-                    <a class="mdl-navigation__link" href="maps.html">
+                    <a class="mdl-navigation__link" href="{{action('Admin\GroceryShopController@index')}}">
                         <i class="material-icons" role="presentation">local_grocery_store</i>
                         Grocery Shops
                     </a>

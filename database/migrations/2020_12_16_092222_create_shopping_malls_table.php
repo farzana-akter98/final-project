@@ -18,6 +18,7 @@ class CreateShoppingMallsTable extends Migration
             $table->string('name',150);
             $table->string('address',150);
             $table->string('image',150)->default('default.jpg');
+            //$table->string('contact',50);
             $table->timestamps();
         });
     }

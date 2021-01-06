@@ -55,4 +55,13 @@ Route::group(['prefix' => 'admin'],function () {
     Route::get('update_pagemall/{id}','Admin\ShoppingMallController@update_page');
     Route::post('updatemall','Admin\ShoppingMallController@update');
     /*-------------- End Shopping Mall -------------*/
+
+    /*-------------- Grocery Shop -------------*/
+    Route::get('all-grocery','Admin\GroceryShopController@index');
+    Route::get('creategrocery','Admin\GroceryShopController@create');
+    Route::post('storegrocery','Admin\GroceryShopController@store');
+    Route::get('deletegrocery/{id}','Admin\GroceryShopController@delete');
+    Route::get('update_pagegrocery/{id}','Admin\GroceryShopController@update_page');
+    Route::post('updategrocery','Admin\GroceryShopController@update');
+    /*-------------- End Grocery Shop -------------*/
 });

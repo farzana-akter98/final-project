@@ -25,6 +25,7 @@ class ShoppingMallController extends Controller
             $mall->image = $fileName;
             $request->imageName->move('public/uploads/mallsImages/',$fileName);
           }
+        $mall->contact=$request->contact;  
         $mall->save();
         return redirect()->to('admin/all-mall');
     }
@@ -47,6 +48,7 @@ class ShoppingMallController extends Controller
             $mall->image = $fileName;
             $request->imageName->move('public/uploads/mallsImages/',$fileName);
         }
+        $mall->contact=$request->contact; 
         $mall->save();
         return redirect()->to('admin/all-mall');
     }
