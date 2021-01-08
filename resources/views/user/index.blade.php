@@ -3,22 +3,14 @@
 @section('content')
      <!--banner area-->
     
-    <section class="bannar-area">
-        <div class="banner bg">
-           <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="content">
-                            <div class="banner-text">
-                                <h2>welcome to the sylhet wholeheartedly.</h2>
-                                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+     <section class="welcome-area cover">
+        <div class="welcome boundary">
+            <div class="banner-text text-center">
+                <h2>welcome to the sylhet wholeheartedly.</h2>
+                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
             </div>
         </div>
-   </section>
+    </section>
 
   <!--about us-->
    <section class="about-area pt-100">
@@ -31,6 +23,7 @@
                     </div>
                     <div class="col-xl-6 text right about-content">
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry typesetting industry.</p>
+                        <a href="">read more</a>
                     </div>
                </div>
             </div>
