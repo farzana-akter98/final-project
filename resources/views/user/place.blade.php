@@ -1,7 +1,15 @@
 @extends('layouts.user_master')
 @section('title','Place')
 @section('content')
-<section class="place-area pb-100">
+<section class="welcome-area cover">
+    <div class="welcome boundary">
+        <div class="banner-text text-center">
+            <h2>places of sylhet.</h2>
+            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+        </div>
+    </div>
+</section>
+<section class="place-area pt-100 pb-100">
     <div class=" section-title">
         <div class="container">
             <div class="row pt-100">
