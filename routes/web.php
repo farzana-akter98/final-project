@@ -64,4 +64,25 @@ Route::group(['prefix' => 'admin'],function () {
     Route::get('update_pagegrocery/{id}','Admin\GroceryShopController@update_page');
     Route::post('updategrocery','Admin\GroceryShopController@update');
     /*-------------- End Grocery Shop -------------*/
+
+
+
+    /*-------------- Famous Cloth -------------*/
+    Route::get('all-fcloth','Admin\FamousClothController@index');
+    Route::get('createfcloth','Admin\FamousClothController@create');
+    Route::post('storefcloth','Admin\FamousClothController@store');
+    Route::get('deletefcloth/{id}','Admin\FamousClothController@delete');
+    Route::get('update_pagefcloth/{id}','Admin\FamousClothController@update_page');
+    Route::post('updatefcloth','Admin\FamousClothController@update');
+    /*-------------- End Famous Cloth -------------*/
+
+
+    /*-------------- Traditional Aliment -------------*/
+    Route::get('all-tfood','Admin\TraditionalAlimentController@index');
+    Route::get('createtfood','Admin\TraditionalAlimentController@create');
+    Route::post('storetfood','Admin\TraditionalAlimentController@store');
+    Route::get('deletetfood/{id}','Admin\TraditionalAlimentController@delete');
+    Route::get('update_pagetfood/{id}','Admin\TraditionalAlimentController@update_page');
+    Route::post('updatetfood','Admin\TraditionalAlimentController@update');
+    /*-------------- End Traditional Aliment -------------*/
 });

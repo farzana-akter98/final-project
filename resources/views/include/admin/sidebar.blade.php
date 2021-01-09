@@ -42,11 +42,11 @@
                         <i class="material-icons" role="presentation">local_grocery_store</i>
                         Grocery Shops
                     </a>
-                    <a class="mdl-navigation__link" href="charts.html">
+                    <a class="mdl-navigation__link" href="{{action('Admin\FamousClothController@index')}}">
                         <i class="material-icons">accessibility</i>
                         Famous Attire
                     </a>
-                    <a class="mdl-navigation__link" href="charts.html">
+                    <a class="mdl-navigation__link" href="{{action('Admin\TraditionalAlimentController@index')}}">
                         <i class="material-icons">wine_bar</i>
                         Traditional Aliment
                     </a>
