@@ -10,7 +10,7 @@
     </div>
 </section>
 <section class="place-area pt-100 pb-100">
-    <div class=" section-title">
+    <div class="section-title">
         <div class="container">
             <div class="row pt-100">
                 <div class="col-xl-12 about-title text-center">

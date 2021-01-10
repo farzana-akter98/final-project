@@ -277,42 +277,48 @@
             </div>
         </div>
     </section>
+    
     <section class="gallery-area1 pb-100">
         <div class="container">          
-                <div class="gallery-value row">
-                    <div class="gallery row">
-                        <div class="card1 galley-img">
-                            <img src="{{asset('public/user_assets')}}/images/about.jpg"/>
-                        </div> 
-                        <div class="card1 gallery-content">
-                            <div class="info">
-                                <h2>place name</h2> 
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry typesetting industry.</p>
+                <div class="row">
+                    <div class="col-xl-4">
+                        <div class="gallery">
+                            <div class="card1 gallery-img">
+                                <img src="{{asset('public/user_assets/')}}/images/about.jpg"/>
                             </div>
-                        </div>  
+                            <div class="card1 gallery-content">
+                                <div class="info">
+                                    <h2>place name</h2> 
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry typesetting industry.</p>
+                                </div>
+                            </div> 
+                        </div>
                     </div>
-
-                    <div class="gallery row">
-                        <div class="card1 galley-img">
-                            <img src="{{asset('public/user_assets')}}/images/about.jpg"/>
-                        </div> 
-                        <div class="card1 gallery-content">
-                            <div class="info">
-                                <h2>place name</h2> 
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry typesetting industry.</p>
+                    <div class="col-xl-4">
+                        <div class="gallery">
+                            <div class="card1 gallery-img">
+                                <img src="{{asset('public/user_assets/')}}/images/about.jpg"/>
                             </div>
-                        </div>  
+                            <div class="card1 gallery-content">
+                                <div class="info">
+                                    <h2>place name</h2> 
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry typesetting industry.</p>
+                                </div>
+                            </div> 
+                        </div>
                     </div>
-                    <div class="gallery row">
-                        <div class="card1 galley-img">
-                            <img src="{{asset('public/user_assets')}}/images/about.jpg"/>
-                        </div> 
-                        <div class="card1 gallery-content">
-                            <div class="info">
-                                <h2>place name</h2> 
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry typesetting industry.</p>
+                    <div class="col-xl-4">
+                        <div class="gallery">
+                            <div class="card1 gallery-img">
+                                <img src="{{asset('public/user_assets/')}}/images/about.jpg"/>
                             </div>
-                        </div>  
+                            <div class="card1 gallery-content">
+                                <div class="info">
+                                    <h2>place name</h2> 
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry typesetting industry.</p>
+                                </div>
+                            </div> 
+                        </div>
                     </div>
                 </div>
            </div>
