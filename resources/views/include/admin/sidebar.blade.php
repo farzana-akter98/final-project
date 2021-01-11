@@ -42,6 +42,10 @@
                         <i class="material-icons" role="presentation">local_grocery_store</i>
                         Grocery Shops
                     </a>
+                    <a class="mdl-navigation__link" href="">
+                        <i class="material-icons">local_hospital</i>
+                        Emergency Contact
+                    </a>
                     <a class="mdl-navigation__link" href="{{action('Admin\FamousClothController@index')}}">
                         <i class="material-icons">accessibility</i>
                         Famous Attire
@@ -57,7 +61,7 @@
                             <i class="material-icons">keyboard_arrow_down</i>
                         </a>
                         <div class="mdl-navigation">
-                            <a class="mdl-navigation__link" href="">
+                            <a class="mdl-navigation__link" href="{{action('Admin\RestaurentNameController@index')}}">
                                 Restaurants Name
                             </a>
                             <a class="mdl-navigation__link" href="">

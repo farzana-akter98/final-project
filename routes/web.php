@@ -85,4 +85,14 @@ Route::group(['prefix' => 'admin'],function () {
     Route::get('update_pagetfood/{id}','Admin\TraditionalAlimentController@update_page');
     Route::post('updatetfood','Admin\TraditionalAlimentController@update');
     /*-------------- End Traditional Aliment -------------*/
+
+
+    /*-------------- Restaurent Name -------------*/
+    Route::get('all-restname','Admin\RestaurentNameController@index');
+    Route::get('createrestname','Admin\RestaurentNameController@create');
+    Route::post('storerestname','Admin\RestaurentNameController@store');
+    Route::get('deleterestname/{id}','Admin\RestaurentNameController@delete');
+    Route::get('update_pagerestname/{id}','Admin\RestaurentNameController@update_page');
+    Route::post('updaterestname','Admin\RestaurentNameController@update');
+    /*-------------- End Restaurent Name -------------*/
 });
