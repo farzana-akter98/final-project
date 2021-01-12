@@ -322,7 +322,7 @@ header.sticky .header{
   top: 0;
 }
 .cover{
-	background-image:url("../images/slider2.jpg");
+	background-image:url("../images/banner/slider2.jpg");
 	background-size:cover;
 	min-height: 100vh;
 	background-position:center;
@@ -337,27 +337,27 @@ header.sticky .header{
 	
   25%{  
 	background-size: cover;
-	background-image: url("../images/slider8.jfif");
+	background-image: url("../images/banner/slider8.jfif");
     background-position: center;
     background-repeat:no-repeat;
     animation-delay:2s;
   }
   50%{
-    background-image: url("../images/slider9.jfif");
+    background-image: url("../images/banner/slider9.jfif");
 	background-size: cover;
     background-position: center;
     background-repeat:no-repeat;
 	animation-delay:2s;
   }
   75%{
-    background-image: url("../images/slider4.jpg");
+    background-image: url("../images/banner/slider4.jpg");
 	background-size: cover;
     background-position: center;
     background-repeat:no-repeat;
 	 animation-delay:2s;
   }
   100%{
-    background-image: url("../images/slider3.jpg");
+    background-image: url("../images/banner/slider3.jpg");
     background-size: cover;
     background-position: center;
     background-repeat:no-repeat;
@@ -618,6 +618,7 @@ transition: 1s;
 }
 /* End Button CSS*/
 /*place to visit css*/
+
 .place-card{
   position: relative;
   background: #000;
@@ -640,6 +641,7 @@ transition: 1s;
 }
 .place-card .place-img img{
   max-width: 100%;
+  height: 150px;
   border-radius: 4px;
 }
 .place-card:hover{
@@ -671,56 +673,46 @@ transition: 1s;
   transition: 0.3s;
 }
 /* End Place CSS*/
-/*gallery css*/
-
-.middle{
+/*gallerypage css*/
+.gallerypage{
   position: relative;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.card{
-  cursor: pointer;
-  width: 340px;
-  height: 480px;
-
-}
-.front, .back{
-  width: 100%;
-  height: 100%;
   overflow: hidden;
-  padding-top:112px;
-  backface-visibility: hidden;
-  position: absolute;
-  transition: transform .6s linear;
+  margin-bottom: 30px;
 }
-.front img{
-  height: 100%;
-}
-.front{
-  transform: perspective(600px) rotateY(0deg);
-}
-.back{
-  background: #f1f1ff;
-  transform: perspective(600px) rotateY(180deg);
-}
-.back-content{
-  color: #747474;
-  text-align: center;
+.gallerypage img{
   width: 100%;
+  height: 300px;
+  transform-origin: bottom center;
+  transform: perspective(500px) rotateX(0);
+  transition: 0.5s all ease;
 }
-.card:hover >.front{
-  transform: perspective(600px) rotateY(-180deg);
+.gallerypage:hover img{
+  transform: perspective(500px) rotateX(50deg);
+  vertical-align: middle;
 }
-.card:hover >.back{
-  transform: perspective(600px) rotateY(0deg);
+.gallerypage .gallerypage-content{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, rgba(255,65,108,0.8),rgba(255,75,43,0.8));
+  transition: 0.5s all ease;
+  transform-origin: top center;
+  transform: perspective(500px) rotateX(-50deg);
+  opacity: 0;
 }
-.back-content h2 {
-  text-transform: capitalize;
-  font-size: 35px;
+.gallerypage:hover .gallerypage-content{
+  opacity: 1;
+  transform: perspective(500px) rotateX(0);  
 }
-
+.gallerypage .gallerypage-content p{
+  color: #fff;
+}
+/* End Gallery Page CSS*/
 /*services css*/
 .services {
   display: flex;
@@ -765,6 +757,9 @@ font-size: 24px;
 }
 /* End Services CSS */
 /* home page gallery css*/
+.gallery-area1 .col-xl-3{
+  padding: 20px;
+}
 .gallery-value{
   display: flex;
   justify-content: space-between;
@@ -773,7 +768,6 @@ font-size: 24px;
 }
 .gallery{
   position: relative;
-  width: 300px;
   height: 400px;
   margin-bottom: 30px;
 }
@@ -795,6 +789,11 @@ font-size: 24px;
   transition-duration: .5s, 0s, .5s;
   z-index: 2;
   transform: translate(-15px, -15px);
+}
+.gallery .card1.gallery-img img{
+  width: 100%;
+  height: 400px;
+  vertical-align: middle;
 }
 .gallery:hover .card1.gallery-img{
   transition-property: left, z-index, transform;

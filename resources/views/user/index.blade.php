@@ -78,7 +78,7 @@
                    <div class="col-xl-3">
                        <div class="place-card flex">
                            <div class="place-img">
-                               <img src="{{asset('public/user_assets')}}/images/lalakhal2.jpg" alt="">
+                               <img src="{{asset('public/user_assets')}}/images/place/place2.jpg" alt="">
                            </div>
                            <div class="place-content text-center">
                                <h3>place name</h3>
@@ -99,7 +99,7 @@
                    <div class="col-xl-3">
                     <div class="place-card flex">
                         <div class="place-img">
-                            <img src="{{asset('public/user_assets')}}/images/lalakhal2.jpg" alt="">
+                            <img src="{{asset('public/user_assets')}}/images/place/place3.jpg" alt="">
                         </div>
                         <div class="place-content text-center">
                             <h3>place name</h3>
@@ -120,7 +120,7 @@
                 <div class="col-xl-3">
                     <div class="place-card flex">
                         <div class="place-img">
-                            <img src="{{asset('public/user_assets')}}/images/lalakhal2.jpg" alt="">
+                            <img src="{{asset('public/user_assets')}}/images/place/place4.jpg" alt="">
                         </div>
                         <div class="place-content text-center">
                             <h3>place name</h3>
@@ -141,7 +141,7 @@
                 <div class="col-xl-3">
                     <div class="place-card flex">
                         <div class="place-img">
-                            <img src="{{asset('public/user_assets')}}/images/lalakhal2.jpg" alt="">
+                            <img src="{{asset('public/user_assets')}}/images/place/place9.jpg" alt="">
                         </div>
                         <div class="place-content text-center">
                             <h3>place name</h3>
@@ -281,7 +281,7 @@
     <section class="gallery-area1 pb-100">
         <div class="container">          
                 <div class="row">
-                    <div class="col-xl-4">
+                    <div class="col-xl-3">
                         <div class="gallery">
                             <div class="card1 gallery-img">
                                 <img src="{{asset('public/user_assets/')}}/images/about.jpg"/>
@@ -294,7 +294,7 @@
                             </div> 
                         </div>
                     </div>
-                    <div class="col-xl-4">
+                    <div class="col-xl-3">
                         <div class="gallery">
                             <div class="card1 gallery-img">
                                 <img src="{{asset('public/user_assets/')}}/images/about.jpg"/>
@@ -307,7 +307,20 @@
                             </div> 
                         </div>
                     </div>
-                    <div class="col-xl-4">
+                    <div class="col-xl-3">
+                        <div class="gallery">
+                            <div class="card1 gallery-img">
+                                <img src="{{asset('public/user_assets/')}}/images/about.jpg"/>
+                            </div>
+                            <div class="card1 gallery-content">
+                                <div class="info">
+                                    <h2>place name</h2> 
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry typesetting industry.</p>
+                                </div>
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="col-xl-3">
                         <div class="gallery">
                             <div class="card1 gallery-img">
                                 <img src="{{asset('public/user_assets/')}}/images/about.jpg"/>

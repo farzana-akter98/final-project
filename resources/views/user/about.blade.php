@@ -41,7 +41,7 @@
             <div class="row pt-100">
                 <div class="value who flex">
                     <div class="value-img col-xl-6">
-                        <img src="{{asset('public/user_assets/')}}/images/who.jpg" alt="">
+                        <img src="{{asset('public/user_assets/')}}/images/about/who.jpg" alt="">
                     </div>
                     <div class="value-content col-xl-6">
                         <h3>who we are</h3>
@@ -52,7 +52,7 @@
             <div class="row">
                 <div class="value philosophy flex">
                     <div class="value-img col-xl-6">
-                        <img src="{{asset('public/user_assets/')}}/images/philosophy.jpg" alt="">
+                        <img src="{{asset('public/user_assets/')}}/images/about/philosophy.jpg" alt="">
                     </div>
                     <div class="value-content col-xl-6">
                         <h3>our philosophy</h3>
@@ -63,7 +63,7 @@
             <div class="row">
                 <div class="value how flex">
                     <div class="value-img col-xl-6">
-                        <img src="{{asset('public/user_assets/')}}/images/how.jpg" alt="">
+                        <img src="{{asset('public/user_assets/')}}/images/about/how.jpg" alt="">
                     </div>
                     <div class="value-content col-xl-6">
                         <h3>how we work</h3>
