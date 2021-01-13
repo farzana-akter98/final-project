@@ -4,7 +4,10 @@
 <!-- gallery page -->
 <section class="gbanner-area bg">
     <div class="container">
-        
+        <div class="banner-text text-center">
+            <h2>our roaming gallery.</h2>
+            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+        </div>
     </div>
 </section>
 <!---- gellery page value-->

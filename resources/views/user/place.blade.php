@@ -3,7 +3,10 @@
 @section('content')
 <section class="pbanner-area bg">
     <div class="container">
-        
+        <div class="banner-text text-center">
+            <h2>enjoy your roaming.</h2>
+            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+        </div>
     </div>
 </section>
 <section class="place-area pt-100 pb-100">

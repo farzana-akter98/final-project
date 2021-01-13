@@ -373,7 +373,7 @@ header.sticky .header{
 	opacity: .6;
 	z-index: -1;
 }
-.banner-text {
+.banner-text{
 	position: absolute;
 	left: 50%;
 	top: 50%;
@@ -390,6 +390,13 @@ header.sticky .header{
 }
 /* End Banner Area */
 /*about page css*/
+.aboutbanner-area{
+  background: url("../images/ab3.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+}
 .aboutbanner-area .banner{
   height: 80vh;
 }
@@ -618,7 +625,16 @@ transition: 1s;
 }
 /* End Button CSS*/
 /*place to visit css*/
-
+.pbanner-area{
+  background: url('../images/placebanner.jpg');
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+}
+.pbanner-area.bg::before, .aboutbanner-area.bg::before, .gbanner-area.bg::before{
+  opacity: 0.75;
+ }
 .place-card{
   position: relative;
   background: #000;
@@ -674,6 +690,13 @@ transition: 1s;
 }
 /* End Place CSS*/
 /*gallerypage css*/
+.gbanner-area{
+  background: url('../images/gbanner3.jpg');
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+}
 .gallerypage{
   position: relative;
   overflow: hidden;

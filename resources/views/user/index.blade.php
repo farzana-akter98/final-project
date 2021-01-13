@@ -284,7 +284,7 @@
                     <div class="col-xl-3">
                         <div class="gallery">
                             <div class="card1 gallery-img">
-                                <img src="{{asset('public/user_assets/')}}/images/about.jpg"/>
+                                <img src="{{asset('public/user_assets/')}}/images/galleryh5.jpg"/>
                             </div>
                             <div class="card1 gallery-content">
                                 <div class="info">
@@ -297,7 +297,7 @@
                     <div class="col-xl-3">
                         <div class="gallery">
                             <div class="card1 gallery-img">
-                                <img src="{{asset('public/user_assets/')}}/images/about.jpg"/>
+                                <img src="{{asset('public/user_assets/')}}/images/galleryh3.jpg"/>
                             </div>
                             <div class="card1 gallery-content">
                                 <div class="info">
@@ -310,7 +310,7 @@
                     <div class="col-xl-3">
                         <div class="gallery">
                             <div class="card1 gallery-img">
-                                <img src="{{asset('public/user_assets/')}}/images/about.jpg"/>
+                                <img src="{{asset('public/user_assets/')}}/images/galleryh6.jpg"/>
                             </div>
                             <div class="card1 gallery-content">
                                 <div class="info">
@@ -323,7 +323,7 @@
                     <div class="col-xl-3">
                         <div class="gallery">
                             <div class="card1 gallery-img">
-                                <img src="{{asset('public/user_assets/')}}/images/about.jpg"/>
+                                <img src="{{asset('public/user_assets/')}}/images/galleryh4.jpg"/>
                             </div>
                             <div class="card1 gallery-content">
                                 <div class="info">
