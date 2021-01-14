@@ -632,7 +632,7 @@ transition: 1s;
   width: 100%;
   height: 100%;
 }
-.pbanner-area.bg::before, .aboutbanner-area.bg::before, .gbanner-area.bg::before{
+.pbanner-area.bg::before, .aboutbanner-area.bg::before, .gbanner-area.bg::before, .hbanner-area.bg::before{
   opacity: 0.75;
  }
 .place-card{
@@ -903,8 +903,15 @@ font-size: 24px;
 .breadcumb-area h4 {
   font-size: 30px;
 }
-
-
+/* Hotel Page Css*/
+.hbanner-area{
+  background: url("../images/hbanner.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+}
+/* End Hotel Page Css*/
 /*footer*/
 .footer-area {
   width: 100%;

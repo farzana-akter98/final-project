@@ -3,9 +3,10 @@ Route::get('/','User\IndexController@index');
 Route::group(['prefix' => 'user'],function () {
     Route::get('about','User\AboutController@index');
     Route::get('gallery','User\GalleryController@index');
+    Route::get('place','User\PlaceController@index');
+    Route::get('hotels','User\HotelsController@index');
     // Route::get('blogs','User\AllBlogController@index');
     // Route::get('blog','User\SingleBlogController@index');
-    Route::get('place','User\PlaceController@index');
     Route::get('contact','User\ContactController@index');
 });
 Route::group(['prefix' => 'admin'],function () {
