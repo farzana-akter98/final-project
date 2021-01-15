@@ -5,6 +5,7 @@ Route::group(['prefix' => 'user'],function () {
     Route::get('gallery','User\GalleryController@index');
     Route::get('place','User\PlaceController@index');
     Route::get('hotels','User\HotelsController@index');
+    Route::get('hotel','User\HotelController@index');
     // Route::get('blogs','User\AllBlogController@index');
     // Route::get('blog','User\SingleBlogController@index');
     Route::get('contact','User\ContactController@index');

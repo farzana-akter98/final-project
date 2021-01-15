@@ -389,6 +389,33 @@ header.sticky .header{
   color: #f3f3f3;
 }
 /* End Banner Area */
+
+/* Destination CSS*/
+.destinationform{
+  position: relative;
+}
+.destination{
+  background: #000;
+  overflow: hidden;
+  padding: 10px 20px;
+  color: #fff;
+  position: absolute;
+  top: -60px;
+  width: 100%;
+  z-index: 2;
+}
+.destination form{
+  width: 100%;
+}
+.destination input[type="submit"]{
+  text-transform: capitalize;
+  padding: 8px 10px;
+  font-size: 18px;
+  margin-top: 5px;
+  font-family: 'Merienda', cursive;
+}
+/* End Destination CSS*/
+
 /*about page css*/
 .aboutbanner-area{
   background: url("../images/ab3.jpg");
@@ -911,7 +938,81 @@ font-size: 24px;
   width: 100%;
   height: 100%;
 }
+.hotelspage{
+  position: relative;
+}
+.hotelspage img{
+  height: 350px;
+}
+.hotel-overlay{
+  position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:350px;
+	visibility:hidden;
+	opacity:0;
+	z-index:2;
+	transition:.5s;
+	transform:scale(0);
+}
+.hotel-overlay::before{
+  position:absolute;
+	content:"";
+	width:100%;
+	height:350px;
+	left:0;
+	top:0;
+	z-index:-1;
+	background-color:#333;
+	opacity:.75;
+}
+.hotel-overlay i{
+  font-size: 50px;
+  text-align: center;
+	position:absolute;
+	left:50%;
+	top:50%;
+	width:100%;
+  transform:translate(-50%,-50%);
+  color: #e91e63;
+}
+.hotelspage:hover .hotel-overlay{
+  visibility:visible;
+	opacity:1;
+	transform:scale(1);
+}
+.hotelspage:hover .hotelspage-content{
+  visibility: hidden;
+}
+.hotelspage-content{
+  top: -50px;
+  position: relative;
+  margin: 0 15px;
+  padding: 15px 0;
+  color: #e91e63;
+  box-shadow: 0 10px 15px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  background: #000;
+}
+.hotelspage-content .row{
+  margin: 0 ;
+}
+.hotelspageinfo span{
+  font-size: 18px;
+  text-transform: capitalize;
+  padding-left: 10px;
+  color: #fff;
+}
 /* End Hotel Page Css*/
+
+/* Single Hotel Page Css*/
+.singlehotel-area img{
+  height: 600px;
+}
+
+/* End Single Hotel Page Css*/
+
 /*footer*/
 .footer-area {
   width: 100%;

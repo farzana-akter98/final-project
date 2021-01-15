@@ -15,12 +15,18 @@
 
     @include('include.user.header')
 
-    <!----content--->
+    <!-- end header area & top area -->
+
+    <!---- start content--->
 
     @yield('content')
+    
+    <!---- end content--->
 
-    <!-- Footer Area Start Here -->
+    <!-- footer area start here -->
 
     @include('include.user.footer')   
+
+    <!-- end footer area start here -->    
 </body>
 </html>
