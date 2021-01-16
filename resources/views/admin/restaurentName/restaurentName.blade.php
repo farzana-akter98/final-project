@@ -36,7 +36,7 @@
                             <td class="mdl-data-table__cell--non-numeric">{{$i++}}</td>
                             <td class="mdl-data-table__cell--non-numeric">{{$item->name}}</td>
                             <td class="mdl-data-table__cell--non-numeric">{{$item->address}}</td>
-                            <td class="mdl-data-table__cell--non-numeric">{{$item->location['name']}}</td>
+                            <td class="mdl-data-table__cell--non-numeric">@if($item->location['name'] == null) N/A @else {{$item->location['name']}} @endif</td>
                             <td class="mdl-data-table__cell--non-numeric">@if ($item->image == 'default.jpg')
                                 <img width="50" height="30" src="{{asset('public/image/default.jpg')}}" alt="">
                             @else

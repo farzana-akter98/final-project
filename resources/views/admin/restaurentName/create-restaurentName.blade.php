@@ -7,7 +7,6 @@
             <h2>Create Restaurent Name</h2>
             <div class="mdl-card__subtitle">Please complete the form</div>
         </div>
-
         <div class="create-page mdl-card__supporting-text">
             <form action="{{action('Admin\RestaurentNameController@store')}}" class="form" method="POST" enctype="multipart/form-data">
                 @csrf
@@ -21,8 +20,13 @@
                             <label class="mdl-textfield__label">Restaurent Address</label>
                         </div>
                         <div class="mdl-cell mdl-cell--12-col mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                            <input class="mdl-textfield__input" type="text" name="location_id" value=""/>
-                            <label class="mdl-textfield__label">Location Name</label>
+                            <select name="location_id" class="place">
+                                <option value=""> Select a Location </option>
+                                @foreach ($locations as $location)
+                                 <option value="{{$location->id}}"> {{$location->name}} </option> 
+                                @endforeach
+                                <option value="">Others</option>
+                             </select>
                         </div>
                     <div class="mdl-cell mdl-cell--12-col mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
                         <input class="mdl-textfield__input" type="file"  onchange="document.getElementById('restname_image').src = window.URL.createObjectURL(this.files[0])" name="imageName"/>

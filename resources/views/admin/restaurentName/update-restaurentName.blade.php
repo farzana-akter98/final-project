@@ -22,8 +22,12 @@
                             <label class="mdl-textfield__label">Restaurent Address</label>
                         </div>
                         <div class="mdl-cell mdl-cell--12-col mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                            <input class="mdl-textfield__input" type="text" name="restname_id" value="{{$restname->location_id}}"/>
-                            <label class="mdl-textfield__label">Location</label>
+                            <select name="location_id" class="place">
+                                <option value=""> Select a Location </option>
+                                @foreach ($locations as $location)
+                                <option value="{{$location->id}}" @if ($restname->location_id == $location->id) selected @endif> {{$location->name}} </option>
+                                @endforeach
+                             </select>
                         </div>
                     <div class="mdl-cell mdl-cell--12-col mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
                         <input class="mdl-textfield__input" type="file" onchange="document.getElementById('restname_image').src = window.URL.createObjectURL(this.files[0])" name="imageName"/>
