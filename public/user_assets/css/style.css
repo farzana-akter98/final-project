@@ -324,7 +324,7 @@ header.sticky .header{
 .cover{
 	background-image:url("../images/banner/slider2.jpg");
 	background-size:cover;
-	min-height: 100vh;
+	min-height: 70vh;
 	background-position:center;
 	background-repeat: no-repeat;
 	animation: slider 40s infinite; 
@@ -390,7 +390,7 @@ header.sticky .header{
 }
 /* End Banner Area */
 
-/* Destination CSS*/
+/* Homepage Destination CSS*/
 .destinationform{
   position: relative;
 }
@@ -414,7 +414,7 @@ header.sticky .header{
   margin-top: 5px;
   font-family: 'Merienda', cursive;
 }
-/* End Destination CSS*/
+/* End Homepage Destination CSS*/
 
 /*about page css*/
 .aboutbanner-area{
@@ -422,9 +422,8 @@ header.sticky .header{
   background-size: cover;
   background-position: center;
   width: 100%;
-  height: 100%;
 }
-.aboutbanner-area .banner{
+.aboutbanner-area, .pbanner-area, .gbanner-area, .hbanner-area{
   height: 80vh;
 }
 .about-area1{
@@ -657,7 +656,6 @@ transition: 1s;
   background-size: cover;
   background-position: center;
   width: 100%;
-  height: 100%;
 }
 .pbanner-area.bg::before, .aboutbanner-area.bg::before, .gbanner-area.bg::before, .hbanner-area.bg::before{
   opacity: 0.75;
@@ -722,7 +720,6 @@ transition: 1s;
   background-size: cover;
   background-position: center;
   width: 100%;
-  height: 100%;
 }
 .gallerypage{
   position: relative;
@@ -936,7 +933,6 @@ font-size: 24px;
   background-size: cover;
   background-position: center;
   width: 100%;
-  height: 100%;
 }
 .hotelspage{
   position: relative;
@@ -1010,7 +1006,11 @@ font-size: 24px;
 .singlehotel-area img{
   height: 600px;
 }
-
+.singlehotel-area i{
+  font-size: 20px;
+  padding-right: 10px;
+  color: #e91e63;
+}
 /* End Single Hotel Page Css*/
 
 /*footer*/

@@ -36,10 +36,10 @@
                                 <h3>place name</h3>
                                 <div class="row"><a href="">
                                     <div class="place-location flex">
-                                    <div class="col-xl-6">
+                                    <div class="col-6">
                                         <i class="fas fa-location-arrow"></i>
                                     </div>
-                                    <div class="col-xl-6">
+                                    <div class="col-6">
                                     <h4>location address</h4>
                                     </div>
                                 </div>
