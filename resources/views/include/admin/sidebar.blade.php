@@ -86,7 +86,7 @@
                     </div>
                     <div class="sub-navigation">
                         <a class="mdl-navigation__link">
-                            <i class="material-icons">local_shipping</i>
+                            <i class="material-icons">wc</i>
                             All Visitors
                             <i class="material-icons">keyboard_arrow_down</i>
                         </a>
