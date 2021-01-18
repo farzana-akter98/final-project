@@ -5,32 +5,32 @@
         <img src="{{asset('public/user_assets/')}}/images/hotel/hotel7.jpg" alt="">
         <div class="container">
             <div class="row">
-                <div class="col-xl-12 about-title text-center">
+                <div class="col-md-12 about-title text-center">
                    <h2>hotel name</h2> 
                 </div>
-                <div class="col-xl-4 text-center single-hotel">
+                <div class="col-md-4 text-center single-hotel">
                     <i class="fas fa-map-marked-alt"></i>
                     <span class="hotel-awc">address</span>
                     <div class="row">
-                        <div class="single-hotel-col col-xl-12 ">
+                        <div class="single-hotel-col col-md-12 ">
                             <h4>123 Main Street, New York, NY 10030</h4>
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-4 text-center single-hotel">
+                <div class="col-md-4 text-center single-hotel">
                     <i class="fas fa-globe-europe"></i>
                     <span class="hotel-awc">website</span>
                     <div class="row">
-                        <div class="col-xl-12 single-hotel-col">
+                        <div class="col-md-12 single-hotel-col">
                             <a href="#">www.hotelname.com</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-4 text-center single-hotel">
+                <div class="col-md-4 text-center single-hotel">
                     <i class="fas fa-address-book"></i>
                     <span class="hotel-awc">contact</span>
                     <div class="row">
-                        <div class="col-xl-12 single-hotel-col">
+                        <div class="col-md-12 single-hotel-col">
                             <a href="#">+123456789</a>
                         </div>
                     </div>

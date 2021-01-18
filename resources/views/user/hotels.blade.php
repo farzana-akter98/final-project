@@ -19,7 +19,7 @@
         <div class="section-title">
             <div class="container">
                 <div class="row pt-100">
-                    <div class="col-xl-12 about-title text-center">
+                    <div class="col-md-12 about-title text-center">
                         <h2>hotels.</h2>
                         <h4 class="about-heading">check out hotels of places in sylhet</h4>
                     </div>
@@ -31,7 +31,7 @@
     <section class="hotelspage-area pb-100">
         <div class="container">          
                 <div class="row">
-                    <div class="col-xl-4">
+                    <div class="col-md-4">
                         <a href="{{action('User\HotelController@index')}}">
                             <div class="hotelspage">
                                 <img src="{{asset('public/user_assets/')}}/images/hotel/hotel1.jpg" alt="">
@@ -46,7 +46,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-xl-4">
+                    <div class="col-md-4">
                         <a href="">
                             <div class="hotelspage">
                                 <img src="{{asset('public/user_assets/')}}/images/hotel/hotel2.jpg" alt="">
@@ -61,7 +61,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-xl-4">
+                    <div class="col-md-4">
                         <a href="">
                             <div class="hotelspage">
                                 <img src="{{asset('public/user_assets/')}}/images/hotel/hotel3.jpg" alt="">
@@ -76,7 +76,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-xl-4">
+                    <div class="col-md-4">
                         <a href="">
                             <div class="hotelspage">
                                 <img src="{{asset('public/user_assets/')}}/images/hotel/hotel4.jpg" alt="">
@@ -91,7 +91,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-xl-4">
+                    <div class="col-md-4">
                         <a href="">
                             <div class="hotelspage">
                                 <img src="{{asset('public/user_assets/')}}/images/hotel/hotel5.jpg" alt="">
@@ -106,7 +106,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-xl-4">
+                    <div class="col-md-4">
                         <a href="">
                             <div class="hotelspage">
                                 <img src="{{asset('public/user_assets/')}}/images/hotel/hotel6.jpg" alt="">
@@ -121,7 +121,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-xl-4">
+                    <div class="col-md-4">
                         <a href="">
                             <div class="hotelspage">
                                 <img src="{{asset('public/user_assets/')}}/images/hotel/hotel7.jpg" alt="">
@@ -136,7 +136,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-xl-4">
+                    <div class="col-md-4">
                         <a href="">
                             <div class="hotelspage">
                                 <img src="{{asset('public/user_assets/')}}/images/hotel/hotel8.jpg" alt="">
@@ -151,7 +151,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-xl-4">
+                    <div class="col-md-4">
                         <a href="">
                             <div class="hotelspage">
                                 <img src="{{asset('public/user_assets/')}}/images/hotel/hotel9.jpg" alt="">
@@ -166,7 +166,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-xl-4">
+                    <div class="col-md-4">
                         <a href="">
                             <div class="hotelspage">
                                 <img src="{{asset('public/user_assets/')}}/images/hotel/hotel10.jpg" alt="">
@@ -181,7 +181,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-xl-4">
+                    <div class="col-md-4">
                         <a href="">
                             <div class="hotelspage">
                                 <img src="{{asset('public/user_assets/')}}/images/hotel/hotel11.jpg" alt="">
@@ -196,7 +196,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-xl-4">
+                    <div class="col-md-4">
                         <a href="">
                             <div class="hotelspage">
                                 <img src="{{asset('public/user_assets/')}}/images/hotel/hotel12.jpg" alt="">

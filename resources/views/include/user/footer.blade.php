@@ -1,7 +1,7 @@
 <section class="footer-area pt-100 section-title">
     <div class="footer">
         <div class="container">
-            <div class="about-part col-xl-3">
+            <div class="about-part col-md-3">
                 <h2>about reizen</h2>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                 <div class="mtb-10">
@@ -13,7 +13,7 @@
                 </ul>
                 </div>
             </div>
-            <div class="service-list col-xl-3">
+            <div class="service-list col-md-3">
                 <h2>quick links</h2>
                 <div class="mtb-10">
                 <ul>
@@ -29,12 +29,12 @@
                 </ul>
                 </div>
             </div>
-            <div class="webname">
+            <div class="webname col-md-3">
                 <div class="circle">
                     <h2>reizen</h2>
                 </div>
             </div>
-            <div class="contact-part col-xl-3">
+            <div class="contact-part col-md-3">
                 <h2>our contact</h2>
                 <div class="contact-content mtb-10">
                     <div class="contact-phone p-10 row">

@@ -21,13 +21,13 @@
         <div class="section-title">
             <div class="container">
                 <div class="row pt-100">
-                    <div class="col-xl-12 about-title text-center">
+                    <div class="col-md-12 about-title text-center">
                         <h2>places to visit.</h2>
                         <h4 class="about-heading">check out amazing places of sylhet</h4>
                     </div>
                 </div>
                 <div class="row pt-100">
-                    <div class="col-xl-3">
+                    <div class="col-md-3">
                         <div class="place-card flex">
                             <div class="place-img">
                                 <img src="{{asset('public/user_assets')}}/images/place/place1.jpg" alt="">
@@ -36,11 +36,9 @@
                                 <h3>place name</h3>
                                 <div class="row"><a href="">
                                     <div class="place-location flex">
-                                    <div class="col-6">
+                                    <div class="col-md-12 flex">
                                         <i class="fas fa-location-arrow"></i>
-                                    </div>
-                                    <div class="col-6">
-                                    <h4>location address</h4>
+                                        <span class="address"><h4>location address</h4></span>
                                     </div>
                                 </div>
                                 </a>
@@ -48,7 +46,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-3">
+                    <div class="col-md-3">
                     <div class="place-card flex">
                         <div class="place-img">
                             <img src="{{asset('public/user_assets')}}/images/place/place2.jpg" alt="">
@@ -57,19 +55,17 @@
                             <h3>place name</h3>
                             <div class="row"><a href="">
                                 <div class="place-location flex">
-                                <div class="col-6">
-                                    <i class="fas fa-location-arrow"></i>
+                                    <div class="col-md-12 flex">
+                                        <i class="fas fa-location-arrow"></i>
+                                        <span class="address"><h4>location address</h4></span>
+                                    </div>
                                 </div>
-                                <div class="col-6">
-                                <h4>location address</h4>
-                                </div>
-                            </div>
                             </a>
                             </div>
                         </div>
                     </div>
                     </div>
-                    <div class="col-xl-3">
+                    <div class="col-md-3">
                     <div class="place-card flex">
                         <div class="place-img">
                             <img src="{{asset('public/user_assets')}}/images/place/place3.jpg" alt="">
@@ -78,19 +74,17 @@
                             <h3>place name</h3>
                             <div class="row"><a href="">
                                 <div class="place-location flex">
-                                <div class="col-6">
-                                    <i class="fas fa-location-arrow"></i>
+                                    <div class="col-md-12 flex">
+                                        <i class="fas fa-location-arrow"></i>
+                                        <span class="address"><h4>location address</h4></span>
+                                    </div>
                                 </div>
-                                <div class="col-6">
-                                <h4>location address</h4>
-                                </div>
-                            </div>
                             </a>
                             </div>
                         </div>
                     </div>
                     </div>
-                    <div class="col-xl-3">
+                    <div class="col-md-3">
                     <div class="place-card flex">
                         <div class="place-img">
                             <img src="{{asset('public/user_assets')}}/images/place/place4.jpg" alt="">
@@ -99,19 +93,17 @@
                             <h3>place name</h3>
                             <div class="row"><a href="">
                                 <div class="place-location flex">
-                                <div class="col-6">
-                                    <i class="fas fa-location-arrow"></i>
+                                    <div class="col-md-12 flex">
+                                        <i class="fas fa-location-arrow"></i>
+                                        <span class="address"><h4>location address</h4></span>
+                                    </div>
                                 </div>
-                                <div class="col-6">
-                                <h4>location address</h4>
-                                </div>
-                            </div>
                             </a>
                             </div>
                         </div>
                     </div>
                     </div>
-                    <div class="col-xl-3">
+                    <div class="col-md-3">
                         <div class="place-card flex">
                             <div class="place-img">
                                 <img src="{{asset('public/user_assets')}}/images/place/place12.jpg" alt="">
@@ -120,19 +112,17 @@
                                 <h3>place name</h3>
                                 <div class="row"><a href="">
                                     <div class="place-location flex">
-                                    <div class="col-6">
-                                        <i class="fas fa-location-arrow"></i>
-                                    </div>
-                                    <div class="col-6">
-                                    <h4>location address</h4>
-                                    </div>
-                                </div>
+                                        <div class="col-md-12 flex">
+                                            <i class="fas fa-location-arrow"></i>
+                                            <span class="address"><h4>location address</h4></span>
+                                        </div>
+                                   </div>
                                 </a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-3">
+                    <div class="col-md-3">
                     <div class="place-card flex">
                         <div class="place-img">
                             <img src="{{asset('public/user_assets')}}/images/place/place5.jpg" alt="">
@@ -141,19 +131,17 @@
                             <h3>place name</h3>
                             <div class="row"><a href="">
                                 <div class="place-location flex">
-                                <div class="col-6">
-                                    <i class="fas fa-location-arrow"></i>
+                                    <div class="col-md-12 flex">
+                                        <i class="fas fa-location-arrow"></i>
+                                        <span class="address"><h4>location address</h4></span>
+                                    </div>
                                 </div>
-                                <div class="col-6">
-                                <h4>location address</h4>
-                                </div>
-                            </div>
                             </a>
                             </div>
                         </div>
                     </div>
                     </div>
-                    <div class="col-xl-3">
+                    <div class="col-md-3">
                     <div class="place-card flex">
                         <div class="place-img">
                             <img src="{{asset('public/user_assets')}}/images/place/place6.jpg" alt="">
@@ -162,19 +150,17 @@
                             <h3>place name</h3>
                             <div class="row"><a href="">
                                 <div class="place-location flex">
-                                <div class="col-6">
-                                    <i class="fas fa-location-arrow"></i>
+                                    <div class="col-md-12 flex">
+                                        <i class="fas fa-location-arrow"></i>
+                                        <span class="address"><h4>location address</h4></span>
+                                    </div>
                                 </div>
-                                <div class="col-6">
-                                <h4>location address</h4>
-                                </div>
-                            </div>
                             </a>
                             </div>
                         </div>
                     </div>
                     </div>
-                    <div class="col-xl-3">
+                    <div class="col-md-3">
                     <div class="place-card flex">
                         <div class="place-img">
                             <img src="{{asset('public/user_assets')}}/images/place/place7.jpg" alt="">
@@ -183,19 +169,17 @@
                             <h3>place name</h3>
                             <div class="row"><a href="">
                                 <div class="place-location flex">
-                                <div class="col-6">
-                                    <i class="fas fa-location-arrow"></i>
+                                    <div class="col-md-12 flex">
+                                        <i class="fas fa-location-arrow"></i>
+                                        <span class="address"><h4>location address</h4></span>
+                                    </div>
                                 </div>
-                                <div class="col-6">
-                                <h4>location address</h4>
-                                </div>
-                            </div>
                             </a>
                             </div>
                         </div>
                     </div>
                     </div>
-                    <div class="col-xl-3">
+                    <div class="col-md-3">
                         <div class="place-card flex">
                             <div class="place-img">
                                 <img src="{{asset('public/user_assets')}}/images/place/place8.jpeg" alt="">
@@ -204,19 +188,17 @@
                                 <h3>place name</h3>
                                 <div class="row"><a href="">
                                     <div class="place-location flex">
-                                    <div class="col-6">
-                                        <i class="fas fa-location-arrow"></i>
+                                        <div class="col-md-12 flex">
+                                            <i class="fas fa-location-arrow"></i>
+                                            <span class="address"><h4>location address</h4></span>
+                                        </div>
                                     </div>
-                                    <div class="col-6">
-                                    <h4>location address</h4>
-                                    </div>
-                                </div>
                                 </a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-3">
+                    <div class="col-md-3">
                     <div class="place-card flex">
                         <div class="place-img">
                             <img src="{{asset('public/user_assets')}}/images/place/place9.jpg" alt="">
@@ -225,19 +207,17 @@
                             <h3>place name</h3>
                             <div class="row"><a href="">
                                 <div class="place-location flex">
-                                <div class="col-6">
-                                    <i class="fas fa-location-arrow"></i>
+                                    <div class="col-md-12 flex">
+                                        <i class="fas fa-location-arrow"></i>
+                                        <span class="address"><h4>location address</h4></span>
+                                    </div>
                                 </div>
-                                <div class="col-6">
-                                <h4>location address</h4>
-                                </div>
-                            </div>
                             </a>
                             </div>
                         </div>
                     </div>
                     </div>
-                    <div class="col-xl-3">
+                    <div class="col-md-3">
                     <div class="place-card flex">
                         <div class="place-img">
                             <img src="{{asset('public/user_assets')}}/images/place/place10.jpg" alt="">
@@ -246,19 +226,17 @@
                             <h3>place name</h3>
                             <div class="row"><a href="">
                                 <div class="place-location flex">
-                                <div class="col-6">
-                                    <i class="fas fa-location-arrow"></i>
+                                    <div class="col-md-12 flex">
+                                        <i class="fas fa-location-arrow"></i>
+                                        <span class="address"><h4>location address</h4></span>
+                                    </div>
                                 </div>
-                                <div class="col-6">
-                                <h4>location address</h4>
-                                </div>
-                            </div>
                             </a>
                             </div>
                         </div>
                     </div>
                     </div>
-                    <div class="col-xl-3">
+                    <div class="col-md-3">
                     <div class="place-card flex">
                         <div class="place-img">
                             <img src="{{asset('public/user_assets')}}/images/place/place11.jpg" alt="">
@@ -267,13 +245,11 @@
                             <h3>place name</h3>
                             <div class="row"><a href="">
                                 <div class="place-location flex">
-                                <div class="col-6">
-                                    <i class="fas fa-location-arrow"></i>
+                                    <div class="col-md-12 flex">
+                                        <i class="fas fa-location-arrow"></i>
+                                        <span class="address"><h4>location address</h4></span>
+                                    </div>
                                 </div>
-                                <div class="col-6">
-                                <h4>location address</h4>
-                                </div>
-                            </div>
                             </a>
                             </div>
                         </div>

@@ -20,7 +20,7 @@
         <div class="section-title">
             <div class="container">
                 <div class="row pt-100">
-                    <div class="col-xl-12 about-title text-center">
+                    <div class="col-md-12 about-title text-center">
                         <h2>gallery.</h2>
                         <h4 class="about-heading">check out amazing gallery of places in sylhet</h4>
                     </div>
@@ -32,7 +32,7 @@
     <section class="gallerypage-area pb-100">
         <div class="container">          
                 <div class="row">
-                    <div class="col-xl-4">
+                    <div class="col-md-4">
                         <div class="gallerypage text-center">
                             <img src="{{asset('public/user_assets/')}}/images/gallery/gallery1.jpg" alt="">
                             <div class="gallerypage-content">
@@ -43,7 +43,7 @@
                             </div> 
                         </div>
                     </div>
-                    <div class="col-xl-4">
+                    <div class="col-md-4">
                         <div class="gallerypage text-center">
                         <img src="{{asset('public/user_assets/')}}/images/gallery/gallery2.jpg" alt="">
                         <div class="gallerypage-content">
@@ -54,7 +54,7 @@
                         </div> 
                         </div>
                     </div>
-                    <div class="col-xl-4">
+                    <div class="col-md-4">
                         <div class="gallerypage text-center">
                         <img src="{{asset('public/user_assets/')}}/images/gallery/gallery3.jpg" alt="">
                         <div class="gallerypage-content">
@@ -65,7 +65,7 @@
                         </div> 
                         </div>
                     </div>
-                    <div class="col-xl-4">
+                    <div class="col-md-4">
                         <div class="gallerypage text-center">
                         <img src="{{asset('public/user_assets/')}}/images/gallery/gallery4.jpg" alt="">
                         <div class="gallerypage-content">
@@ -76,7 +76,7 @@
                         </div> 
                         </div>
                     </div>
-                    <div class="col-xl-4">
+                    <div class="col-md-4">
                         <div class="gallerypage text-center">
                         <img src="{{asset('public/user_assets/')}}/images/gallery/gallery5.jpg" alt="">
                         <div class="gallerypage-content">
@@ -87,7 +87,7 @@
                         </div> 
                         </div>
                     </div>
-                    <div class="col-xl-4">
+                    <div class="col-md-4">
                         <div class="gallerypage text-center">
                         <img src="{{asset('public/user_assets/')}}/images/gallery/gallery6.jpg" alt="">
                         <div class="gallerypage-content">
@@ -98,7 +98,7 @@
                         </div> 
                         </div>
                     </div>
-                    <div class="col-xl-4">
+                    <div class="col-md-4">
                         <div class="gallerypage text-center">
                         <img src="{{asset('public/user_assets/')}}/images/gallery/gallery7.jpg" alt="">
                         <div class="gallerypage-content">
@@ -109,7 +109,7 @@
                         </div> 
                         </div>
                     </div>
-                    <div class="col-xl-4">
+                    <div class="col-md-4">
                         <div class="gallerypage text-center">
                         <img src="{{asset('public/user_assets/')}}/images/gallery/gallery8.jpg" alt="">
                         <div class="gallerypage-content">
@@ -120,7 +120,7 @@
                         </div> 
                         </div>
                     </div>
-                    <div class="col-xl-4">
+                    <div class="col-md-4">
                         <div class="gallerypage text-center">
                         <img src="{{asset('public/user_assets/')}}/images/gallery/gallery9.jpg" alt="">
                         <div class="gallerypage-content">

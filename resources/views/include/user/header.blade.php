@@ -2,13 +2,13 @@
 <section class="top-area">
     <div class="container">
         <div class="row">
-            <div class="col-xl-6">
+            <div class="col-md-6">
                 <div class="top-contact">
                     <a href="mailto:info@reizen.com"><i class="far fa-envelope"></i>info@reizen.com</a>
                     <a href="tel:1234567890"><i class="fas fa-phone-alt"></i> 1234567890</a>
                  </div>  
             </div>
-            <div class="col-xl-6">
+            <div class="col-md-6">
                 <button type="button" class="login-btn">Login</button>             
             </div>
 
@@ -19,10 +19,10 @@
 <header class="header-area">
     <div class="container">
         <div class="header row">
-                <div class="logo col-xl-3">
+                <div class="logo col-md-3">
                     <a href="">Reizen</a>
                 </div> 
-                <div class="navigation col-xl-9 text-right">
+                <div class="navigation col-md-9 text-right">
                     <a href="" id="search-btn"><i class="fas fa-search"></i></a>
                         <div id="myNav" class="overlay">
     
