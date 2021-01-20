@@ -31,15 +31,15 @@
                           
                             <!-- Overlay content -->
                             <div class="overlay-content">
-                              <ul>
-                                <li><a href="index.html">Home</a></li>
-                                <li><a href="about.html">About</a></li>
-                                <li><a href="">Services</a></li>
-                                <li><a href="">places to visit</a></li>
-                                <li><a href="gallery.html">Gallery</a></li>
-                                <li><a href="">Blog</a></li>
-                                <li><a href="contact.html">Contact</a></li>
-                              </ul>>
+                                <ul>
+                                    <li><a href="">Home</a></li>
+                                    <li><a href="">About</a></li>
+                                    <li><a href="">Services</a></li>
+                                    <li><a href="">Places to Visit</a></li>
+                                    <li><a href="">Gallery</a></li>
+                                    <li><a href="">Blog</a></li>
+                                    <li><a href="">Contact</a></li>
+                                </ul>
                             </div>
                           
                         </div>

@@ -220,7 +220,7 @@
                         <a href="">
                             <div class="services">
                                 <i class="fas fa-utensils"></i>
-                                <h3 class="title">restaurents</h3>
+                                <h3 class="title">restaurants</h3>
                                 <i class="fas fa-hand-point-right"></i>
                             </div>
                         </a>
