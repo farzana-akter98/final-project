@@ -42,7 +42,7 @@
                 </div>
                 <div class="form__action">
                     <button id="submit_button" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
-                        Upload
+                        Create
                     </button>
                 </div>
             </form>

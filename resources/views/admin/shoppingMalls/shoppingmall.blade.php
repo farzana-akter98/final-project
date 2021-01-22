@@ -41,7 +41,7 @@
                               <img width="50" height="30" src="{{asset('public/uploads/mallsImages/'.$item->image)}}" alt="">
                             @endif</td>
                             <td class="mdl-data-table__cell--non-numeric">{{$item->contact}}</td>
-                            <td class="mdl-data-table__cell--non-numeric"><span class="label"><a href="{{action('Admin\ShoppingMallController@update_page',['id'=> $item->id])}}">Update</a></span><span><a href="{{action('Admin\ShoppingMallController@delete',['id'=> $item->id])}}" class="delete_a">Delete</a></span></td>
+                            <td class="mdl-data-table__cell--non-numeric"><span class="label"><a href="{{action('Admin\ShoppingMallController@update_page',['id'=> $item->id])}}">Update</a></span><span><a onclick="return confirm('Are you sure to delete?')" href="{{action('Admin\ShoppingMallController@delete',['id'=> $item->id])}}" class="delete_a">Delete</a></span></td>
                         </tr> 
                          @endforeach
                                      

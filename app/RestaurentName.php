@@ -12,4 +12,10 @@ class RestaurentName extends Model
     {
         return $this->belongsTo('App\Location','location_id');
     }
+
+    public function restmenu()
+    {
+        return $this->hasMany('App\RestaurantMenu','restaurent_name_id');
+    }
+    
 }

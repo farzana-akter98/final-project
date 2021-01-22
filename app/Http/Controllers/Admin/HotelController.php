@@ -27,6 +27,7 @@ class HotelController extends Controller
           }
         $hotel->website=$request->website;
         $hotel->contact=$request->contact;
+        $hotel->details=$request->details;
         $hotel->save();
         return redirect()->to('admin/all-hotel');
     }
@@ -51,6 +52,7 @@ class HotelController extends Controller
         }
         $hotel->website=$request->website;
         $hotel->contact=$request->contact;
+        $hotel->details=$request->details;
         $hotel->save();
         return redirect()->to('admin/all-hotel');
     }

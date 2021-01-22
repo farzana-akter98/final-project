@@ -22,6 +22,7 @@ class CreateHotelsTable extends Migration
             $table->string('image',150)->default('default.jpg');
             $table->string('website',150);
             $table->string('contact', 150);
+            $table->longtext('details');
             $table->timestamps();
         });
     }

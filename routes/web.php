@@ -1,4 +1,7 @@
 <?php
+
+    /* -------------- User Panel Route ------------- */
+
 Route::get('/','User\IndexController@index');
 Route::group(['prefix' => 'user'],function () {
     Route::get('about','User\AboutController@index');
@@ -11,6 +14,11 @@ Route::group(['prefix' => 'user'],function () {
     // Route::get('blog','User\SingleBlogController@index');
     Route::get('contact','User\ContactController@index');
 });
+    /* -------------- End User Panel Route ------------- */
+
+
+    /* -------------- Admin Panel Route ------------- */
+
 Route::group(['prefix' => 'admin'],function () {
     Route::get('dashboard','Admin\DashboardController@index');
     
@@ -98,4 +106,37 @@ Route::group(['prefix' => 'admin'],function () {
     Route::get('update_pagerestname/{id}','Admin\RestaurentNameController@update_page');
     Route::post('updaterestname','Admin\RestaurentNameController@update');
     /*-------------- End Restaurent Name -------------*/
+
+
+    /*-------------- Restaurent Menu -------------*/
+    Route::get('all-restmenu','Admin\RestaurantMenuController@index');
+    Route::get('createrestmenu','Admin\RestaurantMenuController@create');
+    Route::post('storerestmenu','Admin\RestaurantMenuController@store');
+    Route::get('deleterestmenu/{id}','Admin\RestaurantMenuController@delete');
+    Route::get('update_pagerestmenu/{id}','Admin\RestaurantMenuController@update_page');
+    Route::post('updaterestmenu','Admin\RestaurantMenuController@update');
+    /*-------------- End Restaurent Menu -------------*/
+
+    
+    /*-------------- Transport Type -------------*/
+    Route::get('all-transtype','Admin\TransportTypeController@index');
+    Route::get('createtranstype','Admin\TransportTypeController@create');
+    Route::post('storetranstype','Admin\TransportTypeController@store');
+    Route::get('deletetranstype/{id}','Admin\TransportTypeController@delete');
+    Route::get('update_pagetranstype/{id}','Admin\TransportTypeController@update_page');
+    Route::post('updatetranstype','Admin\TransportTypeController@update');
+    /*-------------- End Transport Type -------------*/
+
+
+    /*-------------- Transport Cost -------------*/
+    Route::get('all-transcost','Admin\TransportCostController@index');
+    Route::get('createtranscost','Admin\TransportCostController@create');
+    Route::post('storetranscost','Admin\TransportCostController@store');
+    Route::get('deletetranscost/{id}','Admin\TransportCostController@delete');
+    Route::get('update_pagetranscost/{id}','Admin\TransportCostController@update_page');
+    Route::post('updatetranscost','Admin\TransportCostController@update');
+    /*-------------- End Transport Cost -------------*/
 });
+
+
+    /* -------------- End Admin Panel Route ------------- */

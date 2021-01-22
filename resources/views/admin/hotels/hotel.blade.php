@@ -24,6 +24,7 @@
                             <th class="mdl-data-table__cell--non-numeric">Image</th>
                             <th class="mdl-data-table__cell--non-numeric">Website</th>
                             <th class="mdl-data-table__cell--non-numeric">Contact</th>
+                            <th class="mdl-data-table__cell--non-numeric">Details</th>
                             <th class="mdl-data-table__cell--non-numeric">Action</th>
                         </tr>
                         </thead>
@@ -43,7 +44,8 @@
                             @endif</td>
                             <td class="mdl-data-table__cell--non-numeric">{{$item->website}}</td>
                             <td class="mdl-data-table__cell--non-numeric">{{$item->contact}}</td>
-                            <td class="mdl-data-table__cell--non-numeric"><span class="label"><a href="{{action('Admin\HotelController@update_page',['id'=> $item->id])}}">Update</a></span><span><a href="{{action('Admin\HotelController@delete',['id'=> $item->id])}}" class="delete_a">Delete</a></span></td>
+                            <td class="mdl-data-table__cell--non-numeric">{{str_limit($item->details,50,'...')}}</td>
+                            <td class="mdl-data-table__cell--non-numeric"><span class="label"><a href="{{action('Admin\HotelController@update_page',['id'=> $item->id])}}">Update</a></span><span><a onclick="return confirm('Are you sure to delete?')" href="{{action('Admin\HotelController@delete',['id'=> $item->id])}}" class="delete_a">Delete</a></span></td>
                         </tr> 
                          @endforeach
                                      

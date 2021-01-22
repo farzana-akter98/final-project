@@ -33,7 +33,7 @@
                             <td class="mdl-data-table__cell--non-numeric">{{$i++}}</td>
                             <td class="mdl-data-table__cell--non-numeric">{{$item->name}}</td>
                             <td class="mdl-data-table__cell--non-numeric">{{count($item->blogs)}}</td>
-                            <td class="mdl-data-table__cell--non-numeric"><span class="label"><a href="{{action('Admin\BlogCategoryController@update_page',['id'=>$item->id])}}">Update</a></span><span><a href="{{action('Admin\BlogCategoryController@delete',['id'=>$item->id])}}" class="delete_a">Delete</a></span> </td>
+                            <td class="mdl-data-table__cell--non-numeric"><span class="label"><a href="{{action('Admin\BlogCategoryController@update_page',['id'=>$item->id])}}">Update</a></span><span><a onclick="return confirm('Are you sure to delete?')" href="{{action('Admin\BlogCategoryController@delete',['id'=>$item->id])}}" class="delete_a">Delete</a></span> </td>
                         </tr>
                          @endforeach   
                         

@@ -43,7 +43,7 @@
                                 @endif</td>
                                 <td class="mdl-data-table__cell--non-numeric">{{$item->user_id}}</td>
                                 <td class="mdl-data-table__cell--non-numeric">{{$item->category['name']}}</td>
-                                <td class="mdl-data-table__cell--non-numeric"><span class="label"><a href="{{action('Admin\BlogPostController@update_page',['id'=>$item->id])}}">Update</a></span><span><a href="{{action('Admin\BlogPostController@delete',['id'=>$item->id])}}" class="delete_a">Delete</a></span> </td>
+                                <td class="mdl-data-table__cell--non-numeric"><span class="label"><a href="{{action('Admin\BlogPostController@update_page',['id'=>$item->id])}}">Update</a></span><span><a onclick="return confirm('Are you sure to delete?')" href="{{action('Admin\BlogPostController@delete',['id'=>$item->id])}}" class="delete_a">Delete</a></span> </td>
                             </tr> 
                             @endforeach
                          

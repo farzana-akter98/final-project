@@ -39,6 +39,10 @@
                         <input class="mdl-textfield__input" type="text" name="contact" value="{{$hotel->contact}}"/>
                         <label class="mdl-textfield__label">Contact</label>
                     </div>
+                    <div class="mdl-cell mdl-cell--12-col mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                        <input class="mdl-textfield__input" type="text" name="details" value="{{$hotel->details}}"/>
+                        <label class="mdl-textfield__label">Details</label>
+                    </div>
                 </div>
                 <div class="form__action">
                     <button id="submit_button" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">

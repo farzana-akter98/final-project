@@ -64,7 +64,7 @@
                             <a class="mdl-navigation__link" href="{{action('Admin\RestaurentNameController@index')}}">
                                 Restaurants Name
                             </a>
-                            <a class="mdl-navigation__link" href="">
+                            <a class="mdl-navigation__link" href="{{action('Admin\RestaurantMenuController@index')}}">
                                 Restaurants Menu
                             </a>
                         </div>
@@ -76,10 +76,10 @@
                             <i class="material-icons">keyboard_arrow_down</i>
                         </a>
                         <div class="mdl-navigation">
-                            <a class="mdl-navigation__link" href="">
-                                Transports Category
+                            <a class="mdl-navigation__link" href="{{action('Admin\TransportTypeController@index')}}">
+                                Transports Type
                             </a>
-                            <a class="mdl-navigation__link" href="">
+                            <a class="mdl-navigation__link" href="{{action('Admin\TransportCostController@index')}}">
                                 Transports Cost
                             </a>
                         </div>

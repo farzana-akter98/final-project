@@ -1,35 +1,43 @@
 @extends('layouts.admin_master')
-@section('title','UpdateLocation')
+@section('title','UpdateRestaurantMenu')
 @section('content')
 <main class="mdl-layout__content mdl-color--grey-100">
     <div class="mdl-card mdl-shadow--2dp employer-form" action="#">
         <div class="mdl-card__title">
-            <h2>Update Location</h2>
+            <h2>Update RestaurantMenu</h2>
             <div class="mdl-card__subtitle">Please complete the form</div>
         </div>
 
         <div class="create-page mdl-card__supporting-text">
-            <form action="#" class="form" method="POST" enctype="multipart/form-data">
+            <form action="{{action('Admin\RestaurantMenuController@update')}}" class="form" method="POST" enctype="multipart/form-data">
                 @csrf
-                <input type="hidden" name="id" value="{{$location->id}}"/>
+                <input type="hidden" name="id" value="{{$restmenu->id}}"/>
                 <div class="form__article">
                         <div class="mdl-cell mdl-cell--12-col mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                            <input class="mdl-textfield__input" type="text" name="name" value="{{$location->name}}"/>
-                            <label class="mdl-textfield__label">Location Name</label>
+                            <select name="restaurent_name_id" class="place">
+                                <option value=""> Select a restname </option>
+                                @foreach ($restnames as $restname)
+                                <option value="{{$restname->id}}" @if ($restname->restname_id == $restname->id) selected @endif> {{$restname->name}} </option>
+                                @endforeach
+                            </select>
                         </div>
                         <div class="mdl-cell mdl-cell--12-col mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                            <input class="mdl-textfield__input" type="text" name="address" value="{{$location->address}}"/>
-                            <label class="mdl-textfield__label">Location Address</label>
+                            <input class="mdl-textfield__input" type="text" name="menu_name" value="{{$restmenu->menu_name}}"/>
+                            <label class="mdl-textfield__label">RestaurantMenu Name</label>
                         </div>
                     <div class="mdl-cell mdl-cell--12-col mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                        <input class="mdl-textfield__input" type="file" onchange="document.getElementById('location_image').src = window.URL.createObjectURL(this.files[0])" name="imageName"/>
+                        <input class="mdl-textfield__input" type="file" onchange="document.getElementById('restmenu_image').src = window.URL.createObjectURL(this.files[0])" name="imageName"/>
                     </div>
                     <div class="mdl-cell mdl-cell--12-col mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                        @if ($location->image == 'default.jpg')
+                        @if ($restmenu->image == 'default.jpg')
                               <img width="250" height="130" src="{{asset('public/image/default.jpg')}}" alt="">
                             @else
-                              <img width="250" height="130" id="location_image" src="{{asset('public/uploads/locationImages/'.$location->image)}}" alt="">
+                              <img width="250" height="130" id="restmenu_image" src="{{asset('public/uploads/restmenuImages/'.$restmenu->image)}}" alt="">
                             @endif
+                    </div>
+                    <div class="mdl-cell mdl-cell--12-col mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                        <input class="mdl-textfield__input" type="text" name="price" value="{{$restmenu->price}}"/>
+                        <label class="mdl-textfield__label">Price</label>
                     </div>
                 </div>
                 <div class="form__action">

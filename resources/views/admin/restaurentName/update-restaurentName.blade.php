@@ -27,7 +27,7 @@
                                 @foreach ($locations as $location)
                                 <option value="{{$location->id}}" @if ($restname->location_id == $location->id) selected @endif> {{$location->name}} </option>
                                 @endforeach
-                             </select>
+                            </select>
                         </div>
                     <div class="mdl-cell mdl-cell--12-col mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
                         <input class="mdl-textfield__input" type="file" onchange="document.getElementById('restname_image').src = window.URL.createObjectURL(this.files[0])" name="imageName"/>
