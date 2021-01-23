@@ -12,7 +12,6 @@ Route::group(['prefix' => 'user'],function () {
     Route::get('restaurants','User\RestaurantsController@index');
     // Route::get('blogs','User\AllBlogController@index');
     // Route::get('blog','User\SingleBlogController@index');
-    Route::get('contact','User\ContactController@index');
 });
     /* -------------- End User Panel Route ------------- */
 

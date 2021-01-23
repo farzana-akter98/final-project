@@ -36,7 +36,7 @@
             </div>
             <div class="contact-part col-md-3">
                 <h2>our contact</h2>
-                <div class="contact-content mtb-10">
+                <div class="contact-content mtb-10 pb-50">
                     <div class="contact-phone p-10 row">
                         <a href="">
                             <i class="fas fa-phone-alt"></i><span>+123456789</span>
@@ -58,10 +58,46 @@
                         </a>
                     </div>
                 </div>
+                <a href="" class="contact-btn p-10" onclick="popupToggle()"><span>Make an inquiry!</span></a>
+                <div id="popup">
+                    <div class="contact-info">
+                        
+                        <h2>ask the quest</h2>
+                        <form>
+                            <div class="form-row">
+                              <div class="form-group pt-10">
+                                <label for="inputEmail4">First Name</label>
+                                <input type="text" class="form-control" id="inputEmail4" placeholder="First Name">
+                              </div>
+                              <div class="form-group pb-10">
+                                <label for="inputPassword4">Last Name</label>
+                                <input type="text" class="form-control" id="inputPassword4" placeholder="Last Name">
+                              </div>
+                            </div>
+                            <div class="form-group pb-10">
+                                <label for="inputEmail4">Email</label>
+                                <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                            </div>
+                            <div class="form-group pb-10">
+                                <label for="inputPassword4">Password</label>
+                                <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+                            </div>
+                            <div class="form-group pb-10">
+                                <label for="exampleFormControlTextarea1">Write your query...</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                              </div>
+                            <button type="submit" class="btn btn-primary">Sign in</button>
+                          </form>
+                          <a href="" class="close-popup" onclick="popupToggle()">&times;</a>
+                    </div>
+                </div>
+                <script>
+                    function popupToggle(){
+                        const popup=document.getElementById('popup');
+                        popup.classList.toggle('active')
+                    }
+                </script>
             </div>
-            
         </div>
-    </div>
     <div class="footer-p"><p> &copy; 2020 all rights reserved for reizen</p></div>
 </section>
-
