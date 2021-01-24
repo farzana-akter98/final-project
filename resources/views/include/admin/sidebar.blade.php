@@ -42,7 +42,7 @@
                         <i class="material-icons" role="presentation">local_grocery_store</i>
                         Grocery Shops
                     </a>
-                    <a class="mdl-navigation__link" href="">
+                    <a class="mdl-navigation__link" href="{{action('Admin\EmergencyContactController@index')}}">
                         <i class="material-icons">local_hospital</i>
                         Emergency Contact
                     </a>

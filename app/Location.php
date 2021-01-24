@@ -22,10 +22,10 @@ class Location extends Model
     {
         return $this->hasMany('App\TransportType','location_id');
     }
-
-    public function transportcost()
+    
+    public function emergency()
     {
-        return $this->hasMany('App\TransportCost','location_id');
+        return $this->hasMany('App\EmergencyContact','location_id');
     }
-
+    
 }

@@ -7,7 +7,6 @@ font-family: 'Tangerine', cursive;*/
     padding: 0;
     box-sizing: border-box;
 }
-@import url('https://fonts.googleapis.com/css2?family=Jura:wght@700&family=Open+Sans+Condensed:wght@300&family=Playfair+Display&display=swap');
 .container{
     width:1170px;
     margin:0 auto;

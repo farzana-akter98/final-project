@@ -135,6 +135,16 @@ Route::group(['prefix' => 'admin'],function () {
     Route::get('update_pagetranscost/{id}','Admin\TransportCostController@update_page');
     Route::post('updatetranscost','Admin\TransportCostController@update');
     /*-------------- End Transport Cost -------------*/
+
+
+    /*-------------- Emergency Contact -------------*/
+    Route::get('all-emcontact','Admin\EmergencyContactController@index');
+    Route::get('createemcontact','Admin\EmergencyContactController@create');
+    Route::post('storeemcontact','Admin\EmergencyContactController@store');
+    Route::get('deleteemcontact/{id}','Admin\EmergencyContactController@delete');
+    Route::get('update_pageemcontact/{id}','Admin\EmergencyContactController@update_page');
+    Route::post('updateemcontact','Admin\EmergencyContactController@update');
+    /*-------------- End Emergency Contact -------------*/
 });
 
 

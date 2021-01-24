@@ -8,11 +8,6 @@ class TransportCost extends Model
 {
     protected $table="transport_costs";
 
-    public function location()
-    {
-        return $this->belongsTo('App\Location','location_id');
-    }
-
     public function transporttype()
     {
         return $this->belongsTo('App\TransportType','transport_type_id');

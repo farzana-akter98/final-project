@@ -12,20 +12,20 @@
                 @csrf
                 <div class="form__article">
                         <div class="mdl-cell mdl-cell--12-col mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                            <select name="location_id" class="place">
-                                <option value=""> Select a Location </option>
-                                @foreach ($locations as $location)
-                                 <option value="{{$location->id}}"> {{$location->name}} </option> 
-                                @endforeach
-                             </select>
-                        </div>
-                        <div class="mdl-cell mdl-cell--12-col mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
                             <select name="transport_type_id" class="place">
                                 <option value=""> Select a Transport Type </option>
                                 @foreach ($transtypes as $transtype)
                                  <option value="{{$transtype->id}}"> {{$transtype->type}} </option> 
                                 @endforeach
                              </select>
+                        </div>
+                        <div class="mdl-cell mdl-cell--12-col mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                            <input class="mdl-textfield__input" type="text" name="from"/>
+                            <label class="mdl-textfield__label">From</label>
+                        </div>
+                        <div class="mdl-cell mdl-cell--12-col mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                            <input class="mdl-textfield__input" type="text" name="to"/>
+                            <label class="mdl-textfield__label">To</label>
                         </div>
                         <div class="mdl-cell mdl-cell--12-col mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
                             <input class="mdl-textfield__input" type="text" name="price"/>

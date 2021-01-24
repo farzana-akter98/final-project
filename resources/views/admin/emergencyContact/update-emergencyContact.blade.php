@@ -1,35 +1,38 @@
 @extends('layouts.admin_master')
-@section('title','CreateLocation')
+@section('title','UpdateEmergencyContact')
 @section('content')
 <main class="mdl-layout__content mdl-color--grey-100">
     <div class="mdl-card mdl-shadow--2dp employer-form" action="#">
         <div class="mdl-card__title">
-            <h2>Create Location</h2>
+            <h2>Update EmergencyContact</h2>
             <div class="mdl-card__subtitle">Please complete the form</div>
         </div>
 
         <div class="create-page mdl-card__supporting-text">
-            <form action="{{action('Admin\LocationController@store')}}" class="form" method="POST" enctype="multipart/form-data">
+            <form action="{{action('Admin\EmergencyContactController@update')}}" class="form" method="POST" enctype="multipart/form-data">
                 @csrf
+                <input type="hidden" name="id" value="{{$emcontact->id}}"/>
                 <div class="form__article">
                         <div class="mdl-cell mdl-cell--12-col mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                            <input class="mdl-textfield__input" type="text" name="name"/>
-                            <label class="mdl-textfield__label">Location Name</label>
+                            <select name="location_id" class="place">
+                                <option value=""> Select a Location </option>
+                                @foreach ($locations as $location)
+                                <option value="{{$location->id}}" @if ($emcontact->location_id == $location->id) selected @endif> {{$location->name}} </option>
+                                @endforeach
+                            </select>
                         </div>
                         <div class="mdl-cell mdl-cell--12-col mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                            <input class="mdl-textfield__input" type="text" name="address"/>
-                            <label class="mdl-textfield__label">Location Address</label>
+                            <input class="mdl-textfield__input" type="text" name="police" value="{{$emcontact->police}}"/>
+                            <label class="mdl-textfield__label">Police</label>
                         </div>
                     <div class="mdl-cell mdl-cell--12-col mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                        <input class="mdl-textfield__input" type="file"  onchange="document.getElementById('location_image').src = window.URL.createObjectURL(this.files[0])" name="imageName"/>
-                    </div>
-                    <div class="mdl-cell mdl-cell--12-col mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                        <img width="200" height="100" id="location_image">
+                        <input class="mdl-textfield__input" type="text" name="hospital" value="{{$emcontact->hospital}}"/>
+                        <label class="mdl-textfield__label">Hospital</label>
                     </div>
                 </div>
                 <div class="form__action">
                     <button id="submit_button" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
-                        create
+                        update
                     </button>
                 </div>
             </form>

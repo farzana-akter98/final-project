@@ -15,10 +15,10 @@ class CreateTransportCostsTable extends Migration
     {
         Schema::create('transport_costs', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->unsignedBigInteger('location_id')->index()->nullable();
-            $table->foreign('location_id')->references('id')->on('locations')->onDelete('No Action')->onUpdate('No Action');
             $table->unsignedBigInteger('transport_type_id')->index()->nullable();
             $table->foreign('transport_type_id')->references('id')->on('transport_types')->onDelete('No Action')->onUpdate('No Action');
+            $table->string('from',150);
+            $table->string('to',150);
             $table->double('price')->default(0);
             $table->timestamps();
         });
