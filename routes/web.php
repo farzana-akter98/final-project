@@ -10,6 +10,7 @@ Route::group(['prefix' => 'user'],function () {
     Route::get('hotels','User\HotelsController@index');
     Route::get('hotel','User\HotelController@index');
     Route::get('restaurants','User\RestaurantsController@index');
+    Route::get('shoppingmall','User\ShoppingMallController@index');
     // Route::get('blogs','User\AllBlogController@index');
     // Route::get('blog','User\SingleBlogController@index');
 });

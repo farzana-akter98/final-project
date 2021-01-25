@@ -26,9 +26,6 @@
             <div class="row pt-50">
                 <div class="col-md-4">
                     <div class="restaurant flex">
-                        <div class="restaurant-img data-text="name">
-                            <img src="{{asset('public/user_assets/')}}/images/restaurant/r1.jpg" alt="">
-                        </div>
                         <div class="restaurant-content">
                             <div class="restaurant-info">
                                 <h3>name</h3>
@@ -36,13 +33,11 @@
                                 <a href="">read more</a>
                             </div>
                         </div>
+                        <img src="{{asset('public/user_assets/')}}/images/restaurant/r1.jpg" alt="">
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="restaurant flex">
-                        <div class="restaurant-img data-text="name">
-                            <img src="{{asset('public/user_assets/')}}/images/restaurant/r2.jpg" alt="">
-                        </div>
                         <div class="restaurant-content">
                             <div class="restaurant-info">
                                 <h3>name</h3>
@@ -50,13 +45,11 @@
                                 <a href="">read more</a>
                             </div>
                         </div>
+                        <img src="{{asset('public/user_assets/')}}/images/restaurant/r2.jpg" alt="">
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="restaurant flex">
-                        <div class="restaurant-img data-text="name">
-                            <img src="{{asset('public/user_assets/')}}/images/restaurant/r3.jpg" alt="">
-                        </div>
                         <div class="restaurant-content">
                             <div class="restaurant-info">
                                 <h3>name</h3>
@@ -64,13 +57,11 @@
                                 <a href="">read more</a>
                             </div>
                         </div>
+                        <img src="{{asset('public/user_assets/')}}/images/restaurant/r3.jpg" alt="">
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="restaurant flex">
-                        <div class="restaurant-img data-text="name">
-                            <img src="{{asset('public/user_assets/')}}/images/restaurant/r4.jpg" alt="">
-                        </div>
                         <div class="restaurant-content">
                             <div class="restaurant-info">
                                 <h3>name</h3>
@@ -78,13 +69,11 @@
                                 <a href="">read more</a>
                             </div>
                         </div>
+                        <img src="{{asset('public/user_assets/')}}/images/restaurant/r4.jpg" alt="">
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="restaurant flex">
-                        <div class="restaurant-img data-text="name">
-                            <img src="{{asset('public/user_assets/')}}/images/restaurant/r5.jpg" alt="">
-                        </div>
                         <div class="restaurant-content">
                             <div class="restaurant-info">
                                 <h3>name</h3>
@@ -92,13 +81,11 @@
                                 <a href="">read more</a>
                             </div>
                         </div>
+                        <img src="{{asset('public/user_assets/')}}/images/restaurant/r5.jpg" alt="">
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="restaurant flex">
-                        <div class="restaurant-img data-text="name">
-                            <img src="{{asset('public/user_assets/')}}/images/restaurant/r6.jpg" alt="">
-                        </div>
                         <div class="restaurant-content">
                             <div class="restaurant-info">
                                 <h3>name</h3>
@@ -106,13 +93,11 @@
                                 <a href="">read more</a>
                             </div>
                         </div>
+                        <img src="{{asset('public/user_assets/')}}/images/restaurant/r6.jpg" alt="">
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="restaurant flex">
-                        <div class="restaurant-img data-text="name">
-                            <img src="{{asset('public/user_assets/')}}/images/restaurant/r7.jpg" alt="">
-                        </div>
                         <div class="restaurant-content">
                             <div class="restaurant-info">
                                 <h3>name</h3>
@@ -120,13 +105,11 @@
                                 <a href="">read more</a>
                             </div>
                         </div>
+                        <img src="{{asset('public/user_assets/')}}/images/restaurant/r7.jpg" alt="">
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="restaurant flex">
-                        <div class="restaurant-img data-text="name">
-                            <img src="{{asset('public/user_assets/')}}/images/restaurant/r8.jpg" alt="">
-                        </div>
                         <div class="restaurant-content">
                             <div class="restaurant-info">
                                 <h3>name</h3>
@@ -134,13 +117,11 @@
                                 <a href="">read more</a>
                             </div>
                         </div>
+                        <img src="{{asset('public/user_assets/')}}/images/restaurant/r8.jpg" alt="">
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="restaurant flex">
-                        <div class="restaurant-img data-text="name">
-                            <img src="{{asset('public/user_assets/')}}/images/restaurant/r9.jpg" alt="">
-                        </div>
                         <div class="restaurant-content">
                             <div class="restaurant-info">
                                 <h3>name</h3>
@@ -148,6 +129,7 @@
                                 <a href="">read more</a>
                             </div>
                         </div>
+                        <img src="{{asset('public/user_assets/')}}/images/restaurant/r9.jpg" alt="">
                     </div>
                 </div>
             </div>
