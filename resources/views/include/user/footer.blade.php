@@ -58,7 +58,7 @@
                         </a>
                     </div>
                 </div>
-                <a href="#" data-toggle="modal" data-target="#popup" class="contact-btn p-10"><span>Make an inquiry!</span></a>
+                <a href="" data-toggle="modal" data-target="#popup" class="contact-btn p-10"><span>Make an inquiry!</span></a>
                 <div class="modal" id="popup">
                     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
                         <div class="contact-info">  
