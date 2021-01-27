@@ -32,11 +32,11 @@
                             <!-- Overlay content -->
                             <div class="overlay-content">
                                 <ul>
-                                    <li><a href="">Home</a></li>
-                                    <li><a href="">About</a></li>
+                                    <li><a href="{{action('User\IndexController@index')}}">Home</a></li>
+                                    <li><a href="{{action('User\AboutController@index')}}">About</a></li>
                                     <li><a href="">Services</a></li>
-                                    <li><a href="">Places to Visit</a></li>
-                                    <li><a href="">Gallery</a></li>
+                                    <li><a href="{{action('User\PlaceController@index')}}">Places to Visit</a></li>
+                                    <li><a href="{{action('User\GalleryController@index')}}">Gallery</a></li>
                                     <li><a href="">Blog</a></li>
                                     <li><a href="">Contact</a></li>
                                 </ul>

@@ -57,7 +57,7 @@
                         </div>
                         <div class="col-md-6 text right about-content">
                             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry typesetting industry.</p>
-                            <a href="">read more</a>
+                            <a href="{{action('User\AboutController@index')}}">read more</a>
                         </div>
                 </div>
                 </div>
@@ -217,7 +217,7 @@
                         </a>
                     </div>
                     <div class="col-md-4">
-                        <a href="">
+                        <a href="{{action('User\RestaurantsController@index')}}">
                             <div class="services">
                                 <i class="fas fa-utensils"></i>
                                 <h3 class="title">restaurants</h3>
@@ -244,7 +244,7 @@
                         </a>
                     </div>
                     <div class="col-md-4">
-                        <a href="">
+                        <a href="{{action('User\ShoppingMallController@index')}}">
                             <div class="services">
                                 <i class="fas fa-store"></i>
                                 <h3 class="title">shopping mall</h3>
@@ -262,7 +262,7 @@
                         </a>
                     </div>
                     <div class="col-md-4">
-                        <a href="">
+                        <a href="{{action('User\FamousAttireController@index')}}">
                             <div class="services">
                                     <i class="fas fa-tshirt"></i>
                                     <h3 class="title">famous attire</h3>
@@ -271,7 +271,7 @@
                         </a>
                     </div>
                     <div class="col-md-4">
-                        <a href="">
+                        <a href="{{action('User\TraditionalAlimentController@index')}}">
                             <div class="services">
                                 <i class="fas fa-coffee"></i>
                                 <h3 class="title">traditional aliment</h3>
