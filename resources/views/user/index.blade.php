@@ -101,7 +101,7 @@
 
    <!--homepage visit place-->
 
-    <section class="place-area pb-100">
+    <section class="place-area">
         <div class=" section-title">
             <div class="container">
                 <div class="row pt-100">
@@ -118,15 +118,10 @@
                             </div>
                             <div class="place-content text-center">
                                 <h3>place name</h3>
-                                <div class="row"><a href="">
-                                    <div class="place-location flex">
-                                        <div class="col-md-12 flex">
-                                            <i class="fas fa-location-arrow"></i>
-                                            <span class="address"><h4>location address</h4></span>
-                                        </div>
-                                </div>
+                                <a href="">
+                                    <i class="fas fa-location-arrow"></i>
+                                    <span>address</span>
                                 </a>
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -137,15 +132,10 @@
                             </div>
                             <div class="place-content text-center">
                                 <h3>place name</h3>
-                                <div class="row"><a href="">
-                                    <div class="place-location flex">
-                                        <div class="col-md-12 flex">
-                                            <i class="fas fa-location-arrow"></i>
-                                            <span class="address"><h4>location address</h4></span>
-                                        </div>
-                                    </div>
-                                    </a>
-                                </div>
+                                <a href="">
+                                    <i class="fas fa-location-arrow"></i>
+                                    <span>address</span>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -156,15 +146,10 @@
                             </div>
                             <div class="place-content text-center">
                                 <h3>place name</h3>
-                                <div class="row"><a href="">
-                                    <div class="place-location flex">
-                                        <div class="col-md-12 flex">
-                                            <i class="fas fa-location-arrow"></i>
-                                            <span class="address"><h4>location address</h4></span>
-                                        </div>
-                                    </div>
-                                    </a>
-                                </div>
+                                <a href="">
+                                    <i class="fas fa-location-arrow"></i>
+                                    <span>address</span>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -175,15 +160,10 @@
                             </div>
                             <div class="place-content text-center">
                                 <h3>place name</h3>
-                                <div class="row"><a href="">
-                                    <div class="place-location flex">
-                                        <div class="col-md-12 flex">
-                                            <i class="fas fa-location-arrow"></i>
-                                            <span class="address"><h4>location address</h4></span>
-                                        </div>
-                                    </div>
-                                    </a>
-                                </div>
+                                <a href="">
+                                    <i class="fas fa-location-arrow"></i>
+                                    <span>address</span>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -226,7 +206,7 @@
                         </a>
                     </div>
                     <div class="col-md-4">
-                        <a href="">
+                        <a href="{{action('User\PlaceController@index')}}">
                             <div class="services">
                                 <i class="fas fa-mountain"></i>
                                 <h3 class="title">tourists attraction</h3>
@@ -280,7 +260,7 @@
                         </a>
                     </div>
                     <div class="col-md-4">
-                        <a href="">
+                        <a href="{{action('User\GroceryShopController@index')}}">
                             <div class="services">
                                 <i class="fas fa-shopping-cart"></i>
                                 <h3 class="title">grocery shops</h3>

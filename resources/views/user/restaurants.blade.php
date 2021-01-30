@@ -30,7 +30,7 @@
                             <div class="restaurant-info">
                                 <h3>name</h3>
                                 <p>There are many variations of passages of Lorem Ipsum available,don't look even slightly believable.</p>
-                                <a href="">read more</a>
+                                <a href="{{action('User\RestaurantController@index')}}">read more</a>
                             </div>
                         </div>
                         <img src="{{asset('public/user_assets/')}}/images/restaurant/r1.jpg" alt="">

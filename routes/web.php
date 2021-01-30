@@ -10,12 +10,15 @@ Route::group(['prefix' => 'user'],function () {
     Route::get('hotels','User\HotelsController@index');
     Route::get('hotel','User\HotelController@index');
     Route::get('restaurants','User\RestaurantsController@index');
+    Route::get('restaurant','User\RestaurantController@index');
     Route::get('shoppingmall','User\ShoppingMallController@index');
     Route::get('famousattire','User\FamousAttireController@index');
     Route::get('tradaliment','User\TraditionalAlimentController@index');
+    Route::get('groceryshop','User\GroceryShopController@index');
     // Route::get('blogs','User\AllBlogController@index');
     // Route::get('blog','User\SingleBlogController@index');
 });
+
     /* -------------- End User Panel Route ------------- */
 
 

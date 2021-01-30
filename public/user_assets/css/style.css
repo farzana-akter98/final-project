@@ -22,6 +22,7 @@ h1,h2,h3,h4,h5,h6{
 }
 html, body{
     height: 100%;
+    scroll-behavior: smooth;
     font-family: 'Merienda', cursive;
 }
 .col-xl-1{
@@ -454,7 +455,7 @@ header.sticky .header{
   background-position: center;
   width: 100%;
 }
-.aboutbanner-area, .pbanner-area, .gbanner-area, .hbanner-area, .rbanner-area, .smbanner-area, .fmabanner-area, .tabanner-area{
+.aboutbanner-area, .pbanner-area, .gbanner-area, .hbanner-area, .rbanner-area, .smbanner-area, .fmabanner-area, .tabanner-area, .gsbanner-area{
   height: 80vh;
 }
 .about-area1{
@@ -709,61 +710,37 @@ transition: 1s;
  }
 .place-card{
   position: relative;
-  background: #000;
-  color: #e9204f;
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  margin: 30px 10px;
-  padding: 20px 20px;
+  height: 200px;
+  background: #000;
+  padding: 20px 15px;
+  margin: 30px 0;
   border-radius: 5px;
   transition: 0.3s ease-in-out;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
 }
-.place-card .place-img{
+.place-card:hover{height: 300px;}
+.place-img{
   position: relative;
   width: 100%;
-  top: -50px;
-  box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+  height: 180px;
+  top: -60px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
-.place-card .place-img img{
-  max-width: 100%;
-  height: 150px;
-  border-radius: 4px;
-}
-.place-card:hover{
-  height: 100%;
-  bottom: 50px;
-}
-.place-card .place-content{
+.place-card:hover .place-img{top:-20px}
+.place-content{
   position: relative;
-  margin-top: -100px;
-  padding: 10px 15px;
+  margin-top: -120px;
+  padding-bottom: 10px;
   visibility: hidden;
   opacity: 0;
-  transition: 0.3s ease-in-out;
 }
-.place-content h3, .place-content h4{
-  font-size: 16px;
-}
-.place-content a{
-  color: #fff;
-}
-.place-content a:hover{
-  color: #a8687d;
-}
-.place-card:hover .place-content{
-  visibility: visible;
-  opacity: 1;
-  margin-top: -50px;
-  padding-top: 20px;
-  padding-bottom: 0;
-  transition: 0.3s;
-}
-.place-location i{
-  margin-right: 5px;
-}
+.place-card:hover .place-content{visibility: visible;opacity: 1;margin-top: -20px; transition-delay: 0.3s;}
+.place-img img{height: 100%;border-radius: 4px;}
+.place-content h3{padding-top: 5px; font-size: 18px; color: #e91e63;}
+.place-content a{color: #fff;text-transform: capitalize;}
+.place-content a:hover{color: #a8687d;;}
 .address{
   padding-top: 5px;
 }
@@ -1138,8 +1115,8 @@ font-size: 24px;
   background-position: center;
   width: 100%;
 }
-.rbanner-area.bg::before, .smbanner-area.bg::before, .fmabanner-area.bg::before, .tabanner-area.bg::before{opacity: 0.5;}
-.restaurant, .shoppingmall{
+.rbanner-area.bg::before, .smbanner-area.bg::before, .fmabanner-area.bg::before, .tabanner-area.bg::before, .gsbanner-area.bg::before{opacity: 0.5;}
+.restaurant, .shoppingmall, .groceryshop{
   position: relative;
   background: #000;
   width: 100%;
@@ -1147,7 +1124,7 @@ font-size: 24px;
   margin-bottom: 30px;
   box-shadow: 10px 10px 5px 0 rgba(0, 0, 0, 0.5);
 }
-.restaurant img, .shoppingmall img{
+.restaurant img, .shoppingmall img, .groceryshop img{
   position: absolute;
   top: 0;
   left: 0;
@@ -1161,9 +1138,11 @@ font-size: 24px;
 .restaurant:hover img{
   -webkit-clip-path: polygon(0 0, 100% 0, 0 0, 0% 100%);
   clip-path: polygon(0 0, 100% 0, 0 0, 0% 100%);
+  /*clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+  /*clip-path: polygon(100% 100%, 0 100%, 100% 100%, 0% 100%);
   /*clip-path: polygon(0 0, 51% 52%, 100% 100%, 51% 52%);*/
 }
-.restaurant-content, .shoppingmall-content{
+.restaurant-content, .shoppingmall-content, .groceryshop-content{
   position: absolute;
   top: 0;
   left: 0;
@@ -1175,7 +1154,8 @@ font-size: 24px;
   padding: 20px;
   text-align: center;
 }
-.restaurant-content h3, .shoppingmall-content h3, .famousattire-content h3{color: #e91e63;}
+.shoppingmall-content h4, .groceryshop-content h4{font-size: 18px;}
+.restaurant-content h3, .shoppingmall-content h3, .famousattire-content h3, .groceryshop-content h3{color: #e91e63;}
 .restaurant-content a{padding: 10px 20px; color: #e91e63; text-transform: capitalize; background: #fff; transition: 0.5s;}
 .restaurant-content a:hover{background: #e91e63;color: #fff;}
 /* End Restaurants Page CSS*/
@@ -1191,7 +1171,7 @@ font-size: 24px;
   -webkit-clip-path: polygon(0 0, 51% 52%, 100% 100%, 51% 52%);
   clip-path: polygon(0 0, 51% 52%, 100% 100%, 51% 52%);
 }
-.shoppingmall-contact i{font-size: 30px; padding: 5px; margin-right: 10px;color: #e9204f;}
+.shoppingmall-contact i{font-size: 30px; padding: 5px;color: #e9204f;}
 .shoppingmall-contact span{color: #fff;}
 /* End Shopping Mall Page CSS */
 
@@ -1308,6 +1288,19 @@ font-size: 24px;
   transform: translateY(0px);
 }
 /* End Traditional Aliment Page CSS*/
+
+/* Grocery Shop Page CSS */
+.gsbanner-area{
+  background: url('../images/gsbanner.jpg');
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+}
+.groceryshop:hover img{
+  -webkit-clip-path: polygon(100% 100%, 0 100%, 100% 100%, 0% 100%);
+  clip-path: polygon(100% 100%, 0 100%, 100% 100%, 0% 100%);
+}
+/* End Grocery Shop Page CSS */
 
 /*footer*/
 .footer-area {

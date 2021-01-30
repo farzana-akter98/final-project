@@ -24,132 +24,22 @@
                 </div>
             </div>
             <div class="row pt-50">
-                <div class="col-md-4 flex">
-                    <div class="tradaliment">
-                        <span></span>
-                        <div class="tradaliment-img">
-                            <img src="{{asset('public/user_assets/')}}/images/traditionalaliment/t1.jpg" alt="">
-                        </div>
-                        <div class="tradaliment-content">
-                            <div class="tradaliment-info">
-                                <h3>name</h3>
-                                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+                @foreach ($tfoods as $item)
+                    <div class="col-md-4 flex">
+                        <div class="tradaliment">
+                            <span></span>
+                            <div class="tradaliment-img">
+                                <img src="{{asset('public/uploads/tradalimentImages/'.$item->image)}}" alt="">
+                            </div>
+                            <div class="tradaliment-content">
+                                <div class="tradaliment-info">
+                                    <h3>{{$item->name}}</h3>
+                                    <p>{{$item->details}}</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-4 flex">
-                    <div class="tradaliment">
-                        <span></span>
-                        <div class="tradaliment-img">
-                            <img src="{{asset('public/user_assets/')}}/images/traditionalaliment/t2.jpg" alt="">
-                        </div>
-                        <div class="tradaliment-content">
-                            <div class="tradaliment-info">
-                                <h3>name</h3>
-                                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 flex">
-                    <div class="tradaliment">
-                        <span></span>
-                        <div class="tradaliment-img">
-                            <img src="{{asset('public/user_assets/')}}/images/traditionalaliment/t3.jpg" alt="">
-                        </div>
-                        <div class="tradaliment-content">
-                            <div class="tradaliment-info">
-                                <h3>name</h3>
-                                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 flex">
-                    <div class="tradaliment">
-                        <span></span>
-                        <div class="tradaliment-img">
-                            <img src="{{asset('public/user_assets/')}}/images/traditionalaliment/t4.jpg" alt="">
-                        </div>
-                        <div class="tradaliment-content">
-                            <div class="tradaliment-info">
-                                <h3>name</h3>
-                                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 flex">
-                    <div class="tradaliment">
-                        <span></span>
-                        <div class="tradaliment-img">
-                            <img src="{{asset('public/user_assets/')}}/images/traditionalaliment/t5.jpg" alt="">
-                        </div>
-                        <div class="tradaliment-content">
-                            <div class="tradaliment-info">
-                                <h3>name</h3>
-                                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 flex">
-                    <div class="tradaliment">
-                        <span></span>
-                        <div class="tradaliment-img">
-                            <img src="{{asset('public/user_assets/')}}/images/traditionalaliment/t6.jpg" alt="">
-                        </div>
-                        <div class="tradaliment-content">
-                            <div class="tradaliment-info">
-                                <h3>name</h3>
-                                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 flex">
-                    <div class="tradaliment">
-                        <span></span>
-                        <div class="tradaliment-img">
-                            <img src="{{asset('public/user_assets/')}}/images/traditionalaliment/t7.jpg" alt="">
-                        </div>
-                        <div class="tradaliment-content">
-                            <div class="tradaliment-info">
-                                <h3>name</h3>
-                                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 flex">
-                    <div class="tradaliment">
-                        <span></span>
-                        <div class="tradaliment-img">
-                            <img src="{{asset('public/user_assets/')}}/images/traditionalaliment/t8.jpg" alt="">
-                        </div>
-                        <div class="tradaliment-content">
-                            <div class="tradaliment-info">
-                                <h3>name</h3>
-                                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 flex">
-                    <div class="tradaliment">
-                        <span></span>
-                        <div class="tradaliment-img">
-                            <img src="{{asset('public/user_assets/')}}/images/traditionalaliment/t9.jpg" alt="">
-                        </div>
-                        <div class="tradaliment-content">
-                            <div class="tradaliment-info">
-                                <h3>name</h3>
-                                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                @endforeach
             </div>
         </div>
     </section>  

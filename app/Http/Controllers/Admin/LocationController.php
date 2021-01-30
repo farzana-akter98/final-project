@@ -38,8 +38,8 @@ class LocationController extends Controller
         $location->address=$request->address;  
         if($request->hasFile('imageName')){  
             $path = public_path('uploads/locationImages/'.$location->image);
-          if(file_exists($path)){
-            unlink($path);
+            if(file_exists($path)){
+              unlink($path);
           }
   
             $extension = $request->imageName->extension();

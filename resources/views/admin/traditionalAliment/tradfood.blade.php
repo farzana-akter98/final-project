@@ -33,7 +33,7 @@
                          <tr>
                             <td class="mdl-data-table__cell--non-numeric">{{$i++}}</td>
                             <td class="mdl-data-table__cell--non-numeric">{{$item->name}}</td>
-                            <td class="mdl-data-table__cell--non-numeric">{{$item->details}}</td>
+                            <td class="mdl-data-table__cell--non-numeric">{{str_limit($item->details,50,'...')}}</td>
                             <td class="mdl-data-table__cell--non-numeric">@if ($item->image == 'default.jpg')
                                 <img width="50" height="30" src="{{asset('public/image/default.jpg')}}" alt="">
                             @else

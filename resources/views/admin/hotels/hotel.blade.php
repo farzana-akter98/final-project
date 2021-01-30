@@ -21,6 +21,7 @@
                             <th class="mdl-data-table__cell--non-numeric">#</th>
                             <th class="mdl-data-table__cell--non-numeric">Hotel Name</th>
                             <th class="mdl-data-table__cell--non-numeric">Hotel Address</th>
+                            <th class="mdl-data-table__cell--non-numeric">Location</th>
                             <th class="mdl-data-table__cell--non-numeric">Image</th>
                             <th class="mdl-data-table__cell--non-numeric">Website</th>
                             <th class="mdl-data-table__cell--non-numeric">Contact</th>
@@ -37,6 +38,7 @@
                             <td class="mdl-data-table__cell--non-numeric">{{$i++}}</td>
                             <td class="mdl-data-table__cell--non-numeric">{{$item->name}}</td>
                             <td class="mdl-data-table__cell--non-numeric">{{$item->address}}</td>
+                            <td class="mdl-data-table__cell--non-numeric">@if($item->location['name'] == null) N/A @else {{$item->location['name']}} @endif</td>
                             <td class="mdl-data-table__cell--non-numeric">@if ($item->image == 'default.jpg')
                                 <img width="50" height="30" src="{{asset('public/image/default.jpg')}}" alt="">
                             @else

@@ -21,7 +21,7 @@
                 <div class="row pt-100">
                     <div class="col-md-12 about-title text-center">
                         <h2>hotels.</h2>
-                        <h4 class="about-heading">check out hotels of places in sylhet</h4>
+                        <h4 class="about-heading">check out hotels of in sylhet</h4>
                     </div>
                 </div>
             </div>

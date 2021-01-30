@@ -24,150 +24,24 @@
                 </div>
             </div>
             <div class="row pt-50">
-                <div class="col-md-4">
-                    <div class="shoppingmall flex">
-                        <div class="shoppingmall-content">
-                            <h3>name</h3>
-                            <div class="shoppingmall-contact flex">
-                                <i class="fas fa-map-pin"></i>
-                                <span class="address"><h4>location address</h4></span>
+                @foreach ($malls as $item)
+                    <div class="col-md-4">
+                        <div class="shoppingmall flex">
+                            <div class="shoppingmall-content">
+                                <h3>{{$item->name}}</h3>
+                                <div class="shoppingmall-contact flex">
+                                    <i class="fas fa-map-pin"></i>
+                                    <span class="address"><h4>{{$item->address}}</h4></span>
+                                </div>
+                                <div class="shoppingmall-contact flex">
+                                    <i class="fas fa-mobile"></i>
+                                    <span class="address"><h4>{{$item->contact}}</h4></span>
+                                </div>
                             </div>
-                            <div class="shoppingmall-contact flex">
-                                <i class="fas fa-mobile"></i>
-                                <span class="address"><h4>contact</h4></span>
-                            </div>
+                            <img src="{{asset('public/uploads/mallsImages/'.$item->image)}}" alt="">
                         </div>
-                        <img src="{{asset('public/user_assets/')}}/images/shoppingmall/sm1.jpg" alt="">
                     </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="shoppingmall flex">
-                        <div class="shoppingmall-content">
-                            <h3>name</h3>
-                            <div class="shoppingmall-contact flex">
-                                <i class="fas fa-map-pin"></i>
-                                <span class="address"><h4>location address</h4></span>
-                            </div>
-                            <div class="shoppingmall-contact flex">
-                                <i class="fas fa-mobile"></i>
-                                <span class="address"><h4>contact</h4></span>
-                            </div>
-                        </div>
-                        <img src="{{asset('public/user_assets/')}}/images/shoppingmall/sm2.jpg" alt="">
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="shoppingmall flex">
-                        <div class="shoppingmall-content">
-                            <h3>name</h3>
-                            <div class="shoppingmall-contact flex">
-                                <i class="fas fa-map-pin"></i>
-                                <span class="address"><h4>location address</h4></span>
-                            </div>
-                            <div class="shoppingmall-contact flex">
-                                <i class="fas fa-mobile"></i>
-                                <span class="address"><h4>contact</h4></span>
-                            </div>
-                        </div>
-                        <img src="{{asset('public/user_assets/')}}/images/shoppingmall/sm3.jpg" alt="">
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="shoppingmall flex">
-                        <div class="shoppingmall-content">
-                            <h3>name</h3>
-                            <div class="shoppingmall-contact flex">
-                                <i class="fas fa-map-pin"></i>
-                                <span class="address"><h4>location address</h4></span>
-                            </div>
-                            <div class="shoppingmall-contact flex">
-                                <i class="fas fa-mobile"></i>
-                                <span class="address"><h4>contact</h4></span>
-                            </div>
-                        </div>
-                        <img src="{{asset('public/user_assets/')}}/images/shoppingmall/sm4.jpg" alt="">
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="shoppingmall flex">
-                        <div class="shoppingmall-content">
-                            <h3>name</h3>
-                            <div class="shoppingmall-contact flex">
-                                <i class="fas fa-map-pin"></i>
-                                <span class="address"><h4>location address</h4></span>
-                            </div>
-                            <div class="shoppingmall-contact flex">
-                                <i class="fas fa-mobile"></i>
-                                <span class="address"><h4>contact</h4></span>
-                            </div>
-                        </div>
-                        <img src="{{asset('public/user_assets/')}}/images/shoppingmall/sm5.jpg" alt="">
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="shoppingmall flex">
-                        <div class="shoppingmall-content">
-                            <h3>name</h3>
-                            <div class="shoppingmall-contact flex">
-                                <i class="fas fa-map-pin"></i>
-                                <span class="address"><h4>location address</h4></span>
-                            </div>
-                            <div class="shoppingmall-contact flex">
-                                <i class="fas fa-mobile"></i>
-                                <span class="address"><h4>contact</h4></span>
-                            </div>
-                        </div>
-                        <img src="{{asset('public/user_assets/')}}/images/shoppingmall/sm6.jpg" alt="">
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="shoppingmall flex">
-                        <div class="shoppingmall-content">
-                            <h3>name</h3>
-                            <div class="shoppingmall-contact flex">
-                                <i class="fas fa-map-pin"></i>
-                                <span class="address"><h4>location address</h4></span>
-                            </div>
-                            <div class="shoppingmall-contact flex">
-                                <i class="fas fa-mobile"></i>
-                                <span class="address"><h4>contact</h4></span>
-                            </div>
-                        </div>
-                        <img src="{{asset('public/user_assets/')}}/images/shoppingmall/sm7.jpg" alt="">
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="shoppingmall flex">
-                        <div class="shoppingmall-content">
-                            <h3>name</h3>
-                            <div class="shoppingmall-contact flex">
-                                <i class="fas fa-map-pin"></i>
-                                <span class="address"><h4>location address</h4></span>
-                            </div>
-                            <div class="shoppingmall-contact flex">
-                                <i class="fas fa-mobile"></i>
-                                <span class="address"><h4>contact</h4></span>
-                            </div>
-                        </div>
-                        <img src="{{asset('public/user_assets/')}}/images/shoppingmall/sm8.jpg" alt="">
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="shoppingmall flex">
-                        <div class="shoppingmall-content">
-                            <h3>name</h3>
-                            <div class="shoppingmall-contact flex">
-                                <i class="fas fa-map-pin"></i>
-                                <span class="address"><h4>location address</h4></span>
-                            </div>
-                            <div class="shoppingmall-contact flex">
-                                <i class="fas fa-mobile"></i>
-                                <span class="address"><h4>contact</h4></span>
-                            </div>
-                        </div>
-                        <img src="{{asset('public/user_assets/')}}/images/shoppingmall/sm9.jpg" alt="">
-                    </div>
-                </div>
+                @endforeach
             </div>
         </div>
     </section>

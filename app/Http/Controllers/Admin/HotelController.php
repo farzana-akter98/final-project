@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Admin;
 use App\Hotels;
+use App\Location;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
@@ -9,15 +10,18 @@ class HotelController extends Controller
 {
     public function index(){
         $hotels=Hotels::all();
-        return view('admin.hotels.hotel',compact('hotels'));
+        $locations = Location::all();
+        return view('admin.hotels.hotel',compact('hotels','locations'));
     }
     public function create(){
-        return view('admin.hotels.create-hotel');
+        $locations = Location::all();
+        return view('admin.hotels.create-hotel',compact('locations'));
     }
     public function store(Request $request){
         $hotel=new Hotels();
         $hotel->name=$request->name;
         $hotel->address=$request->address;
+        $hotel->location_id=$request->location_id;
         if($request->hasFile('imageName')){
             $extension = $request->imageName->extension();
             $fileName = str_slug($request->title,'_').'_'.md5(date('Y-m-d H:i:s'));
@@ -33,12 +37,14 @@ class HotelController extends Controller
     }
     public function update_page($id){
         $hotel= Hotels::find($id);
-        return view('admin.hotels.update-hotel',compact('hotel'));
+        $locations = Location::all();
+        return view('admin.hotels.update-hotel',compact('hotel',compact('locations')));
     }
     public function update(Request $request){
         $hotel=Hotels::find($request->id);
         $hotel->name=$request->name;
         $hotel->address=$request->address;
+        $hotel->location_id=$request->location_id;
         if($request->hasFile('imageName')){  
             $path = public_path('uploads/hotelImages/'.$hotel->image);
           if(file_exists($path)){

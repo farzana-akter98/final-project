@@ -17,7 +17,7 @@
                             <label class="mdl-textfield__label">Traditional Aliment Name</label>
                         </div>
                         <div class="mdl-cell mdl-cell--12-col mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                            <input class="mdl-textfield__input" type="text" name="details"/>
+                            <textarea class="mdl-textfield__input" type="text" name="details"></textarea>
                             <label class="mdl-textfield__label">Details</label>
                         </div>
                     <div class="mdl-cell mdl-cell--12-col mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
