@@ -455,9 +455,13 @@ header.sticky .header{
   background-position: center;
   width: 100%;
 }
-.aboutbanner-area, .pbanner-area, .gbanner-area, .hbanner-area, .rbanner-area, .smbanner-area, .fmabanner-area, .tabanner-area, .gsbanner-area{
+.aboutbanner-area, .pbanner-area, .gbanner-area, .hbanner-area, .rbanner-area, .smbanner-area, .fmabanner-area, .tabanner-area, .gsbanner-area, .tcbanner-area, .ecbanner-area{
   height: 80vh;
 }
+.pbanner-area.bg::before, .aboutbanner-area.bg::before, .gbanner-area.bg::before, .hbanner-area.bg::before, .tcbanner-area.bg::before{
+  opacity: 0.75;
+ }
+ .rbanner-area.bg::before, .smbanner-area.bg::before, .fmabanner-area.bg::before, .tabanner-area.bg::before, .gsbanner-area.bg::before, .singlehotel-area, .banner-text.bg::before, .ecbanner-area.bg::before{opacity: 0.5;}
 .about-area1{
   position: relative;
 }
@@ -705,9 +709,6 @@ transition: 1s;
   background-position: center;
   width: 100%;
 }
-.pbanner-area.bg::before, .aboutbanner-area.bg::before, .gbanner-area.bg::before, .hbanner-area.bg::before{
-  opacity: 0.75;
- }
 .place-card{
   position: relative;
   width: 100%;
@@ -1115,7 +1116,6 @@ font-size: 24px;
   background-position: center;
   width: 100%;
 }
-.rbanner-area.bg::before, .smbanner-area.bg::before, .fmabanner-area.bg::before, .tabanner-area.bg::before, .gsbanner-area.bg::before{opacity: 0.5;}
 .restaurant, .shoppingmall, .groceryshop{
   position: relative;
   background: #000;
@@ -1302,6 +1302,38 @@ font-size: 24px;
 }
 /* End Grocery Shop Page CSS */
 
+/* Transport Cost Page CSS  */
+.tcbanner-area{
+  background: url('../images/tcbanner.jpg');
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+}
+.tcbanner-area table, tr, th, td{
+  text-align: center;
+  text-transform: capitalize;
+}
+.table-back{
+  background-color: #fff;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+}
+.table-back tbody td{padding: 15px;}
+.table-back tbody tr:nth-child(odd){background-color:#000;}
+.table-back tbody tr:nth-child(odd) .td-color{color:darkseagreen;}
+.table-back tbody tr:nth-child(even){background-color: #fff}
+.table-back tbody tr:nth-child(even) .td-color{color: #000;}
+.tr-background{background: #fff;}
+.th-color{color: #e91e63;}
+.td-color{color: #000;}
+/* Transport Cost Page CSS  */
+/* Emergency Contact Page CSS  */
+.ecbanner-area{
+  background: url('../images/ecbanner.jpg');
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+}
+/* Emergency Contact Page CSS  */
 /*footer*/
 .footer-area {
   width: 100%;

@@ -20,7 +20,11 @@ class EmergencyContactController extends Controller
     public function store(Request $request){
         $emcontact=new EmergencyContact();
         $emcontact->location_id=$request->location_id;
+        $emcontact->name_police=$request->name_police;
+        $emcontact->address_police=$request->address_police;
         $emcontact->police=$request->police;
+        $emcontact->name_hospital=$request->name_hospital;
+        $emcontact->address_hospital=$request->address_hospital;
         $emcontact->hospital=$request->hospital; 
         $emcontact->save();
         return redirect()->to('admin/all-emcontact');
@@ -33,8 +37,12 @@ class EmergencyContactController extends Controller
     public function update(Request $request){
         $emcontact=EmergencyContact::find($request->id);
         $emcontact->location_id=$request->location_id;
+        $emcontact->name_police=$request->name_police;
+        $emcontact->address_police=$request->address_police;
         $emcontact->police=$request->police;
-        $emcontact->hospital=$request->hospital;
+        $emcontact->name_hospital=$request->name_hospital;
+        $emcontact->address_hospital=$request->address_hospital;
+        $emcontact->hospital=$request->hospital; 
         $emcontact->save();
         return redirect()->to('admin/all-emcontact');
     }

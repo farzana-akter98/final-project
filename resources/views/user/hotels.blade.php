@@ -31,186 +31,23 @@
     <section class="hotelspage-area pb-100">
         <div class="container">          
                 <div class="row">
-                    <div class="col-md-4">
-                        <a href="{{action('User\HotelController@index')}}">
-                            <div class="hotelspage">
-                                <img src="{{asset('public/user_assets/')}}/images/hotel/hotel1.jpg" alt="">
-                                <div class="hotel-overlay"><i class="fas fa-search-location"></i></div>
-                                <div class="hotelspage-content">
-                                    <div class="hotelspageinfo text-center">
-                                        <h2>hotel name</h2> 
-                                        <i class="fas fa-map-marked-alt"></i>
-                                        <span>hotel address</span>
-                                    </div>
-                                </div> 
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-md-4">
-                        <a href="">
-                            <div class="hotelspage">
-                                <img src="{{asset('public/user_assets/')}}/images/hotel/hotel2.jpg" alt="">
-                                <div class="hotel-overlay"><i class="fas fa-search-location"></i></div>
-                                <div class="hotelspage-content">
-                                    <div class="hotelspageinfo text-center">
-                                        <h2>hotel name</h2> 
-                                        <i class="fas fa-map-marked-alt"></i>
-                                        <span>hotel address</span>
-                                    </div>
-                                </div> 
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-md-4">
-                        <a href="">
-                            <div class="hotelspage">
-                                <img src="{{asset('public/user_assets/')}}/images/hotel/hotel3.jpg" alt="">
-                                <div class="hotel-overlay"><i class="fas fa-search-location"></i></div>
-                                <div class="hotelspage-content">
-                                    <div class="hotelspageinfo text-center">
-                                        <h2>hotel name</h2> 
-                                        <i class="fas fa-map-marked-alt"></i>
-                                        <span>hotel address</span>
-                                    </div>
-                                </div> 
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-md-4">
-                        <a href="">
-                            <div class="hotelspage">
-                                <img src="{{asset('public/user_assets/')}}/images/hotel/hotel4.jpg" alt="">
-                                <div class="hotel-overlay"><i class="fas fa-search-location"></i></div>
-                                <div class="hotelspage-content">
-                                    <div class="hotelspageinfo text-center">
-                                        <h2>hotel name</h2> 
-                                        <i class="fas fa-map-marked-alt"></i>
-                                        <span>hotel address</span>
-                                    </div>
-                                </div> 
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-md-4">
-                        <a href="">
-                            <div class="hotelspage">
-                                <img src="{{asset('public/user_assets/')}}/images/hotel/hotel5.jpg" alt="">
-                                <div class="hotel-overlay"><i class="fas fa-search-location"></i></div>
-                                <div class="hotelspage-content">
-                                    <div class="hotelspageinfo text-center">
-                                        <h2>hotel name</h2> 
-                                        <i class="fas fa-map-marked-alt"></i>
-                                        <span>hotel address</span>
-                                    </div>
-                                </div> 
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-md-4">
-                        <a href="">
-                            <div class="hotelspage">
-                                <img src="{{asset('public/user_assets/')}}/images/hotel/hotel6.jpg" alt="">
-                                <div class="hotel-overlay"><i class="fas fa-search-location"></i></div>
-                                <div class="hotelspage-content">
-                                    <div class="hotelspageinfo text-center">
-                                        <h2>hotel name</h2> 
-                                        <i class="fas fa-map-marked-alt"></i>
-                                        <span>hotel address</span>
-                                    </div>
-                                </div> 
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-md-4">
-                        <a href="">
-                            <div class="hotelspage">
-                                <img src="{{asset('public/user_assets/')}}/images/hotel/hotel7.jpg" alt="">
-                                <div class="hotel-overlay"><i class="fas fa-search-location"></i></div>
-                                <div class="hotelspage-content">
-                                    <div class="hotelspageinfo text-center">
-                                        <h2>hotel name</h2> 
-                                        <i class="fas fa-map-marked-alt"></i>
-                                        <span>hotel address</span>
-                                    </div>
-                                </div> 
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-md-4">
-                        <a href="">
-                            <div class="hotelspage">
-                                <img src="{{asset('public/user_assets/')}}/images/hotel/hotel8.jpg" alt="">
-                                <div class="hotel-overlay"><i class="fas fa-search-location"></i></div>
-                                <div class="hotelspage-content">
-                                    <div class="hotelspageinfo text-center">
-                                        <h2>hotel name</h2> 
-                                        <i class="fas fa-map-marked-alt"></i>
-                                        <span>hotel address</span>
-                                    </div>
-                                </div> 
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-md-4">
-                        <a href="">
-                            <div class="hotelspage">
-                                <img src="{{asset('public/user_assets/')}}/images/hotel/hotel9.jpg" alt="">
-                                <div class="hotel-overlay"><i class="fas fa-search-location"></i></div>
-                                <div class="hotelspage-content">
-                                    <div class="hotelspageinfo text-center">
-                                        <h2>hotel name</h2> 
-                                        <i class="fas fa-map-marked-alt"></i>
-                                        <span>hotel address</span>
-                                    </div>
-                                </div> 
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-md-4">
-                        <a href="">
-                            <div class="hotelspage">
-                                <img src="{{asset('public/user_assets/')}}/images/hotel/hotel10.jpg" alt="">
-                                <div class="hotel-overlay"><i class="fas fa-search-location"></i></div>
-                                <div class="hotelspage-content">
-                                    <div class="hotelspageinfo text-center">
-                                        <h2>hotel name</h2> 
-                                        <i class="fas fa-map-marked-alt"></i>
-                                        <span>hotel address</span>
-                                    </div>
-                                </div> 
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-md-4">
-                        <a href="">
-                            <div class="hotelspage">
-                                <img src="{{asset('public/user_assets/')}}/images/hotel/hotel11.jpg" alt="">
-                                <div class="hotel-overlay"><i class="fas fa-search-location"></i></div>
-                                <div class="hotelspage-content">
-                                    <div class="hotelspageinfo text-center">
-                                        <h2>hotel name</h2> 
-                                        <i class="fas fa-map-marked-alt"></i>
-                                        <span>hotel address</span>
-                                    </div>
-                                </div> 
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-md-4">
-                        <a href="">
-                            <div class="hotelspage">
-                                <img src="{{asset('public/user_assets/')}}/images/hotel/hotel12.jpg" alt="">
-                                <div class="hotel-overlay"><i class="fas fa-search-location"></i></div>
-                                <div class="hotelspage-content">
-                                    <div class="hotelspageinfo text-center">
-                                        <h2>hotel name</h2> 
-                                        <i class="fas fa-map-marked-alt"></i>
-                                        <span>hotel address</span>
-                                    </div>
-                                </div> 
-                            </div>
-                        </a>
-                    </div>
+                    @foreach ($hotels as $item)
+                        <div class="col-md-4">
+                            <a href="{{action('User\HotelsController@view',['id'=> $item->id])}}">
+                                <div class="hotelspage">
+                                    <img src="{{asset('public/uploads/hotelImages/'.$item->image)}}" alt="">
+                                    <div class="hotel-overlay"><i class="fas fa-search-location"></i></div>
+                                    <div class="hotelspage-content">
+                                        <div class="hotelspageinfo text-center">
+                                            <h2>{{$item->name}}</h2> 
+                                            <i class="fas fa-map-marked-alt"></i>
+                                            <span>{{$item->address}}</span>
+                                        </div>
+                                    </div> 
+                                </div>
+                            </a>
+                        </div>
+                    @endforeach
                 </div>
             </div>
     </section>

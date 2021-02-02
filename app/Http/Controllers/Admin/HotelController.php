@@ -38,7 +38,7 @@ class HotelController extends Controller
     public function update_page($id){
         $hotel= Hotels::find($id);
         $locations = Location::all();
-        return view('admin.hotels.update-hotel',compact('hotel',compact('locations')));
+        return view('admin.hotels.update-hotel',compact('hotel','locations'));
     }
     public function update(Request $request){
         $hotel=Hotels::find($request->id);

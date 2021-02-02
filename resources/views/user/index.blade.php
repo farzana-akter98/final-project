@@ -215,7 +215,7 @@
                         </a>
                     </div>
                     <div class="col-md-4">
-                        <a href="">
+                        <a href="{{action('User\TransportCostController@index')}}">
                             <div class="services">
                                 <i class="fas fa-car-side"></i>
                                 <h3 class="title">transport cost</h3>
@@ -233,7 +233,7 @@
                         </a>
                     </div>
                     <div class="col-md-4">
-                        <a href="">
+                        <a href="{{action('User\EmergencyContactController@index')}}">
                             <div class="services">
                                 <i class="far fa-hospital"></i>
                                 <h3 class="title">emergency contacts</h3>
@@ -282,7 +282,7 @@
             <div class="container">
                     <div class="row pt-100">
                         <div class="col-md-12 about-title text-center">
-                            <h2>gallery.</h2>
+                            <h2>latest gallery.</h2>
                             <h4 class="about-heading">check out amazing gallery of places in sylhet</h4>
                         </div>
                     </div>

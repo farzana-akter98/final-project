@@ -29,6 +29,10 @@
                             <input class="mdl-textfield__input" type="text" name="to" value="{{$transcost->to}}"/>
                             <label class="mdl-textfield__label">To</label>
                         </div>
+                        <div class="mdl-cell mdl-cell--12-col mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                            <input class="mdl-textfield__input" type="text" name="price" value="{{$transcost->price}}"/>
+                            <label class="mdl-textfield__label">Transport Cost</label>
+                        </div>
                 </div>
                 <div class="form__action">
                     <button id="submit_button" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
