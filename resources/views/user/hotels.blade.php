@@ -33,7 +33,7 @@
                 <div class="row">
                     @foreach ($hotels as $item)
                         <div class="col-md-4">
-                            <a href="{{action('User\HotelsController@view',['id'=> $item->id])}}">
+                            <a href="{{action('User\HotelsController@view',['id'=> $item->id,'slug'=>str_slug($item->name)])}}">
                                 <div class="hotelspage">
                                     <img src="{{asset('public/uploads/hotelImages/'.$item->image)}}" alt="">
                                     <div class="hotel-overlay"><i class="fas fa-search-location"></i></div>

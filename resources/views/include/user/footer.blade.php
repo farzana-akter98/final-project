@@ -1,4 +1,4 @@
-<section class="footer-area pt-100 section-title">
+<section class="footer-area pt-100">
     <div class="footer">
         <div class="container">
             <div class="about-part col-md-3">

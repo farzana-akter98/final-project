@@ -8,7 +8,7 @@ Route::group(['prefix' => 'user'],function () {
     Route::get('gallery','User\GalleryController@index');
     Route::get('place','User\PlaceController@index');
     Route::get('hotels','User\HotelsController@index');
-    Route::get('hotel/{id}','User\HotelsController@view');
+    Route::get('hotel/{id}/{slug}','User\HotelsController@view');
     Route::get('restaurants','User\RestaurantsController@index');
     Route::get('restaurant','User\RestaurantController@index');
     Route::get('shoppingmall','User\ShoppingMallController@index');

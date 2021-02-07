@@ -9,8 +9,8 @@ use App\Http\Controllers\Controller;
 class TransportCostController extends Controller
 {
     public function index(){
-        $transcosts = TransportCost::all();
+        //$transcosts = TransportCost::all();
         $transtypes = TransportType::all();
-        return view('user.transportcost',compact('transcosts','transtypes'));
+        return view('user.transportcost',compact('transtypes'));
     }
 }

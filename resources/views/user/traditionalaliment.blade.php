@@ -43,23 +43,24 @@
             </div>
         </div>
     </section>  
-    
-@endsection
-
-<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous">
+    </script>
     <script>
         $(document).ready(function(){
             $('.tradaliment').on('mouseenter', function(e){
-               x=e.pageX - $(this).offset().left,
-               y=e.pageY - $(this).offset().top;
-               $(this).find('span').css({top:y, left:x});
+                x=e.pageX - $(this).offset().left,
+                y=e.pageY - $(this).offset().top;
+                $(this).find('span').css({top:y, left:x});
             })
             $('.tradaliment').on('mouseout', function(e){
-               x=e.pageX - $(this).offset().left,
-               y=e.pageY - $(this).offset().top;
-               $(this).find('span').css({top:y, left:x});
+                x=e.pageX - $(this).offset().left,
+                y=e.pageY - $(this).offset().top;
+                $(this).find('span').css({top:y, left:x});
             })
         })
     </script> 
+@endsection
+
+
 
     

@@ -24,30 +24,31 @@
                     </div>
                 </div>
                 <div class="row pt-50">
-                    <div class="col-md-12">
-                        <div class="table-responsive">
-                            <table class="table table-hover table-back table-striped">
-                                <thead>
-                                    <tr class="tr-background">
-                                        <th scope="col" class="th-color">From</th>
-                                        <th scope="col" class="th-color">To</th>
-                                        <th scope="col" class="th-color">Transport Type</th>
-                                        <th scope="col" class="th-color">Transport Cost</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    @foreach ($transcosts as $item)
-                                        <tr>
-                                            <td class="td-color">{{$item->from}}</td>
-                                            <td class="td-color">{{$item->to}}</td>
-                                            <td class="td-color">{{$item->transporttype['type']}}</td>
-                                            <td class="td-color">{{$item->price}} Taka</td>
+                    @foreach ($transtypes as $item)
+                        <div class="col-md-6 mb-3">
+                            <h2 class="text-center">{{$item->type}}</h2>
+                            <div class="table-responsive">
+                                <table class="table table-hover table-back table-striped">
+                                    <thead>
+                                        <tr class="tr-background">
+                                            <th scope="col" class="th-color">From</th>
+                                            <th scope="col" class="th-color">To</th>
+                                            <th scope="col" class="th-color">Cost</th>
                                         </tr>
-                                    @endforeach
-                                </tbody>
-                            </table>
+                                    </thead>
+                                    <tbody>
+                                        @foreach ($item->transportcost as $row)
+                                            <tr>
+                                                <td class="td-color">{{$row->from}}</td>
+                                                <td class="td-color">{{$row->to}}</td>
+                                                <td class="td-color">{{money($row->price)}}</td>
+                                            </tr>
+                                        @endforeach
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
-                    </div>
+                    @endforeach
                 </div>
             </div>
         </div>
