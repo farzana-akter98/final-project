@@ -31,111 +31,136 @@
  
     <section class="gallerypage-area pb-100">
         <div class="container">          
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="gallerypage text-center">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="gallerypage text-center">
+                        <img src="{{asset('public/user_assets/')}}/images/gallery/gallery1.jpg" alt="">
+                        <div class="gallerypage-content">
+                            <div class="galleryinfo">
+                                <h2>place name</h2> 
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry typesetting industry.</p>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="gallerypage text-center">
+                    <img src="{{asset('public/user_assets/')}}/images/gallery/gallery2.jpg" alt="">
+                    <div class="gallerypage-content">
+                        <div class="galleryinfo">
+                                <h2>place name</h2> 
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry typesetting industry.</p>
+                        </div>
+                    </div> 
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="gallerypage text-center">
+                    <img src="{{asset('public/user_assets/')}}/images/gallery/gallery3.jpg" alt="">
+                    <div class="gallerypage-content">
+                        <div class="galleryinfo">
+                                <h2>place name</h2> 
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry typesetting industry.</p>
+                        </div>
+                    </div> 
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="gallerypage text-center">
+                    <img src="{{asset('public/user_assets/')}}/images/gallery/gallery4.jpg" alt="">
+                    <div class="gallerypage-content">
+                        <div class="galleryinfo">
+                                <h2>place name</h2> 
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry typesetting industry.</p>
+                        </div>
+                    </div> 
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="gallerypage text-center">
+                    <img src="{{asset('public/user_assets/')}}/images/gallery/gallery5.jpg" alt="">
+                    <div class="gallerypage-content">
+                        <div class="galleryinfo">
+                                <h2>place name</h2> 
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry typesetting industry.</p>
+                        </div>
+                    </div> 
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="gallerypage text-center">
+                    <img src="{{asset('public/user_assets/')}}/images/gallery/gallery6.jpg" alt="">
+                    <div class="gallerypage-content">
+                        <div class="galleryinfo">
+                                <h2>place name</h2> 
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry typesetting industry.</p>
+                        </div>
+                    </div> 
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="gallerypage text-center">
+                    <img src="{{asset('public/user_assets/')}}/images/gallery/gallery7.jpg" alt="">
+                    <div class="gallerypage-content">
+                        <div class="galleryinfo">
+                                <h2>place name</h2> 
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry typesetting industry.</p>
+                        </div>
+                    </div> 
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="gallerypage text-center">
+                    <img src="{{asset('public/user_assets/')}}/images/gallery/gallery8.jpg" alt="">
+                    <div class="gallerypage-content">
+                        <div class="galleryinfo">
+                                <h2>place name</h2> 
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry typesetting industry.</p>
+                        </div>
+                    </div> 
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="gallerypage text-center">
+                    <img src="{{asset('public/user_assets/')}}/images/gallery/gallery9.jpg" alt="">
+                    <div class="gallerypage-content">
+                        <div class="galleryinfo">
+                                <h2>place name</h2> 
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry typesetting industry.</p>
+                        </div>
+                    </div> 
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="masonary">
+                    <div class="masonary-box">
+                        <div class="masonary-img">
                             <img src="{{asset('public/user_assets/')}}/images/gallery/gallery1.jpg" alt="">
-                            <div class="gallerypage-content">
-                                <div class="galleryinfo">
-                                    <h2>place name</h2> 
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry typesetting industry.</p>
-                                </div>
-                            </div> 
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="gallerypage text-center">
-                        <img src="{{asset('public/user_assets/')}}/images/gallery/gallery2.jpg" alt="">
-                        <div class="gallerypage-content">
-                            <div class="galleryinfo">
-                                    <h2>place name</h2> 
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry typesetting industry.</p>
-                            </div>
-                        </div> 
+                    <div class="masonary-box">
+                        <div class="masonary-img">
+                            <img src="{{asset('public/user_assets/')}}/images/gallery/gallery2.jpg" alt="">
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="gallerypage text-center">
-                        <img src="{{asset('public/user_assets/')}}/images/gallery/gallery3.jpg" alt="">
-                        <div class="gallerypage-content">
-                            <div class="galleryinfo">
-                                    <h2>place name</h2> 
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry typesetting industry.</p>
-                            </div>
-                        </div> 
+                    <div class="masonary-box">
+                        <div class="masonary-img">
+                            <img src="{{asset('public/user_assets/')}}/images/gallery/gallery3.jpg" alt="">
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="gallerypage text-center">
-                        <img src="{{asset('public/user_assets/')}}/images/gallery/gallery4.jpg" alt="">
-                        <div class="gallerypage-content">
-                            <div class="galleryinfo">
-                                    <h2>place name</h2> 
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry typesetting industry.</p>
-                            </div>
-                        </div> 
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="gallerypage text-center">
-                        <img src="{{asset('public/user_assets/')}}/images/gallery/gallery5.jpg" alt="">
-                        <div class="gallerypage-content">
-                            <div class="galleryinfo">
-                                    <h2>place name</h2> 
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry typesetting industry.</p>
-                            </div>
-                        </div> 
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="gallerypage text-center">
-                        <img src="{{asset('public/user_assets/')}}/images/gallery/gallery6.jpg" alt="">
-                        <div class="gallerypage-content">
-                            <div class="galleryinfo">
-                                    <h2>place name</h2> 
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry typesetting industry.</p>
-                            </div>
-                        </div> 
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="gallerypage text-center">
-                        <img src="{{asset('public/user_assets/')}}/images/gallery/gallery7.jpg" alt="">
-                        <div class="gallerypage-content">
-                            <div class="galleryinfo">
-                                    <h2>place name</h2> 
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry typesetting industry.</p>
-                            </div>
-                        </div> 
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="gallerypage text-center">
-                        <img src="{{asset('public/user_assets/')}}/images/gallery/gallery8.jpg" alt="">
-                        <div class="gallerypage-content">
-                            <div class="galleryinfo">
-                                    <h2>place name</h2> 
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry typesetting industry.</p>
-                            </div>
-                        </div> 
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="gallerypage text-center">
-                        <img src="{{asset('public/user_assets/')}}/images/gallery/gallery9.jpg" alt="">
-                        <div class="gallerypage-content">
-                            <div class="galleryinfo">
-                                    <h2>place name</h2> 
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry typesetting industry.</p>
-                            </div>
-                        </div> 
+                    <div class="masonary-box">
+                        <div class="masonary-img">
+                            <img src="{{asset('public/user_assets/')}}/images/gallery/gallery4.jpg" alt="">
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
     </section>
 
     <!---- end gallery page value-->
+
 @endsection
 
     

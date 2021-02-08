@@ -17,7 +17,7 @@ class CreateBlogImagesTable extends Migration
             $table->bigIncrements('id');
             $table->unsignedBigInteger('blog_post_id');
             $table->foreign('blog_post_id')->references('id')->on('blog_posts')->onDelete('No Action')->onUpdate('No Action');
-            $table->string('imageName');
+            $table->string('imageName')->nullable();
             $table->timestamps();
         });
     }

@@ -34,10 +34,28 @@
                         </div>
                     </div>
                     <div class="mdl-cell mdl-cell--12-col mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                        <label class="mb-3 floating-label">Primary Image</label>
                         <input class="mdl-textfield__input" type="file"  onchange="document.getElementById('blog_image').src = window.URL.createObjectURL(this.files[0])" name="imageName"/>
+                        
                     </div>
                     <div class="mdl-cell mdl-cell--12-col mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
                         <img width="200" height="100" id="blog_image">
+                    </div>
+                    <div class="mdl-cell mdl-cell--12-col mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                        <label class="mb-3 floating-label">Image1</label>
+                        <input class="mdl-textfield__input" type="file"  onchange="document.getElementById('blog_image1').src = window.URL.createObjectURL(this.files[0])" name="images[]"/>
+                        
+                    </div>
+                    <div class="mdl-cell mdl-cell--12-col mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                        <img width="200" height="100" id="blog_image1">
+                    </div>
+                    <div class="mdl-cell mdl-cell--12-col mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                        <label class="mb-3 floating-label">Image2</label>
+                        <input class="mdl-textfield__input" type="file"  onchange="document.getElementById('blog_image2').src = window.URL.createObjectURL(this.files[0])" name="images[]"/>
+                        
+                    </div>
+                    <div class="mdl-cell mdl-cell--12-col mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                        <img width="200" height="100" id="blog_image2">
                     </div>
                 </div>
                 <div class="form__action">

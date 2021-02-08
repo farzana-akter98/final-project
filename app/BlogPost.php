@@ -12,4 +12,9 @@ class BlogPost extends Model
     {
         return $this->belongsTo('App\BlogCategory','blog_category_id');
     }
+
+    public function blogImage()
+    {
+        return $this->hasmany('App\BlogImages','blog_post_id');
+    }
 }

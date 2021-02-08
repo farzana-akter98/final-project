@@ -42,8 +42,37 @@
                               <img width="250" height="130" src="{{asset('public/image/default.jpg')}}" alt="">
                             @else
                               <img width="250" height="130" id="location_image" src="{{asset('public/uploads/blogsImages/'.$blogpost->image)}}" alt="">
-                            @endif
+                        @endif
                     </div>
+                    @if (count($blogpost->blogImage) > 0)
+                        @foreach ($blogpost->blogImage as $key => $item)
+                        <div class="mdl-cell mdl-cell--12-col mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                            <label class="mb-3 floating-label">Image{{$key+1}}</label>
+                            <input class="mdl-textfield__input" type="file"  onchange="document.getElementById('blog_image{{$key+1}}').src = window.URL.createObjectURL(this.files[0])" name="image[]"/>
+                            
+                        </div>
+                        <div class="mdl-cell mdl-cell--12-col mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                            <img width="200" height="100" id="blog_image{{$key+1}}" src="{{asset('public/uploads/blogsImages/'.$item->imageName)}}">
+                        </div>
+                    @endforeach
+                    @else
+                        <div class="mdl-cell mdl-cell--12-col mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                            <label class="mb-3 floating-label">Image1</label>
+                            <input class="mdl-textfield__input" type="file"  onchange="document.getElementById('blog_image1').src = window.URL.createObjectURL(this.files[0])" name="images[]"/>
+                            
+                        </div>
+                        <div class="mdl-cell mdl-cell--12-col mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                            <img width="200" height="100" id="blog_image1">
+                        </div>
+                        <div class="mdl-cell mdl-cell--12-col mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                            <label class="mb-3 floating-label">Image2</label>
+                            <input class="mdl-textfield__input" type="file"  onchange="document.getElementById('blog_image2').src = window.URL.createObjectURL(this.files[0])" name="images[]"/>
+                            
+                        </div>
+                        <div class="mdl-cell mdl-cell--12-col mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                            <img width="200" height="100" id="blog_image2">
+                        </div>
+                    @endif
                 </div>
                 <div class="form__action">
                     <button id="submit_button" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">

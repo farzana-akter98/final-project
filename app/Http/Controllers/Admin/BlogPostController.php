@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Admin;
 use App\BlogPost;
+use App\BlogImages;
 use App\BlogCategory;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
@@ -33,6 +34,22 @@ class BlogPostController extends Controller
           $request->imageName->move('public/uploads/blogsImages/',$fileName);
         }
         $blogpost->save();
+        $blogID = $blogpost->id;
+
+        $images = $request->file('images');
+        if ($request->hasFile('images')){
+            foreach($images as $image){
+              $extension1 = $image->extension();
+              $filename1 = rand(123456,999999).'.'.$extension1;
+              $image->move('public/uploads/blogsImages/',$filename1);
+
+              $blogImage = new BlogImages();
+              $blogImage->blog_post_id = $blogID;
+              $blogImage->imageName = $filename1;
+              $blogImage->save();
+            }
+        }
+
         return redirect()->to('admin/all-blogpost');
       }
     public function update_page($id){

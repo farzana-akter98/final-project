@@ -239,21 +239,13 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-4">
-                    <div class="gallery">
-                        <a href="{{asset('public/user_assets/')}}/images/galleryh5.jpg" data-lightbox="mygallery" data-title="Location Address"><img src="{{asset('public/user_assets/')}}/images/galleryh5.jpg"/></a>
+                @foreach ($blogImage as $item)
+                    <div class="col-md-4">
+                        <div class="gallery">
+                            <a href="{{asset('public/uploads/blogsImages/'.$item->imageName)}}" data-lightbox="mygallery" data-title="Location Address"><img src="{{asset('public/uploads/blogsImages/'.$item->imageName)}}"/></a>
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="gallery">
-                        <a href="{{asset('public/user_assets/')}}/images/galleryh1.jpg" data-lightbox="mygallery" data-title="Location Address"><img src="{{asset('public/user_assets/')}}/images/galleryh1.jpg"/></a>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="gallery">
-                        <a href="{{asset('public/user_assets/')}}/images/galleryh4.jpg" data-lightbox="mygallery" data-title="Location Address"><img src="{{asset('public/user_assets/')}}/images/galleryh4.jpg"/></a>
-                    </div>
-                </div>
+                @endforeach
             </div>
         </div>
     </section>
@@ -272,48 +264,22 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-4">
-                    <div class="single-blog">
-                        <div class="blog-img">
-                            <img src="{{asset('public/user_assets/')}}/images/banner.jpg" alt="">
-                        </div>
-                        <div class="blog-content">
-                            <h4>Blog 1</h4>
-                            <a href="">24 Nov 2020</a> / 
-                            <a href="">Admin</a>
-                            <p>Lorem ipsum dolor sit amet, consectetur, adipisicing elit. Voluptatem aliquam adipisci quod architecto labore iure quia velit quaerat veniam porro.</p>
-                            <a href="" class="btn-primary">Read More <i class="fa fa-angle-double-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="single-blog">
-                        <div class="blog-img">
-                            <img src="{{asset('public/user_assets/')}}/images/banner.jpg" alt="">
-                        </div>
-                        <div class="blog-content">
-                            <h4>Blog 2</h4>
-                            <a href="">24 Nov 2020</a> / 
-                            <a href="">Admin</a>
-                            <p>Lorem ipsum dolor sit amet, consectetur, adipisicing elit. Voluptatem aliquam adipisci quod architecto labore iure quia velit quaerat veniam porro.</p>
-                            <a href="" class="btn-primary">Read More <i class="fa fa-angle-double-right"></i></a>
+                @foreach ($blogs as $item)
+                    <div class="col-md-4">
+                        <div class="single-blog">
+                            <div class="blog-img">
+                                <img src="{{asset('public/uploads/blogsImages/'.$item->image)}}" alt="">
+                            </div>
+                            <div class="blog-content">
+                                <h4>{{$item->title}}</h4>
+                                <a href="">24 Nov 2020</a> / 
+                                <a href="">Admin</a>
+                                <p>{{str_limit($item->description,150,'....')}}</p>
+                                <a href="" class="btn-common">Read More <i class="fa fa-angle-double-right"></i></a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="single-blog">
-                        <div class="blog-img">
-                            <img src="{{asset('public/user_assets/')}}/images/banner.jpg" alt="">
-                        </div>
-                        <div class="blog-content">
-                            <h4>Blog 3</h4>
-                            <a href="">24 Nov 2020</a> / 
-                            <a href="">Admin</a>
-                            <p>Lorem ipsum dolor sit amet, consectetur, adipisicing elit. Voluptatem aliquam adipisci quod architecto labore iure quia velit quaerat veniam porro.</p>
-                            <a href="" class="btn-primary">Read More <i class="fa fa-angle-double-right"></i></a>
-                        </div>
-                    </div>
-                </div>
+                @endforeach
             </div>
         </div>
     </section>  
