@@ -15,44 +15,42 @@
     <!-- end Transport Cost page banner-->
 
     <section class="transportcost-area pt-100 pb-100">
-        <div class=" section-title">
-            <div class="container">
-                <div class="row pt-100">
-                    <div class="col-md-12 about-title text-center">
-                        <h2>emergency contact.</h2>
-                        <h4 class="about-heading">check out emergency contact of sylhet</h4>
-                    </div>
+        <div class="container">
+            <div class="row pt-50 section-title">
+                <div class="col-md-12 about-title text-center">
+                    <h2>emergency contact.</h2>
+                    <h4 class="about-heading">check out emergency contact of sylhet</h4>
                 </div>
-                <div class="row pt-50">
-                    <div class="col-md-12">
-                        <div class="table-responsive">
-                            <table class="table table-hover table-back table-striped">
-                                <thead>
-                                    <tr class="tr-background">
-                                        <th scope="col" class="th-color">Place</th>
-                                        <th scope="col" class="th-color">Police Station</th>
-                                        <th scope="col" class="th-color">Police Station Address</th>
-                                        <th scope="col" class="th-color">Number</th>
-                                        <th scope="col" class="th-color">Hospital Name</th>
-                                        <th scope="col" class="th-color">Hospital Address</th>
-                                        <th scope="col" class="th-color">Number</th>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="table-responsive">
+                        <table class="table table-hover table-back table-striped">
+                            <thead>
+                                <tr class="tr-background">
+                                    <th scope="col" class="th-color">Place</th>
+                                    <th scope="col" class="th-color">Police Station</th>
+                                    <th scope="col" class="th-color">Police Station Address</th>
+                                    <th scope="col" class="th-color">Number</th>
+                                    <th scope="col" class="th-color">Hospital Name</th>
+                                    <th scope="col" class="th-color">Hospital Address</th>
+                                    <th scope="col" class="th-color">Number</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach ($emcontacts as $item)
+                                    <tr>
+                                        <td class="td-color">@if($item->location['name'] == null) N/A @else {{$item->location['name']}} @endif</td>
+                                        <td class="td-color">{{$item->name_police}}</td>
+                                        <td class="td-color">{{$item->address_police}}</td>
+                                        <td class="td-color">{{$item->police}}</td>
+                                        <td class="td-color">{{$item->name_hospital}}</td>
+                                        <td class="td-color">{{$item->address_hospital}}</td>
+                                        <td class="td-color">{{$item->hospital}}</td>
                                     </tr>
-                                </thead>
-                                <tbody>
-                                    @foreach ($emcontacts as $item)
-                                        <tr>
-                                            <td class="td-color">@if($item->location['name'] == null) N/A @else {{$item->location['name']}} @endif</td>
-                                            <td class="td-color">{{$item->name_police}}</td>
-                                            <td class="td-color">{{$item->address_police}}</td>
-                                            <td class="td-color">{{$item->police}}</td>
-                                            <td class="td-color">{{$item->name_hospital}}</td>
-                                            <td class="td-color">{{$item->address_hospital}}</td>
-                                            <td class="td-color">{{$item->hospital}}</td>
-                                        </tr>
-                                    @endforeach
-                                </tbody>
-                            </table>
-                        </div>
+                                @endforeach
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>

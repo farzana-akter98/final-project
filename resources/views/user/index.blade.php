@@ -238,12 +238,11 @@
                     <h4 class="about-heading">check out amazing gallery of places in sylhet</h4>
                 </div>
             </div>
-            <div class="row">
+            <div class="grid">
                 @foreach ($blogImage as $item)
-                    <div class="col-md-4">
-                        <div class="gallery">
-                            <a href="{{asset('public/uploads/blogsImages/'.$item->imageName)}}" data-lightbox="mygallery" data-title="Location Address"><img src="{{asset('public/uploads/blogsImages/'.$item->imageName)}}"/></a>
-                        </div>
+                    <div class="grid-sizer"></div>
+                    <div class="grid-item">
+                        <a href="{{asset('public/uploads/blogsImages/'.$item->imageName)}}" data-lightbox="mygallery" data-title="Location Address"><img src="{{asset('public/uploads/blogsImages/'.$item->imageName)}}"/></a>
                     </div>
                 @endforeach
             </div>
@@ -275,7 +274,7 @@
                                 <a href="">24 Nov 2020</a> / 
                                 <a href="">Admin</a>
                                 <p>{{str_limit($item->description,150,'....')}}</p>
-                                <a href="" class="btn-common">Read More <i class="fa fa-angle-double-right"></i></a>
+                                <a href="" class="btn-common">Read More</a>
                             </div>
                         </div>
                     </div>
@@ -286,8 +285,8 @@
   
     <!-- end homepage blog-->
 
-<script src="{{asset('public/user_assets/')}}/js/lightbox-plus-jquery.min.js"></script>    
-<script src="{{asset('public/user_assets/')}}/js/typed.js"></script>
+  
+
 <script type="text/javascript">
     var typed = new Typed('.animate', {
       strings:[

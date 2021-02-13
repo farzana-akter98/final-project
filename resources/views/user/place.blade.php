@@ -1,5 +1,5 @@
 @extends('layouts.user_master')
-@section('title','Place')
+@section('title','Places')
 @section('content')
 
     <!-- places page banner area -->
@@ -18,32 +18,30 @@
     <!-- places page value -->
 
     <section class="place-area pt-100 pb-100">
-        <div class="section-title">
-            <div class="container">
-                <div class="row pt-100">
-                    <div class="col-md-12 about-title text-center">
-                        <h2>places to visit.</h2>
-                        <h4 class="about-heading">check out amazing places of sylhet</h4>
-                    </div>
+        <div class="container">
+            <div class="row pt-50 section-title">
+                <div class="col-md-12 about-title text-center">
+                    <h2>places to visit.</h2>
+                    <h4 class="about-heading">check out amazing places of sylhet</h4>
                 </div>
-                <div class="row pt-100">
-                    @foreach ($locations as $item)
-                        <div class="col-md-3">
-                            <div class="place-card flex">
-                                <div class="place-img">
-                                    <img src="{{asset('public/uploads/locationImages/'.$item->image)}}" alt="">
-                                </div>
-                                <div class="place-content text-center">
-                                    <h3>{{$item->name}}</h3>
-                                    <a href="">
-                                        <i class="fas fa-location-arrow"></i>
-                                        <span>{{$item->address}}</span>
-                                    </a>
-                                </div>
+            </div>
+            <div class="row">
+                @foreach ($locations as $item)
+                    <div class="col-md-3">
+                        <div class="place-card flex">
+                            <div class="place-img">
+                                <img src="{{asset('public/uploads/locationImages/'.$item->image)}}" alt="">
+                            </div>
+                            <div class="place-content text-center">
+                                <h3>{{$item->name}}</h3>
+                                <a href="">
+                                    <i class="fas fa-location-arrow"></i>
+                                    <span>{{$item->address}}</span>
+                                </a>
                             </div>
                         </div>
-                    @endforeach
-                </div>
+                    </div>
+                @endforeach
             </div>
         </div>
     </section>

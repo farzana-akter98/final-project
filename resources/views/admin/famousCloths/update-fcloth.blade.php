@@ -29,7 +29,7 @@
                               <img width="250" height="130" src="{{asset('public/image/default.jpg')}}" alt="">
                             @else
                               <img width="250" height="130" id="fcloth_image" src="{{asset('public/uploads/fclothImages/'.$fcloth->image)}}" alt="">
-                            @endif
+                        @endif
                     </div>
                 </div>
                 <div class="form__action">

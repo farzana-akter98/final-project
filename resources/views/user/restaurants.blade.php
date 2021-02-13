@@ -16,14 +16,14 @@
     <!-- End restaurants page banner-->
 
     <section class="restaurants-area pt-100 pb-100">
-        <div class="container section-title">
-            <div class="row pt-100">
+        <div class="container">
+            <div class="row pt-50 section-title">
                 <div class="col-md-12 about-title text-center">
                     <h2>restaurants.</h2>
                     <h4 class="about-heading">check out amazing restaurants in sylhet</h4>
                 </div>
             </div>
-            <div class="row pt-50">
+            <div class="row">
                 <div class="col-md-4">
                     <div class="restaurant flex">
                         <div class="restaurant-content">

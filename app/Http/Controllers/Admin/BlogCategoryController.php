@@ -17,7 +17,7 @@ class BlogCategoryController extends Controller
     public function store(Request $request){
       $blogcategory=new BlogCategory();  
       $blogcategory->name=$request->name;
-      $blogcategory->slug=str_slug($request->name,'_');
+      $blogcategory->slug = str_slug($request->name,'_');
       $blogcategory->save();
       return redirect()->to('admin/all-blogcategory');
     }

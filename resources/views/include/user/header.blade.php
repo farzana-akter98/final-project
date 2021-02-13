@@ -9,7 +9,7 @@
                  </div>  
             </div>
             <div class="col-md-6">
-                <button type="button" class="login-btn">Login</button>             
+                <a href="{{action('User\LoginFormController@login')}}" type="button" class="login-btn">Login</a>          
             </div>
 
         </div>

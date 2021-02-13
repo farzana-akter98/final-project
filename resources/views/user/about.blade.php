@@ -42,7 +42,7 @@
                 </div>
             </div>
     </section>
-    <section class="value-area pt-100 pb-100">
+    <section class="value-area pb-100">
             <div class="container section-title pt-100">
                 <div class="row pt-100">
                     <div class="value who flex">

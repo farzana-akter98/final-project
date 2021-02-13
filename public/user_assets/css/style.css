@@ -12,8 +12,10 @@ font-family: 'Tangerine', cursive;*/
     margin:0 auto;
 }
 .row {
+    display: -ms-flexbox;
     display: flex;
     flex-direction: row;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     margin: 0 -15px;
 }
@@ -211,9 +213,9 @@ input[type=submit]:hover {
     border: 2px solid #130609;
     color: #fff;
     font-weight: 700;
-    padding: 8px 0;
+    text-align: center;
+    padding: 10px 20px;
     font-size: 15px;
-    cursor: pointer;
     position: relative;
   }
   .login-btn::before, .login-btn::after {
@@ -266,7 +268,7 @@ header.sticky{
   z-index: 3;
 }
 header.sticky .logo a, header.sticky span, header.sticky i{
-  color:#e9204f ;
+  color:#e91e63 ;
 }
 header.sticky .header{
   border-bottom: 0;
@@ -275,7 +277,7 @@ header.sticky .header{
   padding-top: 15px;
   padding-bottom: 15px;
   margin-bottom: 10px;
-  border-bottom: 1px solid #e9204f;
+  border-bottom: 1px solid #e91e63;
 }
 
 #search-btn{
@@ -320,7 +322,7 @@ header.sticky .header{
 }
 
 .overlay a:hover, .overlay a:focus, #popup .close-popup:hover{
-  color: #e9204f;
+  color: #e91e63;
 }
 
 .overlay .closebtn{
@@ -421,7 +423,7 @@ header.sticky .header{
   margin-bottom: 10px;
 }
 .banner-text span{
-  color: chartreuse;
+  color: #e91e63;
   border-bottom: 3px solid #fff;
   margin-bottom: 10px;
 }
@@ -760,61 +762,24 @@ transition: 1s;
   background-position: center;
   width: 100%;
 }
-.gallerypage{
-  position: relative;
-  overflow: hidden;
-  margin-bottom: 30px;
+.grid {
+  background: #fff;
 }
-.gallerypage img{
-  width: 100%;
-  height: 300px;
-  transform-origin: bottom center;
-  transform: perspective(500px) rotateX(0);
-  transition: 0.5s all ease;
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
 }
-.gallerypage:hover img{
-  transform: perspective(500px) rotateX(50deg);
-  vertical-align: middle;
+.grid-sizer,
+.grid-item {
+  width: 33.333%;
 }
-.gallerypage .gallerypage-content{
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: linear-gradient(to right, rgba(255,65,108,0.8),rgba(255,75,43,0.8));
-  transition: 0.5s all ease;
-  transform-origin: top center;
-  transform: perspective(500px) rotateX(-50deg);
-  opacity: 0;
+.grid-item {
+  float: left;
 }
-.gallerypage:hover .gallerypage-content{
-  opacity: 1;
-  transform: perspective(500px) rotateX(0);  
-}
-.gallerypage .gallerypage-content p{
-  color: #fff;
-}
-.masonary{
-  position: relative;
+.grid-item img {
+  display: block;
   max-width: 100%;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
-  grid-template-rows: minmax(100px, auto);
-  grid-auto-flow: dense;
-}
-.masonary-box{
-  display: grid;
-  place-items: center;
-  transition: 0.5s;
-}
-.masonary-img img{
-  position: relative;
-  width: 100%;
-  vertical-align: middle;
 }
 /* End Gallery Page CSS*/
 /*services css*/
@@ -888,18 +853,6 @@ font-size: 24px;
   margin-bottom: 20px
 }
 
-/*breadcrumb area*/
-
-.breadcumb-area {
-  background-color:  #e9204f;
-  text-align: center;
-  padding: 30px 0;
-  color: white;
-  text-transform: capitalize;
-}
-.breadcumb-area h4 {
-  font-size: 30px;
-}
 /* Hotel Page Css*/
 .hbanner-area{
   background: url("../images/hbanner.jpg");
@@ -1100,7 +1053,17 @@ font-size: 24px;
 .restaurant-content a{padding: 10px 20px; color: #e91e63; text-transform: capitalize; background: #fff; transition: 0.5s;}
 .restaurant-content a:hover{background: #e91e63;color: #fff;}
 /* End Restaurants Page CSS*/
-
+/* Single Restaurent Page CSS */
+#instructions {
+	position: absolute;
+	color: #fff;
+	bottom: 0;
+	padding-bottom: 6px;
+	width: 100%;
+	text-align: center;
+	pointer-events: none;
+}
+/* End Single Restaurent Page CSS */
 /* Shopping Mall Page CSS */
 .smbanner-area{
   background: url('../images/smbanner.jpg');
@@ -1275,6 +1238,160 @@ font-size: 24px;
   width: 100%;
 }
 /* Emergency Contact Page CSS  */
+/* Login Form Page CSS*/
+.loginform-area{
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #f1f4f9, #dff1ff);
+}
+.loginform-area .color{
+  position: absolute;
+  filter:blur(150px);
+}
+.loginform-area .color:nth-child(1){
+  width: 600px;
+  height: 600px;
+  background: #ff359b;
+  top: -350px;
+}
+.loginform-area .color:nth-child(2){
+  width: 500px;
+  height: 500px;
+  background: #fffd87;
+  bottom: -150px;
+  left: 100px;
+}
+.loginform-area .color:nth-child(3){
+  width: 300px;
+  height: 300px;
+  background: #00d2ff;
+  bottom: 50px;
+  right: 100px;
+}
+.loginBox{
+  position: relative;
+}
+.loginContainer{
+  position: relative;
+  width: 400px;
+  min-height: 400px;
+  background: rgba(255,255,255,.1);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(5px);
+  box-shadow: 0 25px 45px rgba(0,0,0,.1);
+  border: 1px solid rgba(255,255,255,0.5);
+  border-right: 1px solid rgba(255,255,255,0.2);
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+.loginForm{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 40px;
+}
+.loginForm h2{
+  position: relative;
+  color: #fff;
+  margin-bottom: 40px;
+}
+.loginForm h2::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 80px;
+  height: 2px;
+  background: #fff;
+}
+.loginForm .inputBox{margin-top: 20px;width: 100%;}
+.loginForm .inputBox input{
+  width: 100%;
+  background: rgba(255,255,255,.2);
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  border-radius: 35px;
+  border: 1px solid rgba(255,255,255,0.5);
+  border-right: 1px solid rgba(255,255,255,0.2);
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+  font-size: 16px;
+  color: #fff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+/* .loginForm .inputBox input::placeholder{
+  color: #fff;
+} */
+.loginForm .inputBox input[type="submit"]{
+  background: #fff;
+  color: #666;
+  max-width: 100px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+.loginBox .square{
+  position: absolute;
+  backdrop-filter: blur(5px);
+  box-shadow: 0 25px 45px rgba(0,0,0,.1);
+  border: 1px solid rgba(255,255,255,0.5);
+  border-right: 1px solid rgba(255,255,255,0.2);
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+  background: rgba(255,255,255,.1);
+  animation: animate 10s linear infinite;
+  animation-delay: calc(-1s * var(--i));
+  border-radius: 10px
+}
+@keyframes animate{
+  0%,100%{
+    transform: translateY(-40px);
+  }
+  50%{
+    transform: translateY(40px);
+  }
+}
+.loginBox .square:nth-child(1){
+  top: -50px;
+  right: -60px;
+  width: 100px;
+  height: 100px;
+}
+.loginBox .square:nth-child(2){
+  top: 150px;
+  left: -100px;
+  width: 120px;
+  height: 120px;
+  z-index: 2;
+}
+.loginBox .square:nth-child(3){
+  bottom: 50px;
+  right: -60px;
+  width: 80px;
+  height: 80px;
+  z-index: 2;
+}
+.loginBox .square:nth-child(4){
+  bottom: -80px;
+  left: 100px;
+  width: 50px;
+  height: 50px;
+}
+.loginBox .square:nth-child(5){
+  top: -80px;
+  left: 140px;
+  width: 60px;
+  height: 60px;
+}
+.forget{
+  margin-top: 5px;color: #000;
+}
+.forget a{color: #e91e63;padding: 10px;}
+/* End Login Form Page CSS*/
 /*footer*/
 .footer-area {
   width: 100%;
@@ -1326,7 +1443,7 @@ font-size: 24px;
   z-index: 2;
   font-size: 4em;
   text-align: center;
-  color: #e9204f;
+  color: #e91e63;
 }
 .footer .container{
   display: flex;
@@ -1343,7 +1460,7 @@ font-size: 24px;
 .footer-p p{
   background: black;
   padding: 20px 0;
-  color: #e9204f;
+  color: #e91e63;
 }
 .mtb-10{
   margin: 10px 0;
@@ -1363,7 +1480,7 @@ font-size: 24px;
   padding-left: 0;
 }
 .footer .about-part ul li a{
-  color: #e9204f;
+  color: #e91e63;
   align-items: center;
   font-size: 25px;
   padding: 0 5px;
