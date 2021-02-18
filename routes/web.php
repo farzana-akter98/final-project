@@ -19,6 +19,7 @@ Route::group(['prefix' => 'user'],function () {
     Route::get('transportcost','User\TransportCostController@index');
     Route::get('emergencycontact','User\EmergencyContactController@index');
     Route::get('blogs','User\BlogController@index');
+    Route::get('destination','User\DestinationController@index');
     Route::get('login','User\LoginFormController@login');
     Route::get('register','User\LoginFormController@register');
     //Route::get('blog/{id}/{slug}','User\BlogController@view');

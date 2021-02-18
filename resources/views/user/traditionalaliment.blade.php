@@ -4,7 +4,7 @@
     
     <!-- Traditional Aliment page banner-->
 
-    <section class="tabanner-area bg">
+    <section class="banner-area bg" style="background: url('{{asset('public/user_assets/')}}/images/tabanner.jpg'); background-size:cover; background-position:center;">
         <div class="container">
             <div class="banner-text text-center">
                 <h2>traditional aliment of Sylhet.</h2>

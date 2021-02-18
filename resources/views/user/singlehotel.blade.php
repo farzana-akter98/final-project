@@ -4,7 +4,7 @@
     <section class="singlehotel-area pb-100">
         <img src="{{asset('public/uploads/hotelImages/' .$hotel->image)}}" alt="">
         <div class="banner-text bg text-center pt-10 pb-10">
-            <h2>welcome to the hotel wholeheartedly.</h2>
+            <h2>welcome to the {{$hotel->name}}.</h2>
             <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
         </div>
         <div class="container">

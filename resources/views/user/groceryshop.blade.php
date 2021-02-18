@@ -3,7 +3,7 @@
 @section('content')
      <!-- GroceryShop page banner-->
 
-    <section class="gsbanner-area bg">
+    <section class="banner-area bg" style="background: url('{{asset('public/user_assets/')}}/images/gsbanner.jpg'); background-size:cover; background-position:center;">
         <div class="container">
             <div class="banner-text text-center">
                 <h2>grocery shop of sylhet.</h2>

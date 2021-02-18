@@ -4,7 +4,7 @@
 
     <!-- places page banner area -->
 
-    <section class="pbanner-area bg">
+    <section class="banner-area bg" style="background: url('{{asset('public/user_assets/')}}/images/placebanner.jpg'); background-size:cover; background-position:center;">
         <div class="container">
             <div class="banner-text text-center">
                 <h2>enjoy your roaming.</h2>

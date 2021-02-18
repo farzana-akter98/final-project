@@ -265,14 +265,17 @@
             <div class="row">
                 @foreach ($blogs as $item)
                     <div class="col-md-4">
-                        <div class="single-blog">
+                        <div class="blog">
                             <div class="blog-img">
                                 <img src="{{asset('public/uploads/blogsImages/'.$item->image)}}" alt="">
+                                <div class="blog-date text-center">
+                                    <span>10</span>
+                                    <span>sep</span>
+                                    <span>2020</span>
+                                </div>
                             </div>
                             <div class="blog-content">
-                                <h4>{{$item->title}}</h4>
-                                <a href="">24 Nov 2020</a> / 
-                                <a href="">Admin</a>
+                                <h2>{{$item->title}}</h2>
                                 <p>{{str_limit($item->description,150,'....')}}</p>
                                 <a href="" class="btn-common">Read More</a>
                             </div>

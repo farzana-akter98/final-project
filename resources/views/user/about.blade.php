@@ -3,7 +3,7 @@
 @section('content')
     <!-- about page banner-->
 
-    <section class="aboutbanner-area bg">
+    <section class="banner-area bg" style="background: url('{{asset('public/user_assets/')}}/images/ab3.jpg'); background-size:cover; background-position:center;">
         <div class="container">
             <div class="banner-text text-center">
                 <h2>our organizations rule.</h2>

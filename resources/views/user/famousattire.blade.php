@@ -4,7 +4,7 @@
 
     <!-- Famous Attire page banner-->
 
-    <section class="fmabanner-area bg">
+    <section class="banner-area bg" style="background: url('{{asset('public/user_assets/')}}/images/fmbanner.jpg'); background-size:cover; background-position:center;">
         <div class="container">
             <div class="banner-text text-center">
                 <h2>famous attire of Sylhet.</h2>

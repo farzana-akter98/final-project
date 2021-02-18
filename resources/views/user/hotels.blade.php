@@ -2,7 +2,7 @@
 @section('title','Hotel')    
 @section('content')
     <!-- hotels page banner-->
-    <section class="hbanner-area bg">
+    <section class="banner-area bg" style="background: url('{{asset('public/user_assets/')}}/images/hbanner.jpg'); background-size:cover; background-position:center;">
         <div class="container">
             <div class="banner-text text-center">
                 <h2>hotels of sylhet.</h2>
