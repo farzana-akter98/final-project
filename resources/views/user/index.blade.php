@@ -276,6 +276,7 @@
                             </div>
                             <div class="blog-content">
                                 <h2>{{$item->title}}</h2>
+                                <span><i class="far fa-user"></i><h6>author name</h6></span>
                                 <p>{{str_limit($item->description,150,'....')}}</p>
                                 <a href="" class="btn-common">Read More</a>
                             </div>

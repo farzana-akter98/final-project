@@ -53,24 +53,33 @@
                 <h2>destination.</h2>
                 <h4 class="about-heading">check out the destination</h4>
             </div>
+          </div>
+          <div class="row">
             <div class="col-md-12">
-                <ul class="nav nav-tabs nav-pills nav-justified flex-column flex-sm-row">
-                    <li class="nav-item">
-                      <a class="flex-sm-fill text-sm-center nav-link active" href="#">location</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="flex-sm-fill text-sm-center nav-link" href="#">hotel</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="flex-sm-fill text-sm-center nav-link" href="#">restaurant</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="flex-sm-fill text-sm-center nav-link" href="#">transport cost</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="flex-sm-fill text-sm-center nav-link" href="#">emergency contact</a>
-                      </li>
-                  </ul>
+              <div class="destination-tab">
+                <div class="destination-btnBox">
+                  <a href="">place</a>
+                  <a href="">hotel</a>
+                  <a href="">restaurant</a>
+                  <a href="">transport cost</a>
+                  <a href="">emergency contact</a>
+                </div>
+                <div class="destination-content" id="place">
+                  
+                </div>
+                <div class="destination-content" id="hotel">
+
+                </div>
+                <div class="destination-content" id="resturant">
+
+                </div>
+                <div class="destination-content" id="transportcost">
+
+                </div>
+                <div class="destination-content" id="emergencycontact">
+
+                </div>
+              </div>
             </div>
           </div>
       </div>
@@ -137,4 +146,8 @@
     </script>
   
     <!-- End Slide Area Javascript-->
+
+    <!-- Start Tab Area Javascript-->
+    
+    <!-- End Tab Area Javascript-->
 @endsection

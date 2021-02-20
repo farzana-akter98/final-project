@@ -31,6 +31,7 @@
                         </div>
                         <div class="blog-content">
                             <h2>blog title</h2>
+                            <span><i class="far fa-user"></i><h6>author name</h6></span>
                             <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
                             <a href="" class="btn-common">read more</a>
                         </div>
@@ -48,6 +49,7 @@
                         </div>
                         <div class="blog-content">
                             <h2>blog title</h2>
+                            <span><i class="far fa-user"></i><h6>author name</h6></span>
                             <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
                             <a href="" class="btn-common">read more</a>
                         </div>
@@ -65,6 +67,7 @@
                         </div>
                         <div class="blog-content">
                             <h2>blog title</h2>
+                            <span><i class="far fa-user"></i><h6>author name</h6></span>
                             <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
                             <a href="" class="btn-common">read more</a>
                         </div>
@@ -82,6 +85,7 @@
                         </div>
                         <div class="blog-content">
                             <h2>blog title</h2>
+                            <span><i class="far fa-user"></i><h6>author name</h6></span>
                             <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
                             <a href="" class="btn-common">read more</a>
                         </div>
@@ -99,6 +103,7 @@
                         </div>
                         <div class="blog-content">
                             <h2>blog title</h2>
+                            <span><i class="far fa-user"></i><h6>author name</h6></span>
                             <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
                             <a href="" class="btn-common">read more</a>
                         </div>
@@ -116,6 +121,7 @@
                         </div>
                         <div class="blog-content">
                             <h2>blog title</h2>
+                            <span><i class="far fa-user"></i><h6>author name</h6></span>
                             <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
                             <a href="" class="btn-common">read more</a>
                         </div>
@@ -133,6 +139,7 @@
                         </div>
                         <div class="blog-content">
                             <h2>blog title</h2>
+                            <span><i class="far fa-user"></i><h6>author name</h6></span>
                             <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
                             <a href="" class="btn-common">read more</a>
                         </div>
@@ -150,6 +157,7 @@
                         </div>
                         <div class="blog-content">
                             <h2>blog title</h2>
+                            <span><i class="far fa-user"></i><h6>author name</h6></span>
                             <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
                             <a href="" class="btn-common">read more</a>
                         </div>
@@ -167,6 +175,7 @@
                         </div>
                         <div class="blog-content">
                             <h2>blog title</h2>
+                            <span><i class="far fa-user"></i><h6>author name</h6></span>
                             <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
                             <a href="" class="btn-common">read more</a>
                         </div>

@@ -12,8 +12,7 @@ class BlogController extends Controller
         return view('user.blogs',compact('hotels'));
     }
 
-    /*public function view($id){
-        $blog= BlogPost::find($id);
-        return view('user.singleblog',compact('blog'));
-    }*/
+    public function view(){
+        return view('user.singleblog');
+    }
 }
