@@ -10,4 +10,7 @@ class ProfileController extends Controller
     public function index(){
         return view('user.profile');
     }
+    public function view(){
+        return view('user.blogpost');
+    }
 }

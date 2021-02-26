@@ -12,8 +12,7 @@ class PlaceController extends Controller
         return view('user.place',compact('locations'));
     }
 
-    /*public function view($id){
-        $location= Location::find($id);
-        return view('user.singleplace',compact('location'));
-    }*/
+    public function view(){
+        return view('user.singleplace');
+    }
 }

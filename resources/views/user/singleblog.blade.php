@@ -16,6 +16,7 @@
                     <div class="flex">
                         <i class="far fa-user"></i><h6>author name</h6>
                     </div>
+                    <h5>published date: <span>12 sep 2020</span></h5>
                 </div>
             </div>
         </div>

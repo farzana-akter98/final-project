@@ -11,8 +11,16 @@
     </section>
     <section class="profileform-area pb-100">
          <div class="container">
-             <div class="row">
-                 <div class="col-md-12">
+             <div class="row mt-3">
+                 <div class="col-md-4 flex">
+                     <div class="blogpost-a text-center">
+                        <h2>post your own blog</h2>
+                        <div class="blogpost-link">
+                            <a href="{{action('User\ProfileController@view')}}" class="btn-common">post blog</a>
+                        </div>
+                     </div>
+                 </div>
+                 <div class="col-md-8">
                      <div class="profile-form">
                          <form action="">
                             <h2>profile</h2>
@@ -25,8 +33,8 @@
                                     <input type="text" placeholder="Last Name">
                                     <input type="text" placeholder="Address">
                                 </div>
-                                <div class="col-md-12">
-                                    <textarea name="" id="" cols="30" rows="10" placeholder="About You....."></textarea>
+                                <div class="col-md-12 text-center">
+                                    <textarea name="" id="" placeholder="About You....."></textarea>
                                     <input type="submit" value="Save">
                                 </div>
                             </div>

@@ -12,12 +12,16 @@ font-family: 'Tangerine', cursive;*/
     margin:0 auto;
 }
 .row {
-    display: -ms-flexbox;
-    display: flex;
-    flex-direction: row;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    margin: 0 -15px;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 0 -15px;
 }
 h1,h2,h3,h4,h5,h6{
   text-transform: capitalize;
@@ -175,10 +179,22 @@ input[type=submit] {
   border-radius: 4px;
   cursor: pointer;
 }
-
 input[type=submit]:hover {
   background-color: #ff3c6a;
 }
+/* Button Css */
+.btn-common{
+  text-transform:capitalize;
+  font-size: 16px;
+  display: inline-block;
+  position: relative;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: #fff;
+  background: #e9204f;
+}
+.btn-common:hover{color: #e9204f;background: #000;}
+/* End Button CSS*/
 /* End Common Code */ 
   /*top area*/
   .top-contact {
@@ -438,7 +454,38 @@ header.sticky .header{
   color: #f3f3f3;
 }
 /* End Banner Area */
-
+/* To Top Button CSS */
+.to-top{
+  background: #fff;
+  position: fixed;
+  bottom: 16px;
+  right: 32px;
+  width: 50px;
+  height: 50px;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  color: #e91e63;
+  border: 1px solid #e91e63;
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  z-index: 2;
+  opacity: 0;
+  pointer-events: none;
+  transition: all .5s;
+}
+.to-top:hover{background: #000;color: #e91e63;border: none;}
+.to-top.active{
+  bottom: 32px;
+  pointer-events: auto;
+  opacity: 1;
+}
+/* End To Top Button CSS */
 /* Homepage Destination CSS*/
 .destinationform{
   position: relative;
@@ -467,6 +514,7 @@ header.sticky .header{
 /* Destination Page CSS */
 .destination-tab{
   width: 100%;
+  height: auto;
   position: relative;
   overflow: hidden;
 }
@@ -477,13 +525,90 @@ header.sticky .header{
   padding-bottom: 10px;
   border-bottom: 1px solid #ccc;
 }
-.destination-btnBox a{
+.destination-btnBox button{
   text-transform: capitalize; 
   padding:10px 20px;
   color: #e91e63;
   font-size: 16px;
   font-weight: 700;
+  border: none;
   background: transparent;
+}
+.destination-content .row{margin: 0;padding: 0;}
+.tab-content .single-hotel i{color: #e91e63;}
+.tab-content .single-hotel a{text-transform: capitalize;}
+.tab-content .col-md-12{margin-top: 20px;}
+#hotel .circle-img1{margin: 10px;}
+.hotelImg{
+  position: relative;
+  width: 100%;
+  height: 300px;
+  border: 4px solid #e91e63;
+  padding: 20px;
+}
+.hotelImgBox{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+.location-details h2{color: #e91e63;margin-bottom: 10px;}
+.span{font-size: 18px;color: #e91e63;}
+.location{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background: #fff;
+  box-shadow: 0 0 8px rgba(0, 0, 0, .3);
+  margin: 10px;
+  padding: 20px 10px;
+}
+.location::before{
+  content: '';
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  width: 50px;
+  height: 50px;
+  background: #e91e63;
+  transform: rotate(45deg);
+  z-index: -1;
+}
+.location::after{
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  right: -10px;
+  width: 50px;
+  height: 50px;
+  background: #e91e63;
+  z-index: -1;
+}
+.location i{font-size: 20px; color: #e91e63;padding-right: 10px;}
+.location h5{ color: #747474;}
+.gothere{
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.gothere button{
+  padding: 30px;
+  background: #fff;
+  border: none;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+.gothere span{
+  font-size: 40px;
+  color: #e91e63;
+}
+.gothere-text{
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid #e91e63;
+}
+.nearbyplace{
+  height: 300px;
 }
 /* End Destination Page CSS */
 /*about page css*/
@@ -687,19 +812,7 @@ transition: 1s;
 .about-content p{
   margin-bottom: 20px;
 }
-/* Button Css */
-.btn-common{
-  text-transform:capitalize;
-  font-size: 16px;
-  display: inline-block;
-  position: relative;
-  padding: 10px 20px;
-  border-radius: 5px;
-  color: #fff;
-  background: #e9204f;
-}
-.btn-common:hover{color: #e9204f;background: #000;}
-/* End Button CSS*/
+
 
 /* End Home Page About CSS */
 
@@ -860,7 +973,8 @@ font-size: 24px;
 .blog-content span{display: flex;margin: 10px 0;}
 .blog-content span i, .blogprofile i{padding-right: 5px;color: #e91e63;}
 .blog-content h6{color: #e91e63;}
-
+.blogprofile h5{font-size: 18px;margin: 10px;}
+.blogprofile span{color: #e91e63;font-size: 16px;}
 /* Blog Page CSS */
  /* Single Blog Page CSS */
 .blogprofile-img{
@@ -1445,7 +1559,12 @@ font-size: 24px;
 }
 .profile-form h2{color: #e91e63;}
 /* End Profile Page CSS*/
-
+/* Blog Post Page CSS */
+.nav-tabs .nav-link{color: #e91e63;}
+.nav-tabs .nav-link.active{color: #e91e63;background: #000;}
+.blogpost-a{border: 1px solid #e91e63;padding: 20px 30px;}
+.blogpost-a h2{margin-bottom: 20px;color: #000;}
+/* End Blog Post Page CSS */
 /*footer*/
 .footer-area {
   width: 100%;
@@ -1567,6 +1686,7 @@ font-size: 24px;
 }
 .contact-btn{
   padding: 20px 20px;
+  margin-bottom: 10px;
   background: #000;
   color: #e91e63;
   position: relative;

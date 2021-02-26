@@ -6,8 +6,8 @@ Route::get('/','User\IndexController@index');
 Route::group(['prefix' => 'user'],function () {
     Route::get('about','User\AboutController@index');
     Route::get('gallery','User\GalleryController@index');
-    Route::get('place','User\PlaceController@index');
-    //Route::get('place/{id}/{slug}','User\PlaceController@view');
+    Route::get('places','User\PlaceController@index');
+    Route::get('place','User\PlaceController@view');
     Route::get('hotels','User\HotelsController@index');
     Route::get('hotel/{id}/{slug}','User\HotelsController@view');
     Route::get('restaurants','User\RestaurantsController@index');
@@ -21,6 +21,7 @@ Route::group(['prefix' => 'user'],function () {
     Route::get('blogs','User\BlogController@index');
     Route::get('destination','User\DestinationController@index');
     Route::get('profile','User\ProfileController@index');
+    Route::get('blogpost','User\ProfileController@view');
     Route::get('login','User\LoginFormController@login');
     Route::get('register','User\LoginFormController@register');
     Route::get('blog','User\BlogController@view');
@@ -162,3 +163,6 @@ Route::group(['prefix' => 'admin'],function () {
 
 
     /* -------------- End Admin Panel Route ------------- */
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
