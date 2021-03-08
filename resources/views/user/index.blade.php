@@ -4,7 +4,7 @@
   <!--homepage banner area-->
     
     <section class="welcome-area cover">
-            <div class="welcome boundary">
+            <div class="welcome container">
                 <div class="banner-text text-center">
                     <h2>welcome to the sylhet <span class="animate"></span></h2>
                     <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
@@ -14,7 +14,7 @@
 
   <!-- end homepage banner area-->
    
-  <!--homepage destination-->
+  {{-- <!--homepage destination-->
  
     <section class="destinaton-area pb-100">
         <div class="container">
@@ -42,7 +42,7 @@
         </div>
     </section>
 
-  <!-- end homepage destination-->
+  <!-- end homepage destination--> --}}
 
   <!--homepage about us-->
 
@@ -64,29 +64,35 @@
             <div class="container">       
                 <div class="about row">
                         <div class="col-md-4">
-                            <div class="about-icon"><i class="far fa-question-circle"></i></div>
-                            <div class="single-about">
-                                <h4>Who we are</h4>
-                                <p class="about-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint quae similique explicabo sed, fuga eius nostrum! Illo delectus distinctio temporibus.</p>
-                                <a href="" class="btn-common">Read More</a>
+                            <div class="who-we">
+                                <div class="about-icon"><i class="far fa-question-circle"></i></div>
+                                <div class="single-about">
+                                    <h4>Who we are</h4>
+                                    <p class="about-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint quae similique explicabo sed, fuga eius nostrum! Illo delectus distinctio temporibus.</p>
+                                    <a href="" class="btn-common">Read More</a>
+                                </div>
                             </div>
                         </div>
                         <div class="col-md-4">
-                            <div class="about-icon"><i class="fab fa-think-peaks"></i></div>
-                            <div class="single-about">
-                                
-                                <h4>Our philosophy</h4>
-                                <p class="about-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint quae similique explicabo sed, fuga eius nostrum! Illo delectus distinctio temporibus.</p>
-                                <a href="" class="btn-common">Read More</a>
+                            <div class="our-phi">
+                                <div class="about-icon"><i class="fab fa-think-peaks"></i></div>
+                                <div class="single-about">
+                                    
+                                    <h4>Our philosophy</h4>
+                                    <p class="about-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint quae similique explicabo sed, fuga eius nostrum! Illo delectus distinctio temporibus.</p>
+                                    <a href="" class="btn-common">Read More</a>
+                                </div>
                             </div>
                         </div>
                         <div class="col-md-4">
-                            <div class="about-icon"><i class="fas fa-network-wired"></i></div>
-                            <div class="single-about">
-                                
-                                <h4>How we work</h4>
-                                <p class="about-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint quae similique explicabo sed, fuga eius nostrum! Illo delectus distinctio temporibus.</p>
-                                <a href="" class="btn-common">Read More</a>
+                            <div class="how-we">
+                                <div class="about-icon"><i class="fas fa-network-wired"></i></div>
+                                <div class="single-about">
+                                    
+                                    <h4>How we work</h4>
+                                    <p class="about-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint quae similique explicabo sed, fuga eius nostrum! Illo delectus distinctio temporibus.</p>
+                                    <a href="" class="btn-common">Read More</a>
+                                </div>
                             </div>
                         </div>
                 </div>    
@@ -115,7 +121,7 @@
                                 </div>
                                 <div class="place-content text-center">
                                     <h3>{{$item->name}}</h3>
-                                    <a href="">
+                                    <a href="{{action('User\PlaceController@view',['id'=> $item->id,'slug'=>str_slug($item->name)])}}">
                                         <i class="fas fa-location-arrow"></i>
                                         <span>{{$item->address}}</span>
                                     </a>
@@ -278,7 +284,7 @@
                                 <h2>{{$item->title}}</h2>
                                 <span><i class="far fa-user"></i><h6>author name</h6></span>
                                 <p>{{str_limit($item->description,150,'....')}}</p>
-                                <a href="" class="btn-common">Read More</a>
+                                <a href="{{action('User\BlogController@view',['id'=> $item->id,'slug'=>str_slug($item->title)])}}" class="btn-common">Read More</a>
                             </div>
                         </div>
                     </div>

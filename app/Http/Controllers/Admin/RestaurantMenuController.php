@@ -29,13 +29,15 @@ class RestaurantMenuController extends Controller
             $request->imageName->move('public/uploads/restmenuImages/',$fileName);
           }
         $restmenu->price=$request->price;  
+        $restmenu->menuType=$request->menuType; 
         $restmenu->save();
         return redirect()->to('admin/all-restmenu');
     }
     public function update_page($id){
         $restmenu=RestaurantMenu::find($id);
+        $restmenus=RestaurantMenu::all();
         $restnames=RestaurentName::all();
-        return view('admin.restaurentMenu.update-restaurentMenu',compact('restmenu','restnames'));
+        return view('admin.restaurentMenu.update-restaurentMenu',compact('restmenu','restmenus','restnames'));
     }
     public function update(Request $request){
         $restmenu=RestaurantMenu::find($request->id);
@@ -53,6 +55,7 @@ class RestaurantMenuController extends Controller
             $request->imageName->move('public/uploads/restmenuImages/',$fileName);
         }
         $restmenu->price=$request->price; 
+        $restmenu->menuType=$request->menuType; 
         $restmenu->save();
         return redirect()->to('admin/all-restmenu');
     }

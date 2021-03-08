@@ -34,7 +34,7 @@
                             </div>
                             <div class="place-content text-center">
                                 <h3>{{$item->name}}</h3>
-                                <a href="">
+                                <a href="{{action('User\PlaceController@view',['id'=> $item->id,'slug'=>str_slug($item->name)])}}">
                                     <i class="fas fa-location-arrow"></i>
                                     <span>{{$item->address}}</span>
                                 </a>

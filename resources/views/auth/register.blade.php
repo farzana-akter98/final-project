@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="{{asset('public/user_assets/')}}/css/style.css">
+
+
+    <script src="{{ asset('public/js/app.js') }}" defer></script>
     <title>Registration Form</title>
 </head>
 <body>
@@ -21,21 +24,40 @@
             <div class="loginContainer">
                 <div class="loginForm">
                     <h2>registration form</h2>
-                    <form action="">
+                    <form action="{{ route('register') }}" method="POST">
+                        @csrf
                         <div class="inputBox">
-                            <input type="text" placeholder="Username">
+                            <input id="name" type="text" placeholder="Username" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
+                            @error('name')
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
+                            @enderror
                         </div>
                         <div class="inputBox">
-                            <input type="email" placeholder="Email">
+                            <input id="email" type="email" placeholder="Email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email">
+                            @error('email')
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
+                            @enderror
                         </div>
                         <div class="inputBox">
-                            <input type="text" placeholder="Password">
+                            <input id="password" type="password" placeholder="Password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
+                            @error('password')
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
+                            @enderror
+                        </div>
+                        <div class="inputBox">
+                            <input id="password-confirm" type="password" placeholder="Confirm Password" class="form-control" name="password_confirmation" required autocomplete="new-password">
                         </div>
                         <div class="inputBox">
                             <input type="submit" value="Register">
                         </div>
-                        <p class="forget">Already have an account?<a href="{{action('User\LoginFormController@login')}}">Log In</a></p>
                     </form>
+                    <p class="forget">Already have an account?<a href="{{ route('login') }}">Log In</a></p>
                 </div>
             </div>
         </div>

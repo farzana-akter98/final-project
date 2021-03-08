@@ -39,6 +39,15 @@
                         <input class="mdl-textfield__input" type="text" name="price" value="{{$restmenu->price}}"/>
                         <label class="mdl-textfield__label">Price</label>
                     </div>
+                    <div class="mdl-cell mdl-cell--12-col mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                        <select name="menuType" id="" class="place">
+                            <option value="">Select a Type</option>
+                            <option value="Breakfast" @if ($restmenu->menuType == 'Breakfast') selected @endif>Breakfast</option>
+                            <option value="Lunch" @if ($restmenu->menuType == 'Lunch') selected @endif>Lunch</option>
+                            <option value="Dinner"@if ($restmenu->menuType == 'Dinner') selected @endif>Dinner</option>
+                            <option value="Drinks"@if ($restmenu->menuType == 'Drinks') selected @endif>Drinks</option>
+                        </select>
+                    </div>
                 </div>
                 <div class="form__action">
                     <button id="submit_button" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">

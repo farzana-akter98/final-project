@@ -8,6 +8,10 @@
                         <i class="material-icons" role="presentation">dashboard</i>
                         Dashboard
                     </a>
+                    <a class="mdl-navigation__link" href="{{action('Admin\AboutController@index')}}">
+                        <i class="material-icons">local_hotel</i>
+                        About
+                    </a>
                     <a class="mdl-navigation__link" href="{{action('Admin\LocationController@index')}}">
                         <i class="material-icons">room</i>
                         Location

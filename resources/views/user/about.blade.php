@@ -27,7 +27,7 @@
             </div>
         </div>
     </section>
-    <section class="about-area1 pb-100">
+    {{-- <section class="about-area1 pb-100">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
@@ -41,42 +41,44 @@
                     </div>
                 </div>
             </div>
-    </section>
+    </section> --}}
     <section class="value-area pb-100">
-            <div class="container section-title pt-100">
-                <div class="row pt-100">
-                    <div class="value who flex">
-                        <div class="value-img col-md-6">
-                            <img src="{{asset('public/user_assets/')}}/images/about/who.jpg" alt="">
-                        </div>
-                        <div class="value-content col-md-6">
-                            <h3>who we are</h3>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry typesetting industry.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="value philosophy flex">
-                        <div class="value-img col-md-6">
-                            <img src="{{asset('public/user_assets/')}}/images/about/philosophy.jpg" alt="">
-                        </div>
-                        <div class="value-content col-md-6">
-                            <h3>our philosophy</h3>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry typesetting industry.</p>
+            <div class="container">
+                @foreach ($abouts as $item)
+                    <div class="row">
+                        <div class="value who flex">
+                            <div class="value-img col-md-6">
+                                <img src="{{asset('public/uploads/aboutImages/'.$item->whoimage)}}" alt="">
+                            </div>
+                            <div class="value-content col-md-6">
+                                <h3>{{$item->whoname}}</h3>
+                                <p>{{$item->whodetails}}</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="value how flex">
-                        <div class="value-img col-md-6">
-                            <img src="{{asset('public/user_assets/')}}/images/about/how.jpg" alt="">
-                        </div>
-                        <div class="value-content col-md-6">
-                            <h3>how we work</h3>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry typesetting industry.</p>
+                    <div class="row">
+                        <div class="value philosophy flex">
+                            <div class="value-img col-md-6">
+                                <img src="{{asset('public/uploads/aboutImages/'.$item->ourimage)}}" alt="">
+                            </div>
+                            <div class="value-content col-md-6">
+                                <h3>{{$item->ourname}}</h3>
+                                <p>{{$item->ourdetails}}</p>
+                            </div>
                         </div>
                     </div>
-                </div>
+                    <div class="row">
+                        <div class="value how flex">
+                            <div class="value-img col-md-6">
+                                <img src="{{asset('public/uploads/aboutImages/'.$item->howimage)}}" alt="">
+                            </div>
+                            <div class="value-content col-md-6">
+                                <h3>{{$item->howname}}</h3>
+                                <p>{{$item->howdetails}}</p>
+                            </div>
+                        </div>
+                    </div>
+                @endforeach
             </div>
     </section>  
 

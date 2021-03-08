@@ -4,7 +4,7 @@
     <!-- gallery page banner-->
 
     <section class="banner-area bg" style="background: url('{{asset('public/user_assets/')}}/images/gbanner3.jpg'); background-size:cover; background-position:center;">
-        <div class="container">
+        <div class="container-fluid">
             <div class="banner-text text-center">
                 <h2>our roaming gallery.</h2>
                 <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
@@ -25,31 +25,16 @@
                 </div>
             </div>
             
-            <div class="grid">
-                <div class="grid-sizer"></div>
-                <div class="grid-item">
-                    <a href="{{asset('public/user_assets/')}}/images/gallery/gallery1.jpg"  data-lightbox="mygallery" data-title="Location Address"><img src="{{asset('public/user_assets/')}}/images/gallery/gallery1.jpg" alt=""></a>
-                </div>
-                <div class="grid-item">
-                    <a href="{{asset('public/user_assets/')}}/images/gallery/gallery8.jpg"  data-lightbox="mygallery" data-title="Location Address"><img src="{{asset('public/user_assets/')}}/images/gallery/gallery8.jpg" alt=""></a>
-                </div>
-                <div class="grid-item">
-                    <a href="{{asset('public/user_assets/')}}/images/gallery/gallery7.jpg"  data-lightbox="mygallery" data-title="Location Address"><img src="{{asset('public/user_assets/')}}/images/gallery/gallery7.jpg" alt=""></a>
-                </div>
-                <div class="grid-item">
-                    <a href="{{asset('public/user_assets/')}}/images/gallery/gallery4.jpg"  data-lightbox="mygallery" data-title="Location Address"><img src="{{asset('public/user_assets/')}}/images/gallery/gallery4.jpg" alt=""></a>
-                </div>
-                <div class="grid-item">
-                    <a href="{{asset('public/user_assets/')}}/images/gallery/gallery5.jpg"  data-lightbox="mygallery" data-title="Location Address"><img src="{{asset('public/user_assets/')}}/images/gallery/gallery5.jpg" alt=""></a>
-                </div>
-                <div class="grid-item">
-                    <a href="{{asset('public/user_assets/')}}/images/gallery/gallery6.jpg"  data-lightbox="mygallery" data-title="Location Address"><img src="{{asset('public/user_assets/')}}/images/gallery/gallery6.jpg" alt=""></a>
-                </div>
-                <div class="grid-item">
-                    <a href="{{asset('public/user_assets/')}}/images/gallery/gallery2.jpg"  data-lightbox="mygallery" data-title="Location Address"><img src="{{asset('public/user_assets/')}}/images/gallery/gallery2.jpg" alt=""></a>
-                </div>
-                <div class="grid-item">
-                    <a href="{{asset('public/user_assets/')}}/images/gallery/gallery3.jpg"  data-lightbox="mygallery" data-title="Location Address"><img src="{{asset('public/user_assets/')}}/images/gallery/gallery3.jpg" alt=""></a>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="grid">
+                        <div class="grid-sizer"></div>
+                        @foreach ($blogimages as $item)
+                            <div class="grid-item">
+                                <a href="{{asset('public/uploads/blogsImages/'.$item->imageName)}}"  data-lightbox="mygallery"><img src="{{asset('public/uploads/blogsImages/'.$item->imageName)}}" alt=""></a>
+                            </div>
+                        @endforeach
+                    </div>
                 </div>
             </div>
         </div>
@@ -61,11 +46,6 @@
         itemSelector: '.grid-item',
         columnWidth: '.grid-sizer',
         percentPosition: true
-        });
-
-        imagesLoaded( grid ).on( 'progress', function() {
-        // layout Masonry after each image loads
-        msnry.layout();
         });
     </script>
 

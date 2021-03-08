@@ -34,6 +34,15 @@
                         <input class="mdl-textfield__input" type="text" name="price"/>
                         <label class="mdl-textfield__label">Price</label>
                     </div>
+                    <div class="mdl-cell mdl-cell--12-col mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                        <select name="menuType" id="" class="place">
+                            <option value="">Select a Type</option>
+                            <option value="Breakfast">Breakfast</option>
+                            <option value="Lunch">Lunch</option>
+                            <option value="Dinner">Dinner</option>
+                            <option value="Drinks">Drinks</option>
+                        </select>
+                    </div>
                 </div>
                 <div class="form__action">
                     <button id="submit_button" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">

@@ -22,6 +22,7 @@
     <script src="{{asset('public/user_assets/')}}/js/lightbox-plus-jquery.min.js"></script>  
     <script src="{{asset('public/user_assets/')}}/js/typed.js"></script>
     <script src="{{asset('public/user_assets/')}}/js/jquery.min.js"></script>
+    <script src="{{asset('public/user_assets/')}}/js/jquery-3.6.0.min.js"></script>
     <script src="{{asset('public/user_assets/')}}/js/owl.carousel.min.js"></script>
     <script src="{{asset('public/user_assets/')}}/js/bootstrap.min.js"></script>
 

@@ -41,7 +41,7 @@
                         @if ($blogpost->image == 'default.jpg')
                               <img width="250" height="130" src="{{asset('public/image/default.jpg')}}" alt="">
                             @else
-                              <img width="250" height="130" id="location_image" src="{{asset('public/uploads/blogsImages/'.$blogpost->image)}}" alt="">
+                              <img width="250" height="130" id="blog_image" src="{{asset('public/uploads/blogsImages/'.$blogpost->image)}}" alt="">
                         @endif
                     </div>
                     @if (count($blogpost->blogImage) > 0)

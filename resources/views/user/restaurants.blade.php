@@ -24,114 +24,20 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-4">
-                    <div class="restaurant flex">
-                        <div class="restaurant-content">
-                            <div class="restaurant-info">
-                                <h3>name</h3>
-                                <p>There are many variations of passages of Lorem Ipsum available,don't look even slightly believable.</p>
-                                <a href="{{action('User\RestaurantController@index')}}">read more</a>
+                @foreach ($restaurants as $item)
+                    <div class="col-md-4">
+                        <div class="restaurant flex">
+                            <div class="restaurant-content">
+                                <div class="restaurant-info">
+                                    <h3>{{$item->name}}</h3>
+                                    <p>There are many variations of passages of Lorem Ipsum available,don't look even slightly believable.</p>
+                                    <a href="{{action('User\RestaurantsController@view',['id'=> $item->id,'slug'=>str_slug($item->name)])}}">read more</a>
+                                </div>
                             </div>
+                            <img src="{{asset('public/uploads/restnameImages/'.$item->image)}}" alt="">
                         </div>
-                        <img src="{{asset('public/user_assets/')}}/images/restaurant/r1.jpg" alt="">
                     </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="restaurant flex">
-                        <div class="restaurant-content">
-                            <div class="restaurant-info">
-                                <h3>name</h3>
-                                <p>There are many variations of passages of Lorem Ipsum available,don't look even slightly believable.</p>
-                                <a href="">read more</a>
-                            </div>
-                        </div>
-                        <img src="{{asset('public/user_assets/')}}/images/restaurant/r2.jpg" alt="">
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="restaurant flex">
-                        <div class="restaurant-content">
-                            <div class="restaurant-info">
-                                <h3>name</h3>
-                                <p>There are many variations of passages of Lorem Ipsum available,don't look even slightly believable.</p>
-                                <a href="">read more</a>
-                            </div>
-                        </div>
-                        <img src="{{asset('public/user_assets/')}}/images/restaurant/r3.jpg" alt="">
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="restaurant flex">
-                        <div class="restaurant-content">
-                            <div class="restaurant-info">
-                                <h3>name</h3>
-                                <p>There are many variations of passages of Lorem Ipsum available,don't look even slightly believable.</p>
-                                <a href="">read more</a>
-                            </div>
-                        </div>
-                        <img src="{{asset('public/user_assets/')}}/images/restaurant/r4.jpg" alt="">
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="restaurant flex">
-                        <div class="restaurant-content">
-                            <div class="restaurant-info">
-                                <h3>name</h3>
-                                <p>There are many variations of passages of Lorem Ipsum available,don't look even slightly believable.</p>
-                                <a href="">read more</a>
-                            </div>
-                        </div>
-                        <img src="{{asset('public/user_assets/')}}/images/restaurant/r5.jpg" alt="">
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="restaurant flex">
-                        <div class="restaurant-content">
-                            <div class="restaurant-info">
-                                <h3>name</h3>
-                                <p>There are many variations of passages of Lorem Ipsum available,don't look even slightly believable.</p>
-                                <a href="">read more</a>
-                            </div>
-                        </div>
-                        <img src="{{asset('public/user_assets/')}}/images/restaurant/r6.jpg" alt="">
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="restaurant flex">
-                        <div class="restaurant-content">
-                            <div class="restaurant-info">
-                                <h3>name</h3>
-                                <p>There are many variations of passages of Lorem Ipsum available,don't look even slightly believable.</p>
-                                <a href="">read more</a>
-                            </div>
-                        </div>
-                        <img src="{{asset('public/user_assets/')}}/images/restaurant/r7.jpg" alt="">
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="restaurant flex">
-                        <div class="restaurant-content">
-                            <div class="restaurant-info">
-                                <h3>name</h3>
-                                <p>There are many variations of passages of Lorem Ipsum available,don't look even slightly believable.</p>
-                                <a href="">read more</a>
-                            </div>
-                        </div>
-                        <img src="{{asset('public/user_assets/')}}/images/restaurant/r8.jpg" alt="">
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="restaurant flex">
-                        <div class="restaurant-content">
-                            <div class="restaurant-info">
-                                <h3>name</h3>
-                                <p>There are many variations of passages of Lorem Ipsum available,don't look even slightly believable.</p>
-                                <a href="">read more</a>
-                            </div>
-                        </div>
-                        <img src="{{asset('public/user_assets/')}}/images/restaurant/r9.jpg" alt="">
-                    </div>
-                </div>
+                @endforeach
             </div>
         </div>
     </section>

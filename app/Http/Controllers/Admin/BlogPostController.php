@@ -38,18 +38,17 @@ class BlogPostController extends Controller
 
         $images = $request->file('images');
         if ($request->hasFile('images')){
-            foreach($images as $image){
-              $extension1 = $image->extension();
-              $filename1 = rand(123456,999999).'.'.$extension1;
-              $image->move('public/uploads/blogsImages/',$filename1);
+          foreach($images as $image){
+            $extension1 = $image->extension();
+            $filename1 = rand(123456,999999).'.'.$extension1;
+            $image->move('public/uploads/blogsImages/',$filename1);
 
-              $blogImage = new BlogImages();
-              $blogImage->blog_post_id = $blogID;
-              $blogImage->imageName = $filename1;
-              $blogImage->save();
-            }
+            $blogImage = new BlogImages();
+            $blogImage->blog_post_id = $blogID;
+            $blogImage->imageName = $filename1;
+            $blogImage->save();
+          }
         }
-
         return redirect()->to('admin/all-blogpost');
       }
     public function update_page($id){

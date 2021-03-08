@@ -23,6 +23,7 @@
                             <th class="mdl-data-table__cell--non-numeric">RestaurantMenu Name</th>
                             <th class="mdl-data-table__cell--non-numeric">Image</th>
                             <th class="mdl-data-table__cell--non-numeric">Price</th>
+                            <th class="mdl-data-table__cell--non-numeric">Menu Type</th>
                             <th class="mdl-data-table__cell--non-numeric">Action</th>
                         </tr>
                         </thead>
@@ -41,6 +42,7 @@
                               <img width="50" height="30" src="{{asset('public/uploads/restmenuImages/'.$item->image)}}" alt="">
                             @endif</td>
                             <td class="mdl-data-table__cell--non-numeric">{{$item->price}}</td>
+                            <td class="mdl-data-table__cell--non-numeric">{{$item->menuType}}</td>
                             <td class="mdl-data-table__cell--non-numeric"><span class="label"><a href="{{action('Admin\RestaurantMenuController@update_page',['id'=> $item->id])}}">Update</a></span><span><a onclick="return confirm('Are you sure to delete?')" href="{{action('Admin\RestaurantMenuController@delete',['id'=> $item->id])}}" class="delete_a">Delete</a></span></td>
                         </tr>  
                          @endforeach
