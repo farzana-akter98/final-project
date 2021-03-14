@@ -2,7 +2,7 @@
     <div class="mdl-layout__header-row">
         <div class="mdl-layout-spacer"></div>
         <!-- Search-->
-        <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable">
+        {{-- <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable">
             <label class="mdl-button mdl-js-button mdl-button--icon" for="search">
                 <i class="material-icons">search</i>
             </label>
@@ -11,9 +11,9 @@
                 <input class="mdl-textfield__input" type="text" id="search"/>
                 <label class="mdl-textfield__label" for="search">Enter your query...</label>
             </div>
-        </div>
+        </div> --}}
 
-        <div class="material-icons mdl-badge mdl-badge--overlap mdl-button--icon notification" id="notification"
+        {{-- <div class="material-icons mdl-badge mdl-badge--overlap mdl-button--icon notification" id="notification"
              data-badge="23">
             notifications_none
         </div>
@@ -70,13 +70,15 @@
             <li class="mdl-list__item list__item--border-top">
                 <button href="#" class="mdl-button mdl-js-button mdl-js-ripple-effect">ALL NOTIFICATIONS</button>
             </li>
-        </ul>
+        </ul> --}}
 
-        <div class="material-icons mdl-badge mdl-badge--overlap mdl-button--icon message" id="inbox" data-badge="4">
-            mail_outline
-        </div>
+        <a href="{{action('Admin\ContactController@index')}}">
+            <div class="material-icons mdl-badge mdl-badge--overlap mdl-button--icon message" id="inbox">
+                mail_outline
+            </div>
+        </a>
         <!-- Messages dropdown-->
-        <ul class="mdl-menu mdl-list mdl-js-menu mdl-js-ripple-effect mdl-menu--bottom-right mdl-shadow--2dp messages-dropdown"
+        {{-- <ul class="mdl-menu mdl-list mdl-js-menu mdl-js-ripple-effect mdl-menu--bottom-right mdl-shadow--2dp messages-dropdown"
             for="inbox">
             <li class="mdl-list__item">
                 You have 4 new messages!
@@ -132,10 +134,10 @@
             <li class="mdl-list__item list__item--border-top">
                 <button href="#" class="mdl-button mdl-js-button mdl-js-ripple-effect">SHOW ALL MESSAGES</button>
             </li>
-        </ul>
+        </ul> --}}
 
         <div class="avatar-dropdown" id="icon">
-            <span>Luke</span>
+            <span>{{Auth::user()->name}}</span>
         <img src="{{ asset('public/admin_assets/') }}/images/Icon_header.png">
         </div>
         <!-- Account dropdawn-->
@@ -144,12 +146,20 @@
             <li class="mdl-list__item mdl-list__item--two-line">
                 <span class="mdl-list__item-primary-content">
                     <span class="material-icons mdl-list__item-avatar"></span>
-                    <span>Luke</span>
-                    <span class="mdl-list__item-sub-title">Luke@skywalker.com</span>
+                    <span>{{Auth::user()->name}}</span>
+                    <span class="mdl-list__item-sub-title">{{Auth::user()->email}}</span>
                 </span>
             </li>
             <li class="list__item--border-top"></li>
-            <li class="mdl-menu__item mdl-list__item">
+            <a href="{{action('User\IndexController@index')}}">
+                <li class="mdl-menu__item mdl-list__item">
+                    <span class="mdl-list__item-primary-content">
+                        <i class="material-icons mdl-list__item-icon">language</i>
+                        View Website
+                    </span>
+                </li>
+            </a>
+            {{-- <li class="mdl-menu__item mdl-list__item">
                 <span class="mdl-list__item-primary-content">
                     <i class="material-icons mdl-list__item-icon">account_circle</i>
                     My account
@@ -176,8 +186,9 @@
                     <i class="material-icons mdl-list__item-icon">settings</i>
                     Settings
                 </span>
-            </li>
-            <a href="login.html">
+            </li> --}}
+            <a href="{{ route('logout') }}" onclick="event.preventDefault();
+            document.getElementById('logout-form').submit();">
                 <li class="mdl-menu__item mdl-list__item">
                     <span class="mdl-list__item-primary-content">
                         <i class="material-icons mdl-list__item-icon text-color--secondary">exit_to_app</i>
@@ -186,8 +197,10 @@
                 </li>
             </a>
         </ul>
-
-        <button id="more"
+        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+            @csrf
+        </form>
+        {{-- <button id="more"
                 class="mdl-button mdl-js-button mdl-button--icon">
             <i class="material-icons">more_vert</i>
         </button>
@@ -203,6 +216,6 @@
             <li class="mdl-menu__item">
                 F.A.Q.
             </li>
-        </ul>
+        </ul> --}}
     </div>
 </header>

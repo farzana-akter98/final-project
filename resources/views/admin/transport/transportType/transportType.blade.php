@@ -20,7 +20,8 @@
                         <tr>
                             <th class="mdl-data-table__cell--non-numeric">#</th>
                             <th class="mdl-data-table__cell--non-numeric">Location</th>
-                            <th class="mdl-data-table__cell--non-numeric">Transport Type</th>
+                            <th class="mdl-data-table__cell--non-numeric">Transport Category</th>
+                            {{-- <th class="mdl-data-table__cell--non-numeric">Transport Type</th> --}}
                             <th class="mdl-data-table__cell--non-numeric">Action</th>
                         </tr>
                         </thead>
@@ -32,7 +33,8 @@
                          <tr>
                             <td class="mdl-data-table__cell--non-numeric">{{$i++}}</td>
                             <td class="mdl-data-table__cell--non-numeric">{{$item->location['name']}}</td>
-                            <td class="mdl-data-table__cell--non-numeric">{{$item->type}}</td>
+                            <td class="mdl-data-table__cell--non-numeric">{{$item->category['category']}}</td>
+                            {{-- <td class="mdl-data-table__cell--non-numeric">{{$item->type}}</td> --}}
                             <td class="mdl-data-table__cell--non-numeric"><span class="label"><a href="{{action('Admin\TransportTypeController@update_page',['id'=> $item->id])}}">Update</a></span><span><a onclick="return confirm('Are you sure to delete?')" href="{{action('Admin\TransportTypeController@delete',['id'=> $item->id])}}" class="delete_a">Delete</a></span></td>
                         </tr>  
                          @endforeach

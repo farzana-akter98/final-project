@@ -21,9 +21,17 @@
                              </select>
                         </div>
                         <div class="mdl-cell mdl-cell--12-col mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                            <select name="transport_category_id" class="place">
+                                <option value=""> Select a Category </option>
+                                @foreach ($transcategories as $category)
+                                 <option value="{{$category->id}}"> {{$category->category}} </option> 
+                                @endforeach
+                             </select>
+                        </div>
+                        {{-- <div class="mdl-cell mdl-cell--12-col mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
                             <input class="mdl-textfield__input" type="text" name="type"/>
                             <label class="mdl-textfield__label">Transport Type</label>
-                        </div>
+                        </div> --}}
                 </div>
                 <div class="form__action">
                     <button id="submit_button" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">

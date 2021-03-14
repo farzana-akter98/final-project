@@ -1,6 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&family=Langar&family=Tangerine:wght@400;700&display=swap');
-/*font-family: 'Merienda', cursive;
-font-family: 'Tangerine', cursive;*/
 /* Common Code*/
 *{
     margin: 0;
@@ -165,9 +163,9 @@ left: 50%;
   text-transform: uppercase;
   line-height: 17px;
 }
-input[type=text], select, textarea, input[type=email] {
+input[type=text], select, textarea, input[type=email], input[type=file], input[type=password]{
   width: 100%; 
-  padding: 12px; 
+  padding: 10px; 
   border: 1px solid #ccc;
   border-radius: 4px; 
   box-sizing: border-box; 
@@ -179,7 +177,7 @@ input[type=text], select, textarea, input[type=email] {
 input[type=submit] {
   background-color: #e9204f;
   color: white;
-  padding: 12px 20px;
+  padding: 10px 20px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
@@ -1025,7 +1023,6 @@ font-size: 24px;
 .blog{
   position: relative;
   width: 100%;
-  height: 550px;
   background: #fff;
   margin-bottom: 30px;
 }
@@ -1369,6 +1366,7 @@ font-size: 24px;
 .single-menu h4 span{
   float: right;
   color: #e91e63;
+  font-size: 16px;
   font-style: italic;
 }
 .single-menu:hover img{

@@ -2,7 +2,6 @@
 @section('title','Location')
 @section('content')
 <main class="mdl-layout__content ">
-
     <div class="mdl-grid ui-tables">
         <div class="mdl-cell mdl-cell--12-col-desktop mdl-cell--12-col-tablet mdl-cell--4-col-phone">
             <div class="mdl-card mdl-shadow--2dp">

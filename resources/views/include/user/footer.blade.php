@@ -65,40 +65,6 @@
                             </a>
                         </div>
                     </div>
-                    
-                    {{-- <div class="modal" id="popup">
-                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-                            <div class="contact-info">  
-                                
-                                <form>
-                                    <div class="form-row">
-                                        <div class="form-group pt-10">
-                                        <label for="inputEmail4">First Name</label>
-                                        <input type="text" class="form-control" placeholder="First Name">
-                                        </div>
-                                        <div class="form-group pb-10">
-                                        <label for="inputPassword4">Last Name</label>
-                                        <input type="text" class="form-control" placeholder="Last Name">
-                                        </div>
-                                    </div>
-                                    <div class="form-group pb-10">
-                                        <label for="inputEmail4">Email</label>
-                                        <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
-                                    </div>
-                                    <div class="form-group pb-10">
-                                        <label for="inputPassword4">Password</label>
-                                        <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
-                                    </div>
-                                    <div class="form-group pb-10">
-                                        <label for="exampleFormControlTextarea1">Write your query...</label>
-                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                                        </div>
-                                    <button type="submit" class="btn btn-primary">Sign in</button>
-                                </form>
-                                    <a href="" class="close-popup">&times;</a>
-                            </div>
-                        </div>
-                    </div> --}}
                 </div>
                 <button id="show-modal" class="btn contact-btn"><span>Make an inquiry!</span></button>
                 <div class="modal fade" id="myModal">
@@ -112,28 +78,25 @@
                                 <div class="container-fluid">
                                     <div class="row">
                                         <div class="col-md-12">
-                                            <form>
+                                            <form method="POST" action="{{action('User\QueryController@store')}}" enctype="multipart/form-data">
+                                                @csrf
                                                 <div class="form-row">
                                                     <div class="form-group pt-10">
                                                     <label class="h-pink" for="inputEmail4">First Name</label>
-                                                    <input type="text" class="form-control" placeholder="First Name">
+                                                    <input type="text" name="firstname" class="form-control" placeholder="First Name">
                                                     </div>
                                                     <div class="form-group pb-10">
                                                     <label class="h-pink" for="inputPassword4">Last Name</label>
-                                                    <input type="text" class="form-control" placeholder="Last Name">
+                                                    <input type="text" name="lastname" class="form-control" placeholder="Last Name">
                                                     </div>
                                                 </div>
                                                 <div class="form-group pb-10">
                                                     <label class="h-pink" for="inputEmail4">Email</label>
-                                                    <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
-                                                </div>
-                                                <div class="form-group pb-10">
-                                                    <label class="h-pink" for="inputPassword4">Password</label>
-                                                    <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+                                                    <input type="email" name="email" class="form-control" id="inputEmail4" placeholder="Email">
                                                 </div>
                                                 <div class="form-group pb-10">
                                                     <label class="h-pink" for="exampleFormControlTextarea1">Write your query...</label>
-                                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                                    <textarea name="query" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                                                     </div>
                                                 <button type="submit" class="btn btn-common">Send</button>
                                             </form>

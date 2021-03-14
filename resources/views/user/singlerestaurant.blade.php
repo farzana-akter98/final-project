@@ -104,297 +104,103 @@
                 </a>
               </li>
             </ul>
-            {{-- @php
+            @php
                $all = App\RestaurantMenu::where('restaurent_name_id',$restaurant->id)->get();
-               $breakfast = App\RestaurantMenu::where('restaurent_name_id',$restaurant->id)where('menuType','Breakfast')->get();
-               $lunch = App\RestaurantMenu::where('restaurent_name_id',$restaurant->id)where('menuType','Lunch')->get();
-               $dinner = App\RestaurantMenu::where('restaurent_name_id',$restaurant->id)where('menuType','Dinner')->get();
-               $drinks = App\RestaurantMenu::where('restaurent_name_id',$restaurant->id)where('menuType','Drinks')->get();
+               $breakfast = App\RestaurantMenu::where('restaurent_name_id',$restaurant->id)->where('menuType','Breakfast')->get();
+               $lunch = App\RestaurantMenu::where('restaurent_name_id',$restaurant->id)->where('menuType','Lunch')->get();
+               $dinner = App\RestaurantMenu::where('restaurent_name_id',$restaurant->id)->where('menuType','Dinner')->get();
+               $drinks = App\RestaurantMenu::where('restaurent_name_id',$restaurant->id)->where('menuType','Drinks')->get();
                
-            @endphp --}}
+            @endphp
             <div class="tab-content pt-50">
               <div class="tab-pane fade show active" id="all">
                 <div class="row">
-                  <div class="col-md-6">
-                    <div class="menu">
-                      <div class="single-menu">
-                          <img src="{{asset('public/user_assets/')}}/images/singleresturent/about.jpg">
-                          <div class="menu-content">
-                              <h4>Beef Sathkora <span>$45</span></h4>
-                              <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                  Donec semper ullamcorper ipsum, sed finibus turpis rutrum quis.</p>
-                          </div>
+                  @foreach ($all as $item)
+                    <div class="col-md-6">
+                      <div class="menu">
+                        <div class="single-menu">
+                            <img src="{{asset('public/uploads/restmenuImages/'.$item->image)}}">
+                            <div class="menu-content">
+                                <h4>{{$item->menu_name}} <span>{{money($item->price)}}</span></h4>
+                                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Donec semper ullamcorper ipsum, sed finibus turpis rutrum quis.</p>
+                            </div>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="menu">
-                      <div class="single-menu">
-                          <img src="{{asset('public/user_assets/')}}/images/singleresturent/about.jpg">
-                          <div class="menu-content">
-                              <h4>Beef Sathkora <span>$45</span></h4>
-                              <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                  Donec semper ullamcorper ipsum, sed finibus turpis rutrum quis.</p>
-                          </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="menu">
-                      <div class="single-menu">
-                          <img src="{{asset('public/user_assets/')}}/images/singleresturent/about.jpg">
-                          <div class="menu-content">
-                              <h4>Beef Sathkora <span>$45</span></h4>
-                              <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                  Donec semper ullamcorper ipsum, sed finibus turpis rutrum quis.</p>
-                          </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="menu">
-                      <div class="single-menu">
-                          <img src="{{asset('public/user_assets/')}}/images/singleresturent/about.jpg">
-                          <div class="menu-content">
-                              <h4>Beef Sathkora <span>$45</span></h4>
-                              <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                  Donec semper ullamcorper ipsum, sed finibus turpis rutrum quis.</p>
-                          </div>
-                      </div>
-                    </div>
-                  </div>
+                  @endforeach
                 </div>
               </div>
               <div class="tab-pane fade" id="breakfast">
                 <div class="row">
-                  <div class="col-md-6">
-                    <div class="menu">
-                      <div class="single-menu">
-                          <img src="{{asset('public/user_assets/')}}/images/singleresturent/breakfast/b1.jpg">
-                          <div class="menu-content">
-                              <h4>Beef Sathkora <span>$45</span></h4>
-                              <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                  Donec semper ullamcorper ipsum, sed finibus turpis rutrum quis.</p>
-                          </div>
+                  @foreach ($breakfast as $item)
+                    <div class="col-md-6">
+                      <div class="menu">
+                        <div class="single-menu">
+                            <img src="{{asset('public/uploads/restmenuImages/'.$item->image)}}">
+                            <div class="menu-content">
+                                <h4>{{$item->menu_name}} <span>{{money($item->price)}}</span></h4>
+                                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Donec semper ullamcorper ipsum, sed finibus turpis rutrum quis.</p>
+                            </div>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="menu">
-                      <div class="single-menu">
-                          <img src="{{asset('public/user_assets/')}}/images/singleresturent/breakfast/b2.jpg">
-                          <div class="menu-content">
-                              <h4>Beef Sathkora <span>$45</span></h4>
-                              <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                  Donec semper ullamcorper ipsum, sed finibus turpis rutrum quis.</p>
-                          </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="menu">
-                      <div class="single-menu">
-                          <img src="{{asset('public/user_assets/')}}/images/singleresturent/breakfast/b3.jpg">
-                          <div class="menu-content">
-                              <h4>Beef Sathkora <span>$45</span></h4>
-                              <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                  Donec semper ullamcorper ipsum, sed finibus turpis rutrum quis.</p>
-                          </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="menu">
-                      <div class="single-menu">
-                          <img src="{{asset('public/user_assets/')}}/images/singleresturent/breakfast/b4.jpg">
-                          <div class="menu-content">
-                              <h4>Beef Sathkora <span>$45</span></h4>
-                              <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                  Donec semper ullamcorper ipsum, sed finibus turpis rutrum quis.</p>
-                          </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="menu">
-                      <div class="single-menu">
-                          <img src="{{asset('public/user_assets/')}}/images/singleresturent/breakfast/b5.jpg">
-                          <div class="menu-content">
-                              <h4>Beef Sathkora <span>$45</span></h4>
-                              <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                  Donec semper ullamcorper ipsum, sed finibus turpis rutrum quis.</p>
-                          </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="menu">
-                      <div class="single-menu">
-                          <img src="{{asset('public/user_assets/')}}/images/singleresturent/breakfast/b6.jpg">
-                          <div class="menu-content">
-                              <h4>Beef Sathkora <span>$45</span></h4>
-                              <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                  Donec semper ullamcorper ipsum, sed finibus turpis rutrum quis.</p>
-                          </div>
-                      </div>
-                    </div>
-                  </div>
+                  @endforeach
                 </div>
               </div>
               <div class="tab-pane fade" id="lunch">
                 <div class="row">
-                  <div class="col-md-6">
-                    <div class="menu">
-                      <div class="single-menu">
-                          <img src="{{asset('public/user_assets/')}}/images/singleresturent/about.jpg">
-                          <div class="menu-content">
-                              <h4>Beef Sathkora <span>$45</span></h4>
-                              <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                  Donec semper ullamcorper ipsum, sed finibus turpis rutrum quis.</p>
-                          </div>
+                  @foreach ($lunch as $item)
+                    <div class="col-md-6">
+                      <div class="menu">
+                        <div class="single-menu">
+                            <img src="{{asset('public/uploads/restmenuImages/'.$item->image)}}">
+                            <div class="menu-content">
+                                <h4>{{$item->menu_name}} <span>{{money($item->price)}}</span></h4>
+                                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Donec semper ullamcorper ipsum, sed finibus turpis rutrum quis.</p>
+                            </div>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="menu">
-                      <div class="single-menu">
-                          <img src="{{asset('public/user_assets/')}}/images/singleresturent/about.jpg">
-                          <div class="menu-content">
-                              <h4>Beef Sathkora <span>$45</span></h4>
-                              <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                  Donec semper ullamcorper ipsum, sed finibus turpis rutrum quis.</p>
-                          </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="menu">
-                      <div class="single-menu">
-                          <img src="{{asset('public/user_assets/')}}/images/singleresturent/about.jpg">
-                          <div class="menu-content">
-                              <h4>Beef Sathkora <span>$45</span></h4>
-                              <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                  Donec semper ullamcorper ipsum, sed finibus turpis rutrum quis.</p>
-                          </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="menu">
-                      <div class="single-menu">
-                          <img src="{{asset('public/user_assets/')}}/images/singleresturent/about.jpg">
-                          <div class="menu-content">
-                              <h4>Beef Sathkora <span>$45</span></h4>
-                              <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                  Donec semper ullamcorper ipsum, sed finibus turpis rutrum quis.</p>
-                          </div>
-                      </div>
-                    </div>
-                  </div>
+                  @endforeach
                 </div>
               </div>
               <div class="tab-pane fade" id="dinner">
                 <div class="row">
-                  <div class="col-md-6">
-                    <div class="menu">
-                      <div class="single-menu">
-                          <img src="{{asset('public/user_assets/')}}/images/singleresturent/about.jpg">
-                          <div class="menu-content">
-                              <h4>Beef Sathkora <span>$45</span></h4>
-                              <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                  Donec semper ullamcorper ipsum, sed finibus turpis rutrum quis.</p>
-                          </div>
+                  @foreach ($dinner as $item)
+                    <div class="col-md-6">
+                      <div class="menu">
+                        <div class="single-menu">
+                            <img src="{{asset('public/uploads/restmenuImages/'.$item->image)}}">
+                            <div class="menu-content">
+                                <h4>{{$item->menu_name}} <span>{{money($item->price)}}</span></h4>
+                                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Donec semper ullamcorper ipsum, sed finibus turpis rutrum quis.</p>
+                            </div>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="menu">
-                      <div class="single-menu">
-                          <img src="{{asset('public/user_assets/')}}/images/singleresturent/about.jpg">
-                          <div class="menu-content">
-                              <h4>Beef Sathkora <span>$45</span></h4>
-                              <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                  Donec semper ullamcorper ipsum, sed finibus turpis rutrum quis.</p>
-                          </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="menu">
-                      <div class="single-menu">
-                          <img src="{{asset('public/user_assets/')}}/images/singleresturent/about.jpg">
-                          <div class="menu-content">
-                              <h4>Beef Sathkora <span>$45</span></h4>
-                              <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                  Donec semper ullamcorper ipsum, sed finibus turpis rutrum quis.</p>
-                          </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="menu">
-                      <div class="single-menu">
-                          <img src="{{asset('public/user_assets/')}}/images/singleresturent/about.jpg">
-                          <div class="menu-content">
-                              <h4>Beef Sathkora <span>$45</span></h4>
-                              <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                  Donec semper ullamcorper ipsum, sed finibus turpis rutrum quis.</p>
-                          </div>
-                      </div>
-                    </div>
-                  </div>
+                  @endforeach
                 </div>
               </div>
               <div class="tab-pane fade" id="drinks">
                 <div class="row">
-                  <div class="col-md-6">
-                    <div class="menu">
-                      <div class="single-menu">
-                          <img src="{{asset('public/user_assets/')}}/images/singleresturent/about.jpg">
-                          <div class="menu-content">
-                              <h4>Beef Sathkora <span>$45</span></h4>
-                              <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                  Donec semper ullamcorper ipsum, sed finibus turpis rutrum quis.</p>
-                          </div>
+                  @foreach ($drinks as $item)
+                    <div class="col-md-6">
+                      <div class="menu">
+                        <div class="single-menu">
+                            <img src="{{asset('public/uploads/restmenuImages/'.$item->image)}}">
+                            <div class="menu-content">
+                                <h4>{{$item->menu_name}} <span>{{money($item->price)}}</span></h4>
+                                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Donec semper ullamcorper ipsum, sed finibus turpis rutrum quis.</p>
+                            </div>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="menu">
-                      <div class="single-menu">
-                          <img src="{{asset('public/user_assets/')}}/images/singleresturent/about.jpg">
-                          <div class="menu-content">
-                              <h4>Beef Sathkora <span>$45</span></h4>
-                              <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                  Donec semper ullamcorper ipsum, sed finibus turpis rutrum quis.</p>
-                          </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="menu">
-                      <div class="single-menu">
-                          <img src="{{asset('public/user_assets/')}}/images/singleresturent/about.jpg">
-                          <div class="menu-content">
-                              <h4>Beef Sathkora <span>$45</span></h4>
-                              <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                  Donec semper ullamcorper ipsum, sed finibus turpis rutrum quis.</p>
-                          </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="menu">
-                      <div class="single-menu">
-                          <img src="{{asset('public/user_assets/')}}/images/singleresturent/about.jpg">
-                          <div class="menu-content">
-                              <h4>Beef Sathkora <span>$45</span></h4>
-                              <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                  Donec semper ullamcorper ipsum, sed finibus turpis rutrum quis.</p>
-                          </div>
-                      </div>
-                    </div>
-                  </div>
+                  @endforeach
                 </div>
               </div>
             </div>

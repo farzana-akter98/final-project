@@ -16,6 +16,8 @@
                             <th class="mdl-data-table__cell--non-numeric">User Name</th>
                             <th class="mdl-data-table__cell--non-numeric">User Email</th>
                             <th class="mdl-data-table__cell--non-numeric">User Type</th>
+                            <th class="mdl-data-table__cell--non-numeric">Image</th>
+                            <th class="mdl-data-table__cell--non-numeric">About</th>
                             <th class="mdl-data-table__cell--non-numeric">Action</th>
                         </tr>
                         </thead>
@@ -23,17 +25,19 @@
                             @php
                                 $i=1
                             @endphp
-                         @foreach ($locations as $item)
+                         @foreach ($users as $item)
                          <tr>
                             <td class="mdl-data-table__cell--non-numeric">{{$i++}}</td>
                             <td class="mdl-data-table__cell--non-numeric">{{$item->name}}</td>
                             <td class="mdl-data-table__cell--non-numeric">{{$item->email}}</td>
+                            <td class="mdl-data-table__cell--non-numeric">{{$item->userType}}</td>
                             <td class="mdl-data-table__cell--non-numeric">@if ($item->image == 'default.jpg')
                                 <img width="50" height="30" src="{{asset('public/image/default.jpg')}}" alt="">
                             @else
-                              <img width="50" height="30" src="{{asset('public/uploads/locationImages/'.$item->image)}}" alt="">
+                              <img width="50" height="30" src="{{asset('public/uploads/userImages/'.$item->image)}}" alt="">
                             @endif</td>
-                            <td class="mdl-data-table__cell--non-numeric"><span class="label"><a href="{{action('Admin\LocationController@update_page',['id'=> $item->id])}}">Update User Type</a></span></td>
+                            <td class="mdl-data-table__cell--non-numeric">{{str_limit($item->about,50,'...')}}</td>
+                            <td class="mdl-data-table__cell--non-numeric"><span class="label"><a href="{{action('Admin\UserController@update_page',['id'=> $item->id])}}">Update User Type</a></span></td>
                         </tr>  
                          @endforeach
                         

@@ -43,7 +43,7 @@
                 </div>
             </div>
         </div>
-        <div class="row pt-50">
+        {{-- <div class="row pt-50">
             <hr>
             <div class="col-md-12">
                 <form action="">
@@ -51,7 +51,7 @@
                     <input type="submit" value="Send">
                 </form>
             </div>
-        </div>
+        </div> --}}
     </div>
 </section>
 @endsection

@@ -8,10 +8,12 @@
     <!---- Style Sheet --->
 
     <link rel="stylesheet" href="{{asset('public/user_assets/')}}/css/lightbox.min.css">
-    <link rel="stylesheet" href="{{asset('public/user_assets/')}}/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{asset('public/user_assets/')}}/css/animate.min.css">
     <link rel="stylesheet" href="{{asset('public/user_assets/')}}/css/owl.carousel.css">
     <link rel="stylesheet" href="{{asset('public/user_assets/')}}/css/owl.theme.green.css">
+    <link rel="stylesheet" href="{{asset('public/user_assets/')}}/css/bootstrap.min.css">
     <link rel="stylesheet" href="{{asset('public/user_assets/')}}/css/all.min.css">
+    <link rel="stylesheet" href="{{asset('public/user_assets/')}}/css/responsive.css">
     <link rel="stylesheet" href="{{asset('public/user_assets/')}}/css/style.css">
      
     

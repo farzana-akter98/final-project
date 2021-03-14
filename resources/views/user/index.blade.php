@@ -5,9 +5,13 @@
     
     <section class="welcome-area cover">
             <div class="welcome container">
-                <div class="banner-text text-center">
-                    <h2>welcome to the sylhet <span class="animate"></span></h2>
-                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="banner-text text-center">
+                            <h2>welcome to the sylhet <span class="animate"></span></h2>
+                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
     </section>
@@ -244,13 +248,17 @@
                     <h4 class="about-heading">check out amazing gallery of places in sylhet</h4>
                 </div>
             </div>
-            <div class="grid">
-                @foreach ($blogImage as $item)
-                    <div class="grid-sizer"></div>
-                    <div class="grid-item">
-                        <a href="{{asset('public/uploads/blogsImages/'.$item->imageName)}}" data-lightbox="mygallery" data-title="Location Address"><img src="{{asset('public/uploads/blogsImages/'.$item->imageName)}}"/></a>
+            <div class="row">
+                <div class="col-sm-12 col-md-12">
+                    <div class="grid">
+                        @foreach ($blogImage as $item)
+                            <div class="grid-sizer"></div>
+                            <div class="grid-item">
+                                <a href="{{asset('public/uploads/blogsImages/'.$item->imageName)}}" data-lightbox="mygallery" data-title="Location Address"><img src="{{asset('public/uploads/blogsImages/'.$item->imageName)}}"/></a>
+                            </div>
+                        @endforeach
                     </div>
-                @endforeach
+                </div>
             </div>
         </div>
     </section>
@@ -263,14 +271,14 @@
     <section class="blog-area pb-100" >
         <div class="container">
             <div class="row section-title">
-                <div class="col-md-6 about-title">
+                <div class="col-sm-12 col-md-6 about-title">
                     <h2> latest blogs.</h2>
                     <h4 class="about-heading">learn more through our latest blog</h4>
                 </div>
             </div>
             <div class="row">
                 @foreach ($blogs as $item)
-                    <div class="col-md-4">
+                    <div class="col-sm-12 col-md-4 animate__animated animate__fadeInLeft">
                         <div class="blog">
                             <div class="blog-img">
                                 <img src="{{asset('public/uploads/blogsImages/'.$item->image)}}" alt="">
@@ -294,9 +302,8 @@
     </section>  
   
     <!-- end homepage blog-->
-
-  
-
+   
+    <!-- Start Type JS-->
 <script type="text/javascript">
     var typed = new Typed('.animate', {
       strings:[
@@ -309,6 +316,12 @@
       loop:true
     });
 </script>
+
+    <!-- End Type JS-->
+
+<script>
+
+</script>    
 @endsection
 
 

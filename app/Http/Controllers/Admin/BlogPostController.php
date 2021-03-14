@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin;
 use App\BlogPost;
 use App\BlogImages;
 use App\BlogCategory;
+use App\Auth;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
@@ -24,6 +25,7 @@ class BlogPostController extends Controller
         $blogpost->title=$request->title;
         $blogpost->description=$request->description;
         $blogpost->blog_category_id=$request->blog_category_id;
+        $blogpost->user_id = Auth::user()->id;
         //image upload
         if($request->hasFile('imageName')){
           $extension = $request->imageName->extension();

@@ -22,7 +22,7 @@
                            <h2>Blogpost</h2>
                            <div class="row text-center">
                                <div class="col-md-8">
-                                   <form action="{{action('User\ProfileController@store')}}" method="POST" enctype="multipart/form-data">
+                                   <form action="{{action('User\ProfileController@storeblog')}}" method="POST" enctype="multipart/form-data">
                                     @csrf
                                         <input type="text" placeholder="Blog title" name="title">
                                         <select name="blog_category_id" class="place">

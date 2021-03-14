@@ -80,6 +80,9 @@
                             <i class="material-icons">keyboard_arrow_down</i>
                         </a>
                         <div class="mdl-navigation">
+                            <a class="mdl-navigation__link" href="{{action('Admin\TransportCategoryController@index')}}">
+                                Transports Category
+                            </a>
                             <a class="mdl-navigation__link" href="{{action('Admin\TransportTypeController@index')}}">
                                 Transports Type
                             </a>
@@ -88,12 +91,12 @@
                             </a>
                         </div>
                     </div>
-                    <div class="sub-navigation">
-                        <a class="mdl-navigation__link">
-                            <i class="material-icons">wc</i>
-                            All Visitors
-                            <i class="material-icons">keyboard_arrow_down</i>
-                        </a>
+                    <a class="mdl-navigation__link" href="{{action('Admin\UserController@index')}}">
+                        <i class="material-icons">wc</i>
+                        All Visitors
+                    </a>
+                    {{-- <div class="sub-navigation">
+                        
                         <div class="mdl-navigation">
                             <a class="mdl-navigation__link" href="">
                                 Admin
@@ -102,7 +105,7 @@
                                 Visitors
                             </a>
                         </div>
-                    </div>
+                    </div> --}}
                     <hr>
                 </nav>
             </div>

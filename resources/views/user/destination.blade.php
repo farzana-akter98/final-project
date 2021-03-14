@@ -3,43 +3,41 @@
 @section('content')
     <!-- Start Slide Area -->
 
-    <section class="slide-area pb-100">
-        <div class="img-slider">
-          <div class="slide active">
-            <img src="{{asset('public/user_assets/')}}/images/place/place7.jpg" alt="">
-            <div class="banner-text bg text-center pt-10 pb-10">
-              <h2>Name</h2>
-              <p>here are many variations of passages of Lorem Ipsum available,don't look even slightly believable.here are many variations of passages of Lorem Ipsum available,don't look even slightly believable.</p>
-            </div>
+    <section class="banner-area mg-b" >
+      <div id="myCarousel" class="carousel carousel-dark slide carousel-fade">
+        <ol class="carousel-indicators">
+          <li id="#one" class="active"></li>
+          <li id="#two"></li>
+          <li id="#three"></li>
+          <li id="#four"></li>
+          <li id="#five"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="{{asset('public/user_assets/')}}/images/singleplace/p1/p1.jpg" class="d-block w-100" alt="">
           </div>
-          <div class="slide">
-            <img src="{{asset('public/user_assets/')}}/images/place/place8.jpeg" alt="">
-            <div class="banner-text bg text-center pt-10 pb-10">
-              <h2>Name</h2>
-              <p>here are many variations of passages of Lorem Ipsum available,don't look even slightly believable.here are many variations of passages of Lorem Ipsum available,don't look even slightly believable.</p>
-            </div>
+          <div class="carousel-item">
+            <img src="{{asset('public/user_assets/')}}/images/singleplace/p1/p2.jpg" class="d-block w-100" alt="">
           </div>
-          <div class="slide">
-            <img src="{{asset('public/user_assets/')}}/images/place/place16.jpg" alt="">
-            <div class="banner-text bg text-center pt-10 pb-10">
-              <h2>Name</h2>
-              <p>here are many variations of passages of Lorem Ipsum available,don't look even slightly believable.here are many variations of passages of Lorem Ipsum available,don't look even slightly believable.</p>
-            </div>
+          <div class="carousel-item">
+            <img src="{{asset('public/user_assets/')}}/images/singleplace/p1/p3.jpg" class="d-block w-100" alt="">
           </div>
-          <div class="slide">
-            <img src="{{asset('public/user_assets/')}}/images/place/place4.jpg" alt="">
-            <div class="banner-text bg text-center pt-10 pb-10">
-              <h2>Name</h2>
-              <p>here are many variations of passages of Lorem Ipsum available,don't look even slightly believable.here are many variations of passages of Lorem Ipsum available,don't look even slightly believable.</p>
-            </div>
+          <div class="carousel-item">
+            <img src="{{asset('public/user_assets/')}}/images/singleplace/p1/p4.jpg" class="d-block w-100" alt="">
           </div>
-          <div class="nav">
-            <div class="btn active"></div>
-            <div class="btn"></div>
-            <div class="btn"></div>
-            <div class="btn"></div>
+          <div class="carousel-item">
+            <img src="{{asset('public/user_assets/')}}/images/singleplace/p1/p5.jpg" class="d-block w-100" alt="">
           </div>
         </div>
+        <a href="#myCarousel" id="prev" class="carousel-control-prev"><span class="carousel-control-prev-icon"></span></a>
+        <a href="#myCarousel" id="next" class="carousel-control-next"><span class="carousel-control-next-icon"></span></a>
+        <div class="banner-overlay">
+          <div class="banner-content">
+            <h2>{{$loc->name}}</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis est adipisci alias. Facilis, adipisci alias sunt modi illum laboriosam ratione, odio nulla asperiores repellat necessitatibus rem dolorem ullam consequuntur. Alias.</p>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- End Slide Area -->
@@ -314,65 +312,36 @@
 
     <!-- End Destination Area -->
 
-    <!-- Start Slide Area Javascript-->
-
-    {{-- <script type="text/javascript">
-
-        var slides = document.querySelectorAll('.slide');
-        var btns = document.querySelectorAll('.btn');
-        let currentSlide=1;
-  
-        // javascript for image manual nav
-  
-        var manualNav = function(manual){
-          
-          slides.forEach((slide) => {
-            slide.classList.remove('active');
-            btns.forEach((btn) => {
-              btn.classList.remove('active');
-            });
-          });
-  
-          slides[manual].classList.add('active');
-          btns[manual].classList.add('active');
-        }
-  
-        btns.forEach((btn, i) => {
-          btn.addEventListener("click", () => {
-            manualNav(i);
-            currentSlide = i;
-          });
+    <!-- Start Banner Areas Jquery-->
+    <script>
+      $(function(){
+        $('.carousel').carousel({
+          interval: 3000,
         });
-  
-        // javascript for image auto play nav
-  
-        var repeat = function(activeClass){
-          let active = document.getElementsByClassName('active');
-          let i = 1;
-          var repeater = () => {
-            setTimeout(function(){
-              [active].forEach((activeSlide) => {
-                activeSlide.classList.remove('active');
-              });
-              slides[i].classList.add('active');
-              btns[i].classList.add('active');
-              i++;
-              if(slides.length == i){
-                i=0;
-              }
-              if (i >= slides.length) {
-                return;
-              }
-              repeater(); 
-            }, 3000);
-          }
-          repeater(); 
-        }
-        repeat();
-  
-    </script> --}}
-  
-    <!-- End Slide Area Javascript-->
+        $('#next').click(function(){
+          $('#myCarousel').carousel('next');
+        })
+        $('#prev').click(function(){
+          $('#myCarousel').carousel('prev');
+        })
+        $('#one').click(function(){
+          $('#myCarousel').carousel(0);
+        })
+        $('#two').click(function(){
+          $('#myCarousel').carousel(1);
+        })
+        $('#three').click(function(){
+          $('#myCarousel').carousel(2);
+        })
+        $('#four').click(function(){
+          $('#myCarousel').carousel(3);
+        })
+        $('#five').click(function(){
+          $('#myCarousel').carousel(4);
+        })
+      })
+    </script>
+    <!-- Start Banner Areas Jquery-->
      
     <!-- Start Tab Area Jquery-->
     <script>

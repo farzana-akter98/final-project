@@ -37,7 +37,7 @@
                                 <img width="250" height="130" src="{{asset('public/image/default.jpg')}}" alt="">
                                 @else
                                 <img width="250" height="130" id="hotel_image" src="{{asset('public/uploads/hotelImages/' .$hotel->image)}}" alt="">
-                                @endif
+                            @endif
                         </div>
                         <div class="mdl-cell mdl-cell--12-col mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
                             <input class="mdl-textfield__input" type="text" name="website" value="{{$hotel->website}}"/>

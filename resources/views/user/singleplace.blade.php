@@ -31,7 +31,7 @@
         <a href="#myCarousel" id="next" class="carousel-control-next"><span class="carousel-control-next-icon"></span></a>
         <div class="banner-overlay">
           <div class="banner-content">
-            <h2>place name</h2>
+            <h2>{{$location->name}}</h2>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis est adipisci alias. Facilis, adipisci alias sunt modi illum laboriosam ratione, odio nulla asperiores repellat necessitatibus rem dolorem ullam consequuntur. Alias.</p>
           </div>
         </div>

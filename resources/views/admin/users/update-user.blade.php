@@ -9,28 +9,16 @@
         </div>
 
         <div class="create-page mdl-card__supporting-text">
-            <form action="{{action('Admin\LocationController@update')}}" class="form" method="POST" enctype="multipart/form-data">
+            <form action="{{action('Admin\UserController@update')}}" class="form" method="POST" enctype="multipart/form-data">
                 @csrf
-                <input type="hidden" name="id" value="{{$location->id}}"/>
+                <input type="hidden" name="id" value="{{$user->id}}"/>
                 <div class="form__article">
-                        <div class="mdl-cell mdl-cell--12-col mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                            <input class="mdl-textfield__input" type="text" name="name" value="{{$location->name}}"/>
-                            <label class="mdl-textfield__label">Location Name</label>
-                        </div>
-                        <div class="mdl-cell mdl-cell--12-col mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                            <input class="mdl-textfield__input" type="text" name="address" value="{{$location->address}}"/>
-                            <label class="mdl-textfield__label">Location Address</label>
-                        </div>
                     <div class="mdl-cell mdl-cell--12-col mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                        <input class="mdl-textfield__input" type="file" onchange="document.getElementById('location_image').src = window.URL.createObjectURL(this.files[0])" name="imageName"/>
-                    </div>
-                    <div class="mdl-cell mdl-cell--12-col mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                        @if ($location->image == 'default.jpg')
-                              <img width="250" height="130" src="{{asset('public/image/default.jpg')}}" alt="">
-                            @else
-                              <img width="250" height="130" id="location_image" src="{{asset('public/uploads/locationImages/'.$location->image)}}" alt="">
-                            @endif
-                    </div>
+                        <select class="place">
+                            <option value="Admin" @if ($user->userType == 'Admin') selected @endif>Admin</option>
+                            <option value="User" @if ($user->userType == 'User') selected @endif>User</option>
+                        </select>
+                    </div>    
                 </div>
                 <div class="form__action">
                     <button id="submit_button" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">

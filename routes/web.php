@@ -21,14 +21,17 @@ Route::get('search-result','User\SearchResultController@formControl');
 Route::get('destination/{id}/{slug}','User\SearchResultController@destination');
 Route::get('blogs','User\BlogController@index');
 Route::get('blog/{id}/{slug}','User\BlogController@view');
+Route::post('store-query','User\QueryController@store');
 
 Route::group(['middleware' => 'auth'],function () {
     
     Route::group(['prefix' => 'user'],function () {
 
         Route::get('profile','User\ProfileController@index');
+        Route::post('profile-store','User\ProfileController@store');
+        //Route::get('profile-update','User\ProfileController@update');
         Route::get('blogpost','User\ProfileController@view');
-        Route::post('blogpost-store','User\ProfileController@store');
+        Route::post('blogpost-store','User\ProfileController@storeblog');
 
     });
     /* -------------- End User Panel Route ------------- */
@@ -38,6 +41,13 @@ Route::group(['middleware' => 'auth'],function () {
 
         Route::group(['prefix' => 'admin'],function () {
             Route::get('dashboard','Admin\DashboardController@index');
+
+            /*------------------ Users -----------------*/
+            Route::get('all-user','Admin\UserController@index');
+            Route::get('storeuser','Admin\UserController@store');
+            Route::get('update_pageuser/{id}','Admin\UserController@update_page');
+            Route::post('update_pageuser','Admin\UserController@update');
+            /*------------------ Users -----------------*/
             
             /*----------------- Location--------------- */
             Route::get('all-location','Admin\LocationController@index');
@@ -57,7 +67,12 @@ Route::group(['middleware' => 'auth'],function () {
             Route::get('update_pageabout/{id}','Admin\AboutController@update_page');
             Route::post('updateabout','Admin\AboutController@update');
             /*-------------- End About-------------*/
-    
+            
+            /*-------------- Contact -------------*/
+            Route::get('all-contact','Admin\ContactController@index');
+            Route::post('storecontact','Admin\ContactController@store');
+            Route::get('update_pagecontact/{id}','Admin\ContactController@view_pagecontact');
+            /*-------------- End Contact -------------*/
     
             /*--------------Blog Category-------------*/
             Route::get('all-blogcategory','Admin\BlogCategoryController@index');
@@ -144,7 +159,17 @@ Route::group(['middleware' => 'auth'],function () {
             Route::get('update_pagerestmenu/{id}','Admin\RestaurantMenuController@update_page');
             Route::post('updaterestmenu','Admin\RestaurantMenuController@update');
             /*-------------- End Restaurent Menu -------------*/
-    
+            
+
+            /*-------------- Transport Category -------------*/
+            Route::get('all-transcategory','Admin\TransportCategoryController@index');
+            Route::get('createtranscategory','Admin\TransportCategoryController@create');
+            Route::post('storetranscategory','Admin\TransportCategoryController@store');
+            Route::get('deletetranscategory/{id}','Admin\TransportCategoryController@delete');
+            Route::get('update_pagetranscategory/{id}','Admin\TransportCategoryController@update_page');
+            Route::post('updatetranscategory','Admin\TransportCategoryController@update');
+            /*-------------- End Transport Category -------------*/
+
             
             /*-------------- Transport Type -------------*/
             Route::get('all-transtype','Admin\TransportTypeController@index');
@@ -193,5 +218,5 @@ Route::group(['middleware' => 'auth'],function () {
    
 Auth::routes();
 
-Route::get('/home', 'User\IndexController@index')->name('home');
+Route::get('/', 'User\IndexController@index')->name('home');
 //Route::get('/home', 'HomeController@index')->name('home');
