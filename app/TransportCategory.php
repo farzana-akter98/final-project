@@ -12,4 +12,9 @@ class TransportCategory extends Model
     {
         return $this->hasMany('App\TransportType','transport_category_id');
     }
+
+    public function transportcost()
+    {
+        return $this->hasMany('App\TransportCost','transport_category_id');
+    }
 }

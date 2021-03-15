@@ -12,10 +12,19 @@
                 @csrf
                 <div class="form__article">
                         <div class="mdl-cell mdl-cell--12-col mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                            <select name="transport_type_id" class="place">
-                                <option value=""> Select a Transport Type </option>
-                                @foreach ($transtypes as $transtype)
-                                 <option value="{{$transtype->id}}"> {{$transtype->type}} </option> 
+                            <select name="location_id" class="place">
+                                <option value=""> Select a Location </option>
+                                @foreach ($locations as $location)
+                                <option value="{{$location->id}}"> {{$location->name}} </option> 
+                                @endforeach
+                                <option value="">Others</option>
+                            </select>
+                        </div>
+                        <div class="mdl-cell mdl-cell--12-col mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                            <select name="transport_category_id" class="place">
+                                <option value=""> Select a Category </option>
+                                @foreach ($transcategories as $category)
+                                 <option value="{{$category->id}}"> {{$category->category}} </option> 
                                 @endforeach
                              </select>
                         </div>

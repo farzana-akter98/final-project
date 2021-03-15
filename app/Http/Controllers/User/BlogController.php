@@ -15,7 +15,8 @@ class BlogController extends Controller
 
     public function view($id){
         $blog = BlogPost::find($id);
-        $blogimage = BlogImages::find($id);
+        $blogimage = BlogImages::where('blog_post_id', $id)->get();
+        //return $blogimage[0]->imageName;
         return view('user.singleblog',compact('blog','blogimage'));
     }
 }

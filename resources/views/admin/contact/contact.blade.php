@@ -31,8 +31,8 @@
                             <td class="mdl-data-table__cell--non-numeric">{{$item->firstname}}</td>
                             <td class="mdl-data-table__cell--non-numeric">{{$item->lastname}}</td>
                             <td class="mdl-data-table__cell--non-numeric">{{$item->email}}</td>
-                            <td class="mdl-data-table__cell--non-numeric">{{str_limit($item->query,20,'...')}} </td>
-                            <td class="mdl-data-table__cell--non-numeric"><span class="label"><a href="{{action('Admin\ContactController@view_pagecontact',['id'=> $item->id])}}">View</a></span></td>
+                            <td class="mdl-data-table__cell--non-numeric">{{str_limit($item->question,20,'...')}} </td>
+                            <td class="mdl-data-table__cell--non-numeric"><span class="label"><a href="{{action('Admin\ContactController@view_page',['id'=> $item->id])}}">View</a></span></td>
                         </tr> 
                          @endforeach
                                      

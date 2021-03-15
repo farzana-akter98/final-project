@@ -235,7 +235,8 @@
                       @if (count($transcosts) > 0)
                         @foreach ($transcosts as $item)
                           <div class="col-md-6 mb-3">
-                            <h2 class="text-center">{{$item->type}}</h2>
+                            <h2 class="text-center">{{$item->category['category']}}</h2>
+                            {{-- {{$item->transportcost}} --}}
                             <div class="table-responsive">
                                 <table class="table table-hover table-back table-striped">
                                     <thead>
@@ -246,13 +247,11 @@
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        @foreach ($item->transportcost as $row)
                                             <tr>
-                                                <td class="td-color">{{$row->from}}</td>
-                                                <td class="td-color">{{$row->to}}</td>
-                                                <td class="td-color">{{money($row->price)}}</td>
+                                                <td class="td-color">{{$item->from}}</td>
+                                                <td class="td-color">{{$item->to}}</td>
+                                                <td class="td-color">{{money($item->price)}}</td>
                                             </tr>
-                                        @endforeach
                                     </tbody>
                                 </table>
                             </div>

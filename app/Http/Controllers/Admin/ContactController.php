@@ -16,7 +16,7 @@ class ContactController extends Controller
         $contact->firstname=$request->firstname;
         $contact->lastname=$request->lastname;
         $contact->email=$request->email;
-        $contact->query = $request->query;
+        $contact->question = $request->question;
         $contact->save();
         return redirect()->to('admin/all-contact');
     }

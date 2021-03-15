@@ -8,12 +8,12 @@ use Symfony\Component\HttpFoundation\ParameterBag;
 class QueryController extends Controller
 {
     public function store(Request $request){
-        dd($request->all());
+        //dd($request->all());
         $contact = new Contact();
         $contact->firstname = $request->firstname;
         $contact->lastname = $request->lastname;
         $contact->email = $request->email;
-        $contact->query = $request->query;
+        $contact->question = $request->question;
         $contact->save();
         return redirect()->back();
     }

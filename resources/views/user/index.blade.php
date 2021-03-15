@@ -73,7 +73,7 @@
                                 <div class="single-about">
                                     <h4>Who we are</h4>
                                     <p class="about-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint quae similique explicabo sed, fuga eius nostrum! Illo delectus distinctio temporibus.</p>
-                                    <a href="" class="btn-common">Read More</a>
+                                    <a href="{{action('User\AboutController@index')}}" class="btn-common">Read More</a>
                                 </div>
                             </div>
                         </div>
@@ -84,7 +84,7 @@
                                     
                                     <h4>Our philosophy</h4>
                                     <p class="about-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint quae similique explicabo sed, fuga eius nostrum! Illo delectus distinctio temporibus.</p>
-                                    <a href="" class="btn-common">Read More</a>
+                                    <a href="{{action('User\AboutController@index')}}" class="btn-common">Read More</a>
                                 </div>
                             </div>
                         </div>
@@ -95,7 +95,7 @@
                                     
                                     <h4>How we work</h4>
                                     <p class="about-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint quae similique explicabo sed, fuga eius nostrum! Illo delectus distinctio temporibus.</p>
-                                    <a href="" class="btn-common">Read More</a>
+                                    <a href="{{action('User\AboutController@index')}}" class="btn-common">Read More</a>
                                 </div>
                             </div>
                         </div>

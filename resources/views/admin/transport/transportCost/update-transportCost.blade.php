@@ -14,10 +14,18 @@
                 <input type="hidden" name="id" value="{{$transcost->id}}"/>
                 <div class="form__article">
                         <div class="mdl-cell mdl-cell--12-col mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                            <select name="transport_type_id" class="place">
-                                <option value=""> Select a Transport Type </option>
-                                @foreach ($transtypes as $transtype)
-                                <option value="{{$transtype->id}}" @if ($transcost->transport_type_id == $transtype->id) selected @endif> {{$transtype->type}} </option>
+                            <select name="location_id" class="place">
+                                <option value=""> Select a Location </option>
+                                @foreach ($locations as $location)
+                                <option value="{{$location->id}}" @if ($transcost->location_id == $location->id) selected @endif> {{$location->name}} </option>
+                                @endforeach
+                            </select>
+                        </div>
+                        <div class="mdl-cell mdl-cell--12-col mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                            <select name="transport_category_id" class="place">
+                                <option value=""> Select a Category </option>
+                                @foreach ($transcategories as $category)
+                                <option value="{{$category->id}}" @if ($transcost->transport_category_id == $category->id) selected @endif> {{$category->category}} </option>
                                 @endforeach
                             </select>
                         </div>

@@ -71,7 +71,7 @@ Route::group(['middleware' => 'auth'],function () {
             /*-------------- Contact -------------*/
             Route::get('all-contact','Admin\ContactController@index');
             Route::post('storecontact','Admin\ContactController@store');
-            Route::get('update_pagecontact/{id}','Admin\ContactController@view_pagecontact');
+            Route::get('update_pagecontact/{id}','Admin\ContactController@view_page');
             /*-------------- End Contact -------------*/
     
             /*--------------Blog Category-------------*/

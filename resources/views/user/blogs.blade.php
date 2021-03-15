@@ -25,9 +25,9 @@
                             <div class="blog-img">
                                 <img src="{{asset('public/uploads/blogsImages/'.$item->image)}}" alt="">
                                 <div class="blog-date text-center">
-                                    <span>10</span>
-                                    <span>sep</span>
-                                    <span>2020</span>
+                                    <span>{{date('g',strtotime($item->created_at))}}</span>
+                                    <span>{{date('M',strtotime($item->created_at))}}</span>
+                                    <span>{{date('Y',strtotime($item->created_at))}}</span>
                                 </div>
                             </div>
                             <div class="blog-content">

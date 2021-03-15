@@ -7,10 +7,10 @@
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                     <div class="mtb-10">
                     <ul> 
-                        <li><a href=""><i class="fab fa-facebook"></i></a></li>
+                        <li><a href="www.facebook.com"><i class="fab fa-facebook" style="color: #097BEA"></i></a></li>
                         <li><a href=""><i class="fab fa-instagram"></i></a></li>
-                        <li><a href=""><i class="fab fa-twitter"></i></a></li>
-                        <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+                        <li><a href=""><i class="fab fa-twitter" style="color: #1DA1F2"></i></a></li>
+                        <li><a href=""><i class="fab fa-linkedin" style="color: #0A66C2"></i></a></li>
                     </ul>
                     </div>
                 </div>
@@ -20,15 +20,15 @@
                     <h2>quick links</h2>
                     <div class="mtb-10">
                         <ul>
-                            <li><i class="fas fa-caret-right"></i><a href="">hotels</a></li>
-                            <li><i class="fas fa-caret-right"></i><a href="">restaurents</a></li>
-                            <li><i class="fas fa-caret-right"></i><a href="">tourist places</a></li>
-                            <li><i class="fas fa-caret-right"></i><a href="">transport cost</a></li>
-                            <li><i class="fas fa-caret-right"></i><a href="">shoping malls</a></li>
-                            <li><i class="fas fa-caret-right"></i><a href="">grocery shops</a></li>
-                            <li><i class="fas fa-caret-right"></i><a href="">emergency contacts</a></li>
-                            <li><i class="fas fa-caret-right"></i><a href="">famous cloth</a></li>
-                            <li><i class="fas fa-caret-right"></i><a href="">traditional food</a></li>
+                            <li><i class="fas fa-caret-right"></i><a href="{{action('User\HotelsController@index')}}">hotels</a></li>
+                            <li><i class="fas fa-caret-right"></i><a href="{{action('User\RestaurantsController@index')}}">restaurents</a></li>
+                            <li><i class="fas fa-caret-right"></i><a href="{{action('User\PlaceController@index')}}">tourist places</a></li>
+                            <li><i class="fas fa-caret-right"></i><a href="{{action('User\TransportCostController@index')}}">transport cost</a></li>
+                            <li><i class="fas fa-caret-right"></i><a href="{{action('User\ShoppingMallController@index')}}">shoping malls</a></li>
+                            <li><i class="fas fa-caret-right"></i><a href="{{action('User\GroceryShopController@index')}}">grocery shops</a></li>
+                            <li><i class="fas fa-caret-right"></i><a href="{{action('User\EmergencyContactController@index')}}">emergency contacts</a></li>
+                            <li><i class="fas fa-caret-right"></i><a href="{{action('User\FamousAttireController@index')}}">famous cloth</a></li>
+                            <li><i class="fas fa-caret-right"></i><a href="{{action('User\TraditionalAlimentController@index')}}">traditional food</a></li>
                         </ul>
                     </div>
                 </div>
@@ -96,7 +96,7 @@
                                                 </div>
                                                 <div class="form-group pb-10">
                                                     <label class="h-pink" for="exampleFormControlTextarea1">Write your query...</label>
-                                                    <textarea name="query" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                                    <textarea name="question" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                                                     </div>
                                                 <button type="submit" class="btn btn-common">Send</button>
                                             </form>

@@ -16,7 +16,7 @@
     <div class="container">
         <nav class="navbar navbar-expand-md header row">
                 <div class="logo col-md-3">
-                    <a href="">Reizen</a>
+                    <a href="{{action('User\IndexController@index')}}">Reizen</a>
                 </div> 
                 <div class="navigation col-md-9 text-right">
                     

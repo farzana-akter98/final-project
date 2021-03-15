@@ -19,6 +19,7 @@
                         <thead>
                         <tr>
                             <th class="mdl-data-table__cell--non-numeric">#</th>
+                            <th class="mdl-data-table__cell--non-numeric">Location</th>
                             <th class="mdl-data-table__cell--non-numeric">Transport Type</th>
                             <th class="mdl-data-table__cell--non-numeric">From</th>
                             <th class="mdl-data-table__cell--non-numeric">To</th>
@@ -33,7 +34,8 @@
                          @foreach ($transcosts as $item)
                          <tr>
                             <td class="mdl-data-table__cell--non-numeric">{{$i++}}</td>
-                            <td class="mdl-data-table__cell--non-numeric">{{$item->transporttype['type']}}</td>
+                            <td class="mdl-data-table__cell--non-numeric">{{$item->location['name']}}</td>
+                            <td class="mdl-data-table__cell--non-numeric">{{$item->category['category']}}</td>
                             <td class="mdl-data-table__cell--non-numeric">{{$item->from}}</td>
                             <td class="mdl-data-table__cell--non-numeric">{{$item->to}}</td>
                             <td class="mdl-data-table__cell--non-numeric">{{$item->price}}</td>

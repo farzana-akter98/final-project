@@ -23,9 +23,9 @@
                 </div>
             </div>
             <div class="row">
-                @foreach ($transtypes as $item)
+                @foreach ($transcategories as $item)
                     <div class="col-md-6 mb-3">
-                        <h2 class="text-center">{{$item->category['category']}}</h2>
+                        <h2 class="text-center">{{$item->category}}</h2>
                         <div class="table-responsive">
                             <table class="table table-hover table-back table-striped">
                                 <thead>
