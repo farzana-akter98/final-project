@@ -4,9 +4,13 @@
 
     <section class="banner-area bg pb-100" style="background: url('{{asset('public/user_assets/')}}/images/ab3.jpg'); background-size:cover; background-position:center;">
         <div class="container">
-            <div class="banner-text text-center">
-                <h2>search result of place.</h2>
-                <p>the result is matched or not</p>
+            <div class="row">
+                <div class="col-sm-12 col-md-12">
+                    <div class="banner-text text-center">
+                        <h2>search result of place.</h2>
+                        <p>the result is matched or not</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>

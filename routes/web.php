@@ -23,7 +23,7 @@ Route::get('blogs','User\BlogController@index');
 Route::get('blog/{id}/{slug}','User\BlogController@view');
 Route::post('store-query','User\QueryController@store');
 
-Route::group(['middleware' => 'auth'],function () {
+Route::group(['middleware' => ['auth','verified']],function () {
     
     Route::group(['prefix' => 'user'],function () {
 
@@ -215,8 +215,8 @@ Route::group(['middleware' => 'auth'],function () {
     
 
 
-   
-Auth::routes();
+//Auth::routes();
+Auth::routes(['verify' => true]);
 
 Route::get('/', 'User\IndexController@index')->name('home');
 //Route::get('/home', 'HomeController@index')->name('home');

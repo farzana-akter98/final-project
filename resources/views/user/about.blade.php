@@ -6,7 +6,7 @@
     <section class="banner-area bg" style="background: url('{{asset('public/user_assets/')}}/images/ab3.jpg'); background-size:cover; background-position:center;">
         <div class="container">
             <div class="row">
-                <div class="col-md-12">
+                <div class="col-sm-12 col-md-12">
                     <div class="banner-text text-center">
                         <h2>our organizations rule.</h2>
                         <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
