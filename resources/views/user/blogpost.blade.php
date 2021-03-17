@@ -11,11 +11,11 @@
     </section>
     <section class="blogpost-area pb-100">
         <div class="container">
-            @if(session()->has('message'))
+            {{-- @if(session()->has('message'))
                 <div class="alert alert-success">
                     {{ session()->get('message') }}
                 </div>
-            @endif
+            @endif --}}
             <div class="row mt-3">
                 <div class="col-md-12">
                     <div class="profile-form">
@@ -68,4 +68,9 @@
             </div>
         </div>
     </section>
+    @if (Session::has('submitblog'))
+        <script>
+            swal("Good Job!", "Blog Posted Successfully!", "success");
+        </script>
+    @endif
 @endsection

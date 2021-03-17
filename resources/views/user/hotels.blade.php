@@ -18,14 +18,17 @@
     <section class="hotel-area pt-100 pb-100">
         <div class="container">
             <div class="row pt-50 section-title">
-                <div class="col-md-12 about-title text-center">
+                <div class="col-md-12 about-title text-center" data-aos="fade-left"
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine">
                     <h2>hotels.</h2>
                     <h4 class="about-heading">check out hotels of in sylhet</h4>
                 </div>
             </div>
             <div class="row">
                 @foreach ($hotels as $item)
-                    <div class="col-md-4">
+                    <div class="col-md-4" data-aos="zoom-in-up"
+                    data-aos-duration="2000">
                         <a href="{{action('User\HotelsController@view',['id'=> $item->id,'slug'=>str_slug($item->name)])}}">
                             <div class="hotelspage">
                                 <img src="{{asset('public/uploads/hotelImages/'.$item->image)}}" alt="">

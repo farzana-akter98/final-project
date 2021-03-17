@@ -14,7 +14,7 @@
                 <div class="blogprofile">
                     <h2>blog title: {{$blog->title}}</h2>
                     <div class="flex">
-                        <i class="far fa-user"></i><h6>author name</h6>
+                        <i class="far fa-user"></i><h6>{{$blog->user['name']}}</h6>
                     </div>
                     <h5>published date: <span>{{date('g',strtotime($blog->created_at))}}</span>
                         <span>{{date('M',strtotime($blog->created_at))}}</span>

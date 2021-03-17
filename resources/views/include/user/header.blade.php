@@ -15,10 +15,10 @@
 <header class="header-area">
     <div class="container">
         <nav class="navbar navbar-expand-md header row">
-                <div class="logo col-md-3">
+                <div class="logo col-sm-3 col-md-3">
                     <a href="{{action('User\IndexController@index')}}">Reizen</a>
                 </div> 
-                <div class="navigation col-md-9 text-right">
+                <div class="navigation col-sm-9 col-md-9 text-right">
                     
                     <form action="{{action('User\SearchResultController@formControl')}}" method="GET">
                         @csrf
@@ -73,7 +73,6 @@
                                 <li><a href="{{action('User\PlaceController@index')}}">Places to Visit</a></li>
                                 <li><a href="{{action('User\GalleryController@index')}}">Gallery</a></li>
                                 <li><a href="{{action('User\BlogController@index')}}"">Blogs</a></li>
-                                <li><a href="">Contact</a></li>
                             </ul>
                         </div>
                         

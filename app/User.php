@@ -41,5 +41,9 @@ class User extends Authenticatable
     {
         return $this->belongsTo('App\UserProfile','user_id');
     }
+    public function blogpost()
+    {
+        return $this->hasMany('App\BlogPost','user_id');
+    }
 
 }

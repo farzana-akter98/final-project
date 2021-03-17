@@ -1,23 +1,23 @@
 <section class="footer-area pt-50">
     <div class="container">
         <div class="row">
-            <div class="col-md-3">
+            <div class="col-sm-6 col-md-3">
                 <div class="about-part">
-                    <h2>about reizen</h2>
+                    <h2 class="heading-part">about reizen</h2>
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                     <div class="mtb-10">
                     <ul> 
-                        <li><a href="www.facebook.com"><i class="fab fa-facebook" style="color: #097BEA"></i></a></li>
-                        <li><a href=""><i class="fab fa-instagram"></i></a></li>
-                        <li><a href=""><i class="fab fa-twitter" style="color: #1DA1F2"></i></a></li>
-                        <li><a href=""><i class="fab fa-linkedin" style="color: #0A66C2"></i></a></li>
+                        <li><a href="https://www.facebook.com"><i class="fab fa-facebook" style="color: #097BEA"></i></a></li>
+                        <li><a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="https://twitter.com"><i class="fab fa-twitter" style="color: #1DA1F2"></i></a></li>
+                        <li><a href="https://www.linkedin.com/"><i class="fab fa-linkedin" style="color: #0A66C2"></i></a></li>
                     </ul>
                     </div>
                 </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-sm-6 col-md-3">
                 <div class="service-list">
-                    <h2>quick links</h2>
+                    <h2 class="heading-part">quick links</h2>
                     <div class="mtb-10">
                         <ul>
                             <li><i class="fas fa-caret-right"></i><a href="{{action('User\HotelsController@index')}}">hotels</a></li>
@@ -33,16 +33,16 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-sm-6 col-md-3">
                 <div class="webname">
                     <div class="circle">
                         <h2>reizen</h2>
                     </div>
                 </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-sm-6 col-md-3">
                 <div class="contact-part">
-                    <h2>our contact</h2>
+                    <h2 class="heading-part">our contact</h2>
                     <div class="contact-content mtb-10 pb-50">
                         <div class="contact-phone p-10 row">
                             <a href="">
@@ -110,7 +110,12 @@
             </div>
         </div>
     </div>
-    <div class="footer-p"><p> &copy; 2020 all rights reserved for reizen</p></div>
+    <div class="footer-p"><p> &copy; 2021 all rights reserved for reizen</p></div>
+    @if (Session::has('submitquestion'))
+        <script>
+            swal("Good Job!", "Question Submit Successfully!", "success");
+        </script>
+    @endif
     <script>
         $(function(){
             $('#show-modal').click(function(){

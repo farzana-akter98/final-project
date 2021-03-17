@@ -23,7 +23,9 @@
         <div class="section-title">
             <div class="container">
                 <div class="row pt-50">
-                    <div class="col-md-12 about-title text-center">
+                    <div class="col-md-12 about-title text-center" data-aos="fade-up"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine">
                         <h2> about us.</h2>
                         <h4 class="about-heading">WE'RE MORE THAN A DIGITAL AGENCY</h4>
                     </div>
@@ -50,35 +52,47 @@
             <div class="container">
                 @foreach ($abouts as $item)
                     <div class="row">
-                        <div class="value who flex">
-                            <div class="value-img col-md-6">
-                                <img src="{{asset('public/uploads/aboutImages/'.$item->whoimage)}}" alt="">
-                            </div>
-                            <div class="value-content col-md-6">
-                                <h3>{{$item->whoname}}</h3>
-                                <p>{{$item->whodetails}}</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="value philosophy flex">
-                            <div class="value-img col-md-6">
-                                <img src="{{asset('public/uploads/aboutImages/'.$item->ourimage)}}" alt="">
-                            </div>
-                            <div class="value-content col-md-6">
-                                <h3>{{$item->ourname}}</h3>
-                                <p>{{$item->ourdetails}}</p>
+                        <div class="col-md-12" data-aos="fade-up"
+                        data-aos-offset="300"
+                        data-aos-easing="ease-in-sine">
+                            <div class="value who row">
+                                <div class="value-img col-md-6">
+                                    <img src="{{asset('public/uploads/aboutImages/'.$item->whoimage)}}" alt="">
+                                </div>
+                                <div class="value-content col-md-6">
+                                    <h3>{{$item->whoname}}</h3>
+                                    <p>{{$item->whodetails}}</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="value how flex">
-                            <div class="value-img col-md-6">
-                                <img src="{{asset('public/uploads/aboutImages/'.$item->howimage)}}" alt="">
+                        <div class="col-md-12" data-aos="fade-right"
+                        data-aos-offset="300"
+                        data-aos-easing="ease-in-sine">
+                            <div class="value philosophy row">
+                                <div class="value-img col-md-6">
+                                    <img src="{{asset('public/uploads/aboutImages/'.$item->ourimage)}}" alt="">
+                                </div>
+                                <div class="value-content col-md-6">
+                                    <h3>{{$item->ourname}}</h3>
+                                    <p>{{$item->ourdetails}}</p>
+                                </div>
                             </div>
-                            <div class="value-content col-md-6">
-                                <h3>{{$item->howname}}</h3>
-                                <p>{{$item->howdetails}}</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12" data-aos="fade-left"
+                        data-aos-offset="300"
+                        data-aos-easing="ease-in-sine">
+                            <div class="value how row">
+                                <div class="value-img col-md-6">
+                                    <img src="{{asset('public/uploads/aboutImages/'.$item->howimage)}}" alt="">
+                                </div>
+                                <div class="value-content col-md-6">
+                                    <h3>{{$item->howname}}</h3>
+                                    <p>{{$item->howdetails}}</p>
+                                </div>
                             </div>
                         </div>
                     </div>

@@ -20,14 +20,18 @@
     <section class="place-area pt-100 pb-100">
         <div class="container">
             <div class="row pt-50 section-title">
-                <div class="col-md-12 about-title text-center">
+                <div class="col-sm-12 col-md-12 about-title text-center" data-aos="fade-up"
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine">
                     <h2>places to visit.</h2>
                     <h4 class="about-heading">check out amazing places of sylhet</h4>
                 </div>
             </div>
             <div class="row">
                 @foreach ($locations as $item)
-                    <div class="col-md-3">
+                    <div class="col-sm-12 col-md-3" data-aos="fade-left"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine">
                         <div class="place-card flex">
                             <div class="place-img">
                                 <img src="{{asset('public/uploads/locationImages/'.$item->image)}}" alt="">

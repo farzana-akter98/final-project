@@ -53,11 +53,15 @@
     <section class="about-area pt-100">
         <div class="container">
             <div class="row section-title">
-                <div class="col-md-6 about-title">
+                <div class="col-md-6 about-title" data-aos="fade-right"
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine">
                     <h2> about us.</h2>
                     <h4 class="about-heading">WE'RE MORE THAN A DIGITAL AGENCY</h4>
                 </div>
-                <div class="col-md-6 text-right about-content">
+                <div class="col-md-6 text-right about-content" data-aos="fade-left"
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine">
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry typesetting industry.</p>
                 </div>
             </div>
@@ -67,7 +71,9 @@
     <section class="about-area1 pb-100">
             <div class="container">       
                 <div class="about row">
-                        <div class="col-md-4">
+                        <div class="col-md-4" data-aos="fade-up"
+                        data-aos-offset="300"
+                        data-aos-easing="ease-in-sine">
                             <div class="who-we">
                                 <div class="about-icon"><i class="far fa-question-circle"></i></div>
                                 <div class="single-about">
@@ -77,7 +83,9 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-4" data-aos="fade-up"
+                        data-aos-offset="300"
+                        data-aos-easing="ease-in-sine">
                             <div class="our-phi">
                                 <div class="about-icon"><i class="fab fa-think-peaks"></i></div>
                                 <div class="single-about">
@@ -88,7 +96,9 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-4" data-aos="fade-up"
+                        data-aos-offset="300"
+                        data-aos-easing="ease-in-sine">
                             <div class="how-we">
                                 <div class="about-icon"><i class="fas fa-network-wired"></i></div>
                                 <div class="single-about">
@@ -111,14 +121,18 @@
         <div class="">
             <div class="container">
                 <div class="row section-title">
-                    <div class="col-md-12 about-title text-center pt-50">
+                    <div class="col-md-12 about-title text-center pt-50" data-aos="fade-up"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine">
                         <h2>places to visit.</h2>
                         <h4 class="about-heading">check out amazing places of sylhet</h4>
                     </div>
                 </div>
                 <div class="row">
                     @foreach ($places as $item)
-                        <div class="col-md-3">
+                        <div class="col-md-3" data-aos="fade-right"
+                        data-aos-offset="300"
+                        data-aos-easing="ease-in-sine">
                             <div class="place-card flex">
                                 <div class="place-img">
                                     <img src="{{asset('public/uploads/locationImages/'.$item->image)}}" alt="">
@@ -145,13 +159,17 @@
     <section class="service-area pb-100">
         <div class="container">
             <div class="row section-title">
-                <div class="col-md-6 about-title">
+                <div class="col-md-6 about-title" data-aos="fade-right"
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine">
                     <h2> services.</h2>
                     <h4 class="about-heading">services we provide</h4>
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-4" data-aos="fade-right"
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine">
                     <a href="{{action('User\HotelsController@index')}}">
                         <div class="services">
                             <i class="fas fa-hotel"></i>
@@ -160,7 +178,9 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4" data-aos="fade-up"
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine">
                     <a href="{{action('User\RestaurantsController@index')}}">
                         <div class="services">
                             <i class="fas fa-utensils"></i>
@@ -169,7 +189,9 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4" data-aos="fade-left"
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine">
                     <a href="{{action('User\PlaceController@index')}}">
                         <div class="services">
                             <i class="fas fa-mountain"></i>
@@ -178,7 +200,9 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4" data-aos="fade-right"
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine">
                     <a href="{{action('User\TransportCostController@index')}}">
                         <div class="services">
                             <i class="fas fa-car-side"></i>
@@ -187,7 +211,9 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4" data-aos="fade-up"
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine">
                     <a href="{{action('User\ShoppingMallController@index')}}">
                         <div class="services">
                             <i class="fas fa-store"></i>
@@ -196,7 +222,9 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4" data-aos="fade-left"
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine">
                     <a href="{{action('User\EmergencyContactController@index')}}">
                         <div class="services">
                             <i class="far fa-hospital"></i>
@@ -205,7 +233,9 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4" data-aos="fade-right"
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine">
                     <a href="{{action('User\FamousAttireController@index')}}">
                         <div class="services">
                                 <i class="fas fa-tshirt"></i>
@@ -214,7 +244,9 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4" data-aos="fade-up"
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine">
                     <a href="{{action('User\TraditionalAlimentController@index')}}">
                         <div class="services">
                             <i class="fas fa-coffee"></i>
@@ -223,7 +255,9 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4" data-aos="fade-left"
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine">
                     <a href="{{action('User\GroceryShopController@index')}}">
                         <div class="services">
                             <i class="fas fa-shopping-cart"></i>
@@ -243,7 +277,9 @@
     <section class="gallery-area pb-100">
         <div class="container">
             <div class="row section-title">
-                <div class="col-md-12 pt-50 about-title text-center">
+                <div class="col-md-12 pt-50 about-title text-center" data-aos="fade-up"
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine">
                     <h2>exclusive gallery.</h2>
                     <h4 class="about-heading">check out amazing gallery of places in sylhet</h4>
                 </div>
@@ -253,7 +289,8 @@
                     <div class="grid">
                         @foreach ($blogImage as $item)
                             <div class="grid-sizer"></div>
-                            <div class="grid-item">
+                            <div class="grid-item" data-aos="zoom-in-up"
+                            data-aos-duration="3000">
                                 <a href="{{asset('public/uploads/blogsImages/'.$item->imageName)}}" data-lightbox="mygallery" data-title="Location Address"><img src="{{asset('public/uploads/blogsImages/'.$item->imageName)}}"/></a>
                             </div>
                         @endforeach
@@ -271,26 +308,29 @@
     <section class="blog-area pb-100" >
         <div class="container">
             <div class="row section-title">
-                <div class="col-sm-12 col-md-6 about-title">
+                <div class="col-sm-12 col-md-6 about-title" data-aos="fade-right"
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine">
                     <h2> latest blogs.</h2>
                     <h4 class="about-heading">learn more through our latest blog</h4>
                 </div>
             </div>
             <div class="row">
                 @foreach ($blogs as $item)
-                    <div class="col-sm-12 col-md-4 animate__animated animate__fadeInLeft">
+                    <div class="col-sm-12 col-md-4" data-aos="fade-up"
+                    data-aos-duration="3000">
                         <div class="blog">
                             <div class="blog-img">
                                 <img src="{{asset('public/uploads/blogsImages/'.$item->image)}}" alt="">
                                 <div class="blog-date text-center">
-                                    <span>10</span>
-                                    <span>sep</span>
-                                    <span>2020</span>
+                                    <span>{{date('g',strtotime($item->created_at))}}</span>
+                                    <span>{{date('M',strtotime($item->created_at))}}</span>
+                                    <span>{{date('Y',strtotime($item->created_at))}}</span>
                                 </div>
                             </div>
                             <div class="blog-content">
                                 <h2>{{$item->title}}</h2>
-                                <span><i class="far fa-user"></i><h6>author name</h6></span>
+                                <span><i class="far fa-user"></i><h6>{{$item->user['name']}}</h6></span>
                                 <p>{{str_limit($item->description,150,'....')}}</p>
                                 <a href="{{action('User\BlogController@view',['id'=> $item->id,'slug'=>str_slug($item->title)])}}" class="btn-common">Read More</a>
                             </div>
@@ -320,7 +360,7 @@
     <!-- End Type JS-->
 
 <script>
-
+   
 </script>    
 @endsection
 

@@ -45,13 +45,17 @@
     <section class="singlerestaurant-area pb-100">
       <div class="container">
         <div class="row pt-50 section-title">
-          <div class="col-md-12 about-title text-center">
+          <div class="col-md-12 about-title text-center" data-aos="fade-left"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine">
             <h2>about us.</h2>
             <h4 class="about-heading">check out our amazing service</h4>
           </div>
         </div>
         <div class="row pb-100">
-          <div class="col-md-6">
+          <div class="col-md-6" data-aos="fade-right"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine">
             <h4 class="text-center">about us</h4>
             <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
             <div class="row">
@@ -65,19 +69,25 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6">
+          <div class="col-md-6" data-aos="fade-left"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine">
             <img src="{{asset('public/user_assets/')}}/images/singleresturent/about.jpg" alt="">
           </div>
         </div>
         <div class="row pt-50 section-title">
-          <div class="col-md-12 about-title text-center">
+          <div class="col-md-12 about-title text-center" data-aos="fade-up"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine">
             <h2>our menu.</h2>
             <h4 class="about-heading">check out our palatable aliment</h4>
           </div>
         </div>
         <div class="row">
           <div class="col-md-12">
-            <ul class="nav nav-tabs nav-fill" id="myTab">
+            <ul class="nav nav-tabs nav-fill" id="myTab" data-aos="fade-left"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine">
               <li class="nav-item">
                 <a href="#all" class="nav-link active">
                   All
@@ -116,7 +126,9 @@
               <div class="tab-pane fade show active" id="all">
                 <div class="row">
                   @foreach ($all as $item)
-                    <div class="col-md-6">
+                    <div class="col-md-6" data-aos="fade-right"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine">
                       <div class="menu">
                         <div class="single-menu">
                             <img src="{{asset('public/uploads/restmenuImages/'.$item->image)}}">

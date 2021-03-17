@@ -6,6 +6,7 @@ use Illuminate\Support\Facades\Auth;
 use App\BlogCategory;
 use App\BlogPost;
 use App\BlogImages;
+use Session;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
@@ -73,6 +74,7 @@ class ProfileController extends Controller
               $blogImage->save();
             }
         }
-        return redirect()->back()->with('message', 'IT WORKS!');
+        Session::flash('submitblog','Blog posted Successfully!');
+        return redirect()->back();
     }
 }

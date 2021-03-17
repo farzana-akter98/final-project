@@ -18,14 +18,18 @@
     <section class="famousattire-area pt-100 pb-100">
         <div class="container">
             <div class="row pt-50 section-title">
-                <div class="col-md-12 about-title text-center">
+                <div class="col-md-12 about-title text-center" data-aos="fade-down"
+                data-aos-easing="linear"
+                data-aos-duration="1500">
                     <h2>famous attire.</h2>
                     <h4 class="about-heading">check out mosaic shopping malls in sylhet</h4>
                 </div>
             </div>
             <div class="row">
                 @foreach ($fclothes as $item)
-                    <div class="col-md-3">
+                    <div class="col-md-3" data-aos="fade-right"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine">
                         <div class="famousattire">
                             <div class="famousattire-img">
                                 <img src="{{asset('public/uploads/fclothImages/'.$item->image)}}" alt="">

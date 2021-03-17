@@ -18,14 +18,18 @@
     <section class="tradaliment-area pt-100 pb-100">
         <div class="container">
             <div class="row pt-50 section-title">
-                <div class="col-md-12 about-title text-center">
+                <div class="col-md-12 about-title text-center" data-aos="fade-left"
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine">
                     <h2>traditional aliment.</h2>
                     <h4 class="about-heading">check out palatable traditional aliment of sylhet</h4>
                 </div>
             </div>
             <div class="row">
                 @foreach ($tfoods as $item)
-                    <div class="col-md-4 flex">
+                    <div class="col-md-4 flex" data-aos="fade-up"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine">
                         <div class="tradaliment">
                             <span></span>
                             <div class="tradaliment-img">

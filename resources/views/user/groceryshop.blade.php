@@ -17,14 +17,18 @@
     <section class="groceryshop-area pt-100 pb-100">
         <div class="container">
             <div class="row pt-50 section-title">
-                <div class="col-md-12 about-title text-center">
+                <div class="col-md-12 about-title text-center" data-aos="fade-left"
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine">
                     <h2>grocery shop.</h2>
                     <h4 class="about-heading">check out grocery shop of in sylhet</h4>
                 </div>
             </div>
             <div class="row">
                 @foreach ($groceries as $item)
-                    <div class="col-md-4">
+                    <div class="col-md-4" data-aos="fade-up"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine">
                         <div class="groceryshop flex">
                             <div class="groceryshop-content">
                                 <div class="groceryshop-info">

@@ -1716,7 +1716,6 @@ font-size: 24px;
   width: 250px;
   height: 250px;
   position: relative;
-  transform: translate(-25%);
 }
 .footer-area .webname::before{
   content: "";
@@ -1778,6 +1777,17 @@ font-size: 24px;
 .mtb-10{
   margin: 10px 0;
 }
+.heading-part{position: relative;font-size: 20px;}
+.heading-part::before{
+  content: '';
+  background-color: #e91e63;
+  height: 2px;
+  width: 20%;
+  position: absolute;
+  top: 30px;
+  margin-bottom: 10px;
+  left: 0;
+}
 .about-part p{
   margin-top: 10px;
   font-size: 16px;
@@ -1785,9 +1795,17 @@ font-size: 24px;
 .about-part li{
   background: transparent;
   font-size: 16px;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+  padding: 5px;
   display: inline-block;
-  padding: 5px 8px;
   margin: 5px;
+}
+.fa-instagram{
+  background: -webkit-radial-gradient(33% 100% circle, #fed373 4%, #f15245 30%, #d92e7f 62%, #9b36b7 85%, #515ecf);
+  background: radial-gradient(circle at 33% 100%, #fed373 4%, #f15245 30%, #d92e7f 62%, #9b36b7 85%, #515ecf);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .about-part ul{
   padding-left: 0;
@@ -1851,7 +1869,6 @@ font-size: 24px;
 .h-pink{color: #e91e63;}
 
 /* End Footer Area*/
-
 
 
 
