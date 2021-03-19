@@ -19,6 +19,8 @@ class CreateTransportCostsTable extends Migration
             $table->foreign('transport_type_id')->references('id')->on('transport_types')->onDelete('No Action')->onUpdate('No Action');
             $table->unsignedBigInteger('location_id')->index()->nullable();
             $table->foreign('location_id')->references('id')->on('locations')->onDelete('No Action')->onUpdate('No Action');
+            $table->unsignedBigInteger('transport_category_id');
+            $table->foreign('transport_category_id')->references('id')->on('transport_categories')->onDelete('No Action')->onUpdate('No Action');
             $table->string('from',150);
             $table->string('to',150);
             $table->double('price')->default(0);

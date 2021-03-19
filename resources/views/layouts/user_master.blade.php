@@ -23,7 +23,6 @@
     <script src="{{asset('public/user_assets/')}}/js/masonry.pkgd.min.js"></script>
     <script src="{{asset('public/user_assets/')}}/js/lightbox-plus-jquery.min.js"></script>  
     <script src="{{asset('public/user_assets/')}}/js/typed.js"></script>
-    <script src="{{asset('public/user_assets/')}}/js/jquery.min.js"></script>
     <script src="{{asset('public/user_assets/')}}/js/jquery-3.6.0.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
