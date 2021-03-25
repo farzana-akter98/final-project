@@ -55,4 +55,9 @@
              </div>
          </div>
     </section>
+    @if (Session::has('updateprofile'))
+        <script>
+            swal("Good Job!", "Profile Updated Successfully!", "success");
+        </script>
+    @endif
 @endsection

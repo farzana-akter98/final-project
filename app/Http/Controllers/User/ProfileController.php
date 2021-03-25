@@ -35,6 +35,7 @@ class ProfileController extends Controller
         }
         $user->about = $request->about;  
         $user->save();
+        Session::flash('updateprofile','Profile Updated Successfully!');
         return redirect()->to('user/profile');
     }
 
